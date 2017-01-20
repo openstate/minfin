@@ -4,7 +4,9 @@ Overzicht van subsidie(-regelingen), subsidieontvangers en de daarbij behorende 
 
 Bron: http://opendata.rijksbegroting.nl/#dataset_2
 
-1. Departmentnamen gecorrigeerd en consistent doorgevoerd.
-2. Toegevoegd begrotingshoofdstukken (Romeinse cijfer en namen)
-3. Beleidsartikelnummers opgeschoond door alleen het hoofdartikel te gebruiken en consistent doorgevoerd.
-4. Bedragen worden aangeduid x1000 - daar waar dat niet zo was is gecorrigeerd. (rij 59-107 tabblad Art17, [http://opendata.rijksbegroting.nl/subsidieoverzicht_ez_2013.xlsx](http://opendata.rijksbegroting.nl/subsidieoverzicht_ez_2013.xlsx)
+1. Namen departmenten zijn consistent doorgevoerd.
+2. Beleidsartikelnummers zijn gecorrigeerd door het hoofdartikel nummer consistent te gebruiken.
+3. Kolom toegevoegd begrotingshoofdstukken (Romeinse cijfer en namen) en begrotingsjaar.
+4. Bedragen worden aangeduid x1000 - daar waar dat niet zo was is gecorrigeerd. (Economische Zaken, 2013, rij 59-107 tabblad Art 17) [http://opendata.rijksbegroting.nl/subsidieoverzicht_ez_2013.xlsx](http://opendata.rijksbegroting.nl/subsidieoverzicht_ez_2013.xlsx)
+5. 133 rijen met lege velden voor ontvangers in het subsidieoverzicht VWS 2013 zijn ingevuld met "natuurlijk persoon of v.o.f." [http://opendata.rijksbegroting.nl/subsidieoverzicht_vws_2013.xlsx](http://opendata.rijksbegroting.nl/subsidieoverzicht_vws_2013.xlsx)
+6. Karakterencoding UTF8.
