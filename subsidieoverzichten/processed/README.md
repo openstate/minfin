@@ -24,7 +24,7 @@ Naam ministerie	Naam beleidsartikel / subsidie(regeling)	Artikel- nummer	Naam on
 | artikel nummer                                          | artikel_nummer          |
 | naam ontvanger                                          | naam_ontvanger          |
 | uitgekeerd bedrag subsidie(regeling) per eindontvanger  | uitgekeerd_bedrag       |
-|---------------------------------------------------------|                         |
+|                                                         |                         |
 | `toegevoegd`                                            | begrotingsjaar          |
 |                                                         | begrotings_hoofdstuk    |
-|                                                           begrotings_staat        |
+|                                                         | begrotings_staat        |
