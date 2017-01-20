@@ -12,15 +12,12 @@ Bron: http://opendata.rijksbegroting.nl/#dataset_2
 6. Karakterencoding UTF8.
 7. In 2013 ontbreekt subsidieoverzicht Defensie.
 
-"departement","subsidieregeling","beleidsartikel","artikel_nummer","naam_ontvanger","uitgekeerd_bedrag","begrotingsjaar","begrotings_hoofstuk","begrotings_staat"
-
-Naam ministerie	Naam beleidsartikel / subsidie(regeling)	Artikel- nummer	Naam ontvanger	Uitgekeerd bedrag subsidie(regeling) per eindontvanger
 
 | opendata.rijksbegroting                                 | subsidieoverzichten.cvs | 
 | --------------------------------------------------------|-------------------------| 
 | naam ministerie                                         | departement             |
-| naam beleidsartikel                                     | beleidsartikel          |  
-| subsidie(regeling)                                      | subsidieregeling        |
+| naam beleidsartikel/subsidie(regeling)                  | beleidsartikel          |  
+|                                                         | subsidieregeling        |
 | artikel nummer                                          | artikel_nummer          |
 | naam ontvanger                                          | naam_ontvanger          |
 | uitgekeerd bedrag subsidie(regeling) per eindontvanger  | uitgekeerd_bedrag       |
