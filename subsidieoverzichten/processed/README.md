@@ -17,7 +17,7 @@ Bron: http://opendata.rijksbegroting.nl/#dataset_2
 Naam ministerie	Naam beleidsartikel / subsidie(regeling)	Artikel- nummer	Naam ontvanger	Uitgekeerd bedrag subsidie(regeling) per eindontvanger
 
 | opendata.rijksbegroting                                 | subsidieoverzichten.cvs | 
-| --------------------------------------------------------|------------------------:| 
+| --------------------------------------------------------|-------------------------| 
 | naam ministerie                                         | departement             |
 | naam beleidsartikel                                     | beleidsartikel          |  
 | subsidie(regeling)                                      | subsidieregeling        |
