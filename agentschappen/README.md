@@ -11,8 +11,13 @@ Bron: http://opendata.rijksbegroting.nl/#dataset_3
 5. Karakterencoding UTF8.
 6. Regel 259 (een herhaling van veldnamen) is verwijderd.
 
-| opendata.rijksbegroting                                 | subsidieoverzichten.cvs | 
+| opendata.rijksbegroting                                 | agentschappen.csv | 
 | --------------------------------------------------------|-------------------------| 
+||departement|
+||begrotingsstaten|
+||begrotingshoofdstuk_R|
+||begroting|
+||naam_agentschap|
 | Agentschap	                  	|	Agentschap	|
 | Jaar	                        	|	Jaar	|
 | Dep.	                        	|	Dep.	|
