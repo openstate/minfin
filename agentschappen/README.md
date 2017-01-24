@@ -13,11 +13,11 @@ Bron: http://opendata.rijksbegroting.nl/#dataset_3
 
 | opendata.rijksbegroting                                 | agentschappen.csv | 
 | --------------------------------------------------------|-------------------------| 
-||departement|
-||begrotingsstaten|
-||begrotingshoofdstuk_R|
-||begroting|
-||naam_agentschap|
+| `toegevoegd`     |departement|
+| `toegevoegd`     |begrotingsstaten|
+| `toegevoegd`     |begrotingshoofdstuk_R|
+| `toegevoegd`     |begroting|
+| `toegevoegd`     |naam_agentschap|
 | Agentschap	                  	|	Agentschap	|
 | Jaar	                        	|	Jaar	|
 | Dep.	                        	|	Dep.	|
