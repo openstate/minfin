@@ -13,7 +13,7 @@ Bron: http://opendata.rijksbegroting.nl/#dataset_2
 7. In 2013 ontbreekt subsidieoverzicht Defensie.
 
 
-| opendata.rijksbegroting                                 | subsidieoverzichten.cvs | 
+| opendata.rijksbegroting                                 | subsidieoverzichten.csv | 
 | --------------------------------------------------------|-------------------------| 
 | naam ministerie                                         | departement             |
 | naam beleidsartikel/subsidie(regeling)                  | beleidsartikel          |  
