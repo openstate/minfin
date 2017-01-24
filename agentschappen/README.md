@@ -7,7 +7,7 @@ Bron: http://opendata.rijksbegroting.nl/#dataset_3
 1. Volledige namen van agentschappen zijn toegevoegd.
 2. Namen van departementen zijn gecorrigeerd en consistent doorgevoerd.
 3. Kolom toegevoegd begrotingshoofdstukken (Romeinse cijfer en namen)
-4. Bedragen werden aangeduid xmiljoen en is aangepast als x1000 om consistent te zijn met bijvoorbeeld subsidieoverzichten.
+4. Bedragen werden aangeduid xmiljoen en zijn aangepast als x1000 om consistent te zijn met bijvoorbeeld subsidieoverzichten.
 5. Karakterencoding UTF8.
 6. Regel 259 (een herhaling van veldnamen) is verwijderd.
 
