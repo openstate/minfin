@@ -1,0 +1,849 @@
+{
+    "name": "2014-V-tweede_suppletoire_begroting", 
+    "children": [
+        {
+            "name": "Financi\u00ebn", 
+            "children": [
+                {
+                    "name": "Internationale Fin. Betrekkingen", 
+                    "size": "1057770"
+                }, 
+                {
+                    "name": "Belastingen", 
+                    "size": "3225300"
+                }, 
+                {
+                    "name": "Financiele Markten", 
+                    "size": "-8318156"
+                }, 
+                {
+                    "name": "Exportkrediet- en investeringsverzekering", 
+                    "size": "10616446"
+                }, 
+                {
+                    "name": "BTW-Compensatiefonds", 
+                    "size": "2902051"
+                }, 
+                {
+                    "name": "Financ. act. Publiek-Private sector", 
+                    "size": "-860977"
+                }, 
+                {
+                    "name": "Beheer materiele activa", 
+                    "size": "306"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Centraal Apparaat", 
+                    "size": "208119"
+                }
+            ]
+        }, 
+        {
+            "name": "Defensie", 
+            "children": [
+                {
+                    "name": "Taakuitvoering Koninklijke Marechaussee", 
+                    "size": "330231"
+                }, 
+                {
+                    "name": "Algemeen", 
+                    "size": "115880"
+                }, 
+                {
+                    "name": "Ondersteuning krijgsmacht door Cdo Dienstencentra", 
+                    "size": "1072054"
+                }, 
+                {
+                    "name": "Taakuitvoering Luchtstrijdkrachten", 
+                    "size": "679077"
+                }, 
+                {
+                    "name": "Centraal apparaat", 
+                    "size": "1584132"
+                }, 
+                {
+                    "name": "Taakuitvoering Zeestrijdkrachten", 
+                    "size": "737050"
+                }, 
+                {
+                    "name": "Opdracht Inzet", 
+                    "size": "274187"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Investeringen Krijgsmacht", 
+                    "size": "902526"
+                }, 
+                {
+                    "name": "Ondersteuning krijgsmacht door Defensie Materieel Org", 
+                    "size": "764808"
+                }, 
+                {
+                    "name": "Taakuitvoering Landstrijdkrachten", 
+                    "size": "1183368"
+                }, 
+                {
+                    "name": "Geheime uitgaven", 
+                    "size": "5264"
+                }
+            ]
+        }, 
+        {
+            "name": "Gemeentefonds", 
+            "children": [
+                {
+                    "name": "Programma", 
+                    "size": "18694753"
+                }, 
+                {
+                    "name": "Gemeentefonds", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Apparaat", 
+                    "size": "33662"
+                }
+            ]
+        }, 
+        {
+            "name": "Veiligheid en Justitie", 
+            "children": [
+                {
+                    "name": "Jeugd", 
+                    "size": "726514"
+                }, 
+                {
+                    "name": "Geheim", 
+                    "size": "3057"
+                }, 
+                {
+                    "name": "Vreemdelingen", 
+                    "size": "1151621"
+                }, 
+                {
+                    "name": "Nationale Politie", 
+                    "size": "5261882"
+                }, 
+                {
+                    "name": "Veiligheid en criminaliteitsbestrijding", 
+                    "size": "718397"
+                }, 
+                {
+                    "name": "Rechtspleging en rechtsbijstand", 
+                    "size": "1491153"
+                }, 
+                {
+                    "name": "Apparaatsuitgaven kerndepartement", 
+                    "size": "448122"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Sanctietoepassing", 
+                    "size": "2593501"
+                }, 
+                {
+                    "name": "Contraterrorisme en Nationaal Veiligheidsbeleid", 
+                    "size": "253081"
+                }
+            ]
+        }, 
+        {
+            "name": "BES-fonds", 
+            "children": [
+                {
+                    "name": "BES-fonds", 
+                    "size": "36853"
+                }
+            ]
+        }, 
+        {
+            "name": "Volksgezondheid, Welzijn en Sport", 
+            "children": [
+                {
+                    "name": "Jeugd", 
+                    "size": "156055"
+                }, 
+                {
+                    "name": "Algemeen", 
+                    "size": "39600"
+                }, 
+                {
+                    "name": "Apparaatsuitgaven", 
+                    "size": "324504"
+                }, 
+                {
+                    "name": "Sport en Bewegen", 
+                    "size": "82463"
+                }, 
+                {
+                    "name": "Maatschappelijke Ondersteuning en Langdurige Zorg", 
+                    "size": "4571184"
+                }, 
+                {
+                    "name": "Tegemoetkoming Specifieke Kosten", 
+                    "size": "4270922"
+                }, 
+                {
+                    "name": "Oorlogsgetroffenen en Herinneringen Tweede Wereldoorlog", 
+                    "size": "321786"
+                }, 
+                {
+                    "name": "Zorgbreed Beleid", 
+                    "size": "711908"
+                }, 
+                {
+                    "name": "Nominaal en Onvoorzien", 
+                    "size": "1896"
+                }, 
+                {
+                    "name": "Volksgezondheid", 
+                    "size": "595504"
+                }, 
+                {
+                    "name": "Curatieve Zorg", 
+                    "size": "2744094"
+                }
+            ]
+        }, 
+        {
+            "name": "Nationale Schuld", 
+            "children": [
+                {
+                    "name": "Financiering staatsschuld", 
+                    "size": "49430297"
+                }, 
+                {
+                    "name": "Kasbeheer", 
+                    "size": "8020898"
+                }
+            ]
+        }, 
+        {
+            "name": "Diergezondheidsfonds", 
+            "children": [
+                {
+                    "name": "Bewaking en bestrijding van dierziekten", 
+                    "size": "22366"
+                }
+            ]
+        }, 
+        {
+            "name": "Economische Zaken", 
+            "children": [
+                {
+                    "name": "Een sterk innovatievermogen", 
+                    "size": "814829"
+                }, 
+                {
+                    "name": "Apparaat", 
+                    "size": "393282"
+                }, 
+                {
+                    "name": "Groen onderwijs van hoge kwaliteit", 
+                    "size": "868718"
+                }, 
+                {
+                    "name": "Een doelmatige en duurzame energievoorziening", 
+                    "size": "4212097"
+                }, 
+                {
+                    "name": "Een concurr., duurz.en veilige agro-, viss.- en voedeselket.", 
+                    "size": "806755"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Goed functionerende economie en markten", 
+                    "size": "197241"
+                }, 
+                {
+                    "name": "Een excellent ondernemingsklimaat", 
+                    "size": "1880714"
+                }, 
+                {
+                    "name": "Natuur, regio en ruimte", 
+                    "size": "401061"
+                }
+            ]
+        }, 
+        {
+            "name": "Sociale Zaken en Werkgelegenheid", 
+            "children": [
+                {
+                    "name": "Tegemoetkoming ouders", 
+                    "size": "4519668"
+                }, 
+                {
+                    "name": "Algemeen", 
+                    "size": "44902"
+                }, 
+                {
+                    "name": "Werkloosheid", 
+                    "size": "26130"
+                }, 
+                {
+                    "name": "Uitvoeringskosten", 
+                    "size": "445748"
+                }, 
+                {
+                    "name": "Aflopende regelingen", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Integratie en maatschappelijke samenhang", 
+                    "size": "102913"
+                }, 
+                {
+                    "name": "Ziekte en zwangerschap", 
+                    "size": "7246"
+                }, 
+                {
+                    "name": "Bijstand, Toeslagenwet en Sociale werkvoorziening", 
+                    "size": "7084466"
+                }, 
+                {
+                    "name": "Jonggehandicapten", 
+                    "size": "3024897"
+                }, 
+                {
+                    "name": "Arbeidsmarkt", 
+                    "size": "19199"
+                }, 
+                {
+                    "name": "Arbeidsongeschiktheid", 
+                    "size": "586"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Kinderopvang", 
+                    "size": "2313336"
+                }, 
+                {
+                    "name": "Rijksbijdragen", 
+                    "size": "11352184"
+                }, 
+                {
+                    "name": "Apparaat", 
+                    "size": "260236"
+                }, 
+                {
+                    "name": "Nabestaanden", 
+                    "size": "805"
+                }, 
+                {
+                    "name": "Oudedagsvoorziening", 
+                    "size": "1016164"
+                }
+            ]
+        }, 
+        {
+            "name": "Wonen en Rijksdienst", 
+            "children": [
+                {
+                    "name": "Uitvoering Rijkshuisvesting", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Woningmarkt", 
+                    "size": "3189729"
+                }, 
+                {
+                    "name": "Beheer materi\u00eble activa", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Kwaliteit Rijksdienst", 
+                    "size": "31520"
+                }, 
+                {
+                    "name": "Woonomgeving en bouw", 
+                    "size": "310552"
+                }, 
+                {
+                    "name": "Uitvoering rijksvastgoedbeleid", 
+                    "size": "161360"
+                }
+            ]
+        }, 
+        {
+            "name": "Overige Hoge Colleges van Staat", 
+            "children": [
+                {
+                    "name": "De Nationale Ombudsman", 
+                    "size": "16643"
+                }, 
+                {
+                    "name": "Raad van State", 
+                    "size": "59943"
+                }, 
+                {
+                    "name": "Kanselarij der Nederlandse Orden", 
+                    "size": "4073"
+                }, 
+                {
+                    "name": "Kabinet van de Gouverneur van Cura\u00e7ao", 
+                    "size": "3324"
+                }, 
+                {
+                    "name": "Algemene Rekenkamer", 
+                    "size": "30126"
+                }, 
+                {
+                    "name": "Kabinet van de Gouverneur van Sint Maarten", 
+                    "size": "2814"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Kabinet van de Gouverneur van Aruba", 
+                    "size": "1906"
+                }
+            ]
+        }, 
+        {
+            "name": "Buitenlandse Zaken", 
+            "children": [
+                {
+                    "name": "Geheim", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Algemeen", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Apparaat", 
+                    "size": "684218"
+                }, 
+                {
+                    "name": "Europese Samenwerking", 
+                    "size": "9138131"
+                }, 
+                {
+                    "name": "Europese samenwerking", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Grotere veiligheid en stabiliteit en humanitaire hulp", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Veiligheid en stabiliteit", 
+                    "size": "249149"
+                }, 
+                {
+                    "name": "Welzijn en veiligheid van Nederlanders in het buitenland", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Versterkt cultureel profiel en positieve beeldvorming NL", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Meer welvaart en minder armoede", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Internationale rechtsorde en eerbiediging mensenrechten", 
+                    "size": "96424"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "size": "30"
+                }, 
+                {
+                    "name": "Consulaire belangenbehartiging", 
+                    "size": "41166"
+                }, 
+                {
+                    "name": "Internationale rechtsorde en mensenrechten", 
+                    "size": "0"
+                }
+            ]
+        }, 
+        {
+            "name": "Infrastructuur en Milieu", 
+            "children": [
+                {
+                    "name": "Bijdrage BDU", 
+                    "size": "1949119"
+                }, 
+                {
+                    "name": "Wegen en verkeersveiligheid", 
+                    "size": "35935"
+                }, 
+                {
+                    "name": "Ruimtelijke Ontwikkeling", 
+                    "size": "120750"
+                }, 
+                {
+                    "name": "Klimaat", 
+                    "size": "90822"
+                }, 
+                {
+                    "name": "Bijdrage investeringsfondsen", 
+                    "size": "6908777"
+                }, 
+                {
+                    "name": "Lucht en geluid", 
+                    "size": "42908"
+                }, 
+                {
+                    "name": "Externe veiligheid en risico's", 
+                    "size": "20383"
+                }, 
+                {
+                    "name": "Handhaving en toezicht", 
+                    "size": "116481"
+                }, 
+                {
+                    "name": "Waterkwaliteit", 
+                    "size": "85635"
+                }, 
+                {
+                    "name": "Spoor", 
+                    "size": "31215"
+                }, 
+                {
+                    "name": "Apparaatsuitgaven Kerndepartement", 
+                    "size": "303683"
+                }, 
+                {
+                    "name": "Scheepvaart", 
+                    "size": "4529"
+                }, 
+                {
+                    "name": "Algemeen departement", 
+                    "size": "55090"
+                }, 
+                {
+                    "name": "Luchtvaart", 
+                    "size": "20941"
+                }, 
+                {
+                    "name": "OV-keten", 
+                    "size": "33501"
+                }, 
+                {
+                    "name": "Waterkwantiteit", 
+                    "size": "42884"
+                }, 
+                {
+                    "name": "Duurzaamheid", 
+                    "size": "22785"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Meteorologie, seismologie en aardobservatie", 
+                    "size": "37620"
+                }
+            ]
+        }, 
+        {
+            "name": "Provinciefonds", 
+            "children": [
+                {
+                    "name": "Provinciefonds", 
+                    "size": "1289604"
+                }
+            ]
+        }, 
+        {
+            "name": "De Koning", 
+            "children": [
+                {
+                    "name": "Doorbelaste uitgaven van andere begrotingen", 
+                    "size": "5630"
+                }, 
+                {
+                    "name": "Functionele uitgaven van de Koning", 
+                    "size": "26833"
+                }, 
+                {
+                    "name": "UITKERING LEDEN KONINKLIJK HUIS", 
+                    "size": "7614"
+                }
+            ]
+        }, 
+        {
+            "name": "Binnenlandse Zaken en Koninkrijksrelaties", 
+            "children": [
+                {
+                    "name": "Algemeen", 
+                    "size": "1101"
+                }, 
+                {
+                    "name": "Dienstverlenende en innovatieve overheid", 
+                    "size": "132602"
+                }, 
+                {
+                    "name": "VUT-fonds", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Arbeidszaken overheid", 
+                    "size": "36724"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Centraal Apparaat", 
+                    "size": "428835"
+                }, 
+                {
+                    "name": "Openbaar bestuur en democratie", 
+                    "size": "29931"
+                }, 
+                {
+                    "name": "Algemene Inlichtingen- en Veiligheidsdienst", 
+                    "size": "197301"
+                }
+            ]
+        }, 
+        {
+            "name": "Onderwijs, Cultuur en Wetenschap", 
+            "children": [
+                {
+                    "name": "Internationaal onderwijsbeleid", 
+                    "size": "14150"
+                }, 
+                {
+                    "name": "Lesgelden", 
+                    "size": "7116"
+                }, 
+                {
+                    "name": "Media", 
+                    "size": "1184316"
+                }, 
+                {
+                    "name": "Onderzoek en wetenschappen", 
+                    "size": "970433"
+                }, 
+                {
+                    "name": "Wetenschappelijk onderwijs", 
+                    "size": "4312161"
+                }, 
+                {
+                    "name": "Hoger beroepsonderwijs", 
+                    "size": "2958189"
+                }, 
+                {
+                    "name": "Tegemoetkoming studiekosten", 
+                    "size": "102659"
+                }, 
+                {
+                    "name": "Voortgezet onderwijs", 
+                    "size": "7849342"
+                }, 
+                {
+                    "name": "Apparaatskosten", 
+                    "size": "243936"
+                }, 
+                {
+                    "name": "Beroepsonderwijs en volwasseneneducatie", 
+                    "size": "3939921"
+                }, 
+                {
+                    "name": "Cultuur", 
+                    "size": "912735"
+                }, 
+                {
+                    "name": "Primair onderwijs", 
+                    "size": "9649026"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Studiefinanciering", 
+                    "size": "4957118"
+                }, 
+                {
+                    "name": "Emancipatie", 
+                    "size": "13534"
+                }, 
+                {
+                    "name": "Arbeidsmarkt en personeelsbeleid", 
+                    "size": "177553"
+                }
+            ]
+        }, 
+        {
+            "name": "De Staten Generaal", 
+            "children": [
+                {
+                    "name": "Wetgeving en controle Tweede Kamer", 
+                    "size": "95462"
+                }, 
+                {
+                    "name": "Wetgeving en controle Eerste Kamer", 
+                    "size": "11770"
+                }, 
+                {
+                    "name": "Uitgaven tbv van (oud) leden Tweede Kamer en leden EP", 
+                    "size": "29231"
+                }, 
+                {
+                    "name": "Wetgeving en controle Eerste en Tweede Kamer", 
+                    "size": "2524"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "size": "-1256"
+                }
+            ]
+        }, 
+        {
+            "name": "Deltafonds", 
+            "children": [
+                {
+                    "name": "Investeren in Waterkwaliteit", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Netwerkgebonden kosten en overige uitgaven", 
+                    "size": "237443"
+                }, 
+                {
+                    "name": "Investeren in waterveiligheid", 
+                    "size": "775615"
+                }, 
+                {
+                    "name": "Bijdrage ten laste van begroting Hoofdstuk XII", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Investeren in zoetwatervoorziening", 
+                    "size": "4379"
+                }, 
+                {
+                    "name": "Beheer, Onderhoud en vervanging", 
+                    "size": "186128"
+                }, 
+                {
+                    "name": "Experimenteren cf. art.111 Deltawet", 
+                    "size": "30000"
+                }
+            ]
+        }, 
+        {
+            "name": "Koninkrijksrelaties", 
+            "children": [
+                {
+                    "name": "Waarborgfunctie", 
+                    "size": "61879"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "size": "140"
+                }, 
+                {
+                    "name": "Bevord.autonomie Koninkrijkspartners", 
+                    "size": "193361"
+                }
+            ]
+        }, 
+        {
+            "name": "Infrastructuurfonds", 
+            "children": [
+                {
+                    "name": "Bijdrage andere begrotingen Rijk", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Hoofdvaarwegennet", 
+                    "size": "991968"
+                }, 
+                {
+                    "name": "Megaprojecten Verkeer en Vervoer", 
+                    "size": "18738"
+                }, 
+                {
+                    "name": "Hoofdwatersystemen", 
+                    "size": "0"
+                }, 
+                {
+                    "name": "Regionaal, lokale infra", 
+                    "size": "242911"
+                }, 
+                {
+                    "name": "Hoofdwegennet", 
+                    "size": "3786062"
+                }, 
+                {
+                    "name": "Overige uitgaven en ontvangsten", 
+                    "size": "223851"
+                }, 
+                {
+                    "name": "Spoorwegen", 
+                    "size": "1751129"
+                }
+            ]
+        }, 
+        {
+            "name": "Buitenlandse Handel & Ontwikkelingssamenwerking", 
+            "children": [
+                {
+                    "name": "Sociale vooruitgang", 
+                    "size": "632326"
+                }, 
+                {
+                    "name": "Vrede en veiligheid voor ontwikkeling", 
+                    "size": "677659"
+                }, 
+                {
+                    "name": "Duurzame ontwikkeling, voedselzekerheid en water", 
+                    "size": "578488"
+                }, 
+                {
+                    "name": "Versterkte kaders voor ontwikkeling", 
+                    "size": "418185"
+                }, 
+                {
+                    "name": "Duurzame handel en investeringen", 
+                    "size": "1814427"
+                }
+            ]
+        }, 
+        {
+            "name": "Algemene Zaken", 
+            "children": [
+                {
+                    "name": "Bevorderen eenheid regeringsbeleid", 
+                    "size": "57824"
+                }, 
+                {
+                    "name": "Kabinet van de Koning", 
+                    "size": "2360"
+                }, 
+                {
+                    "name": "Cie v. Toez. I&V", 
+                    "size": "1078"
+                }
+            ]
+        }
+    ]
+}
