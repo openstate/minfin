@@ -6450,7 +6450,7 @@ var formatLocale = function(locale) {
         }
 
         // Compute the prefix and suffix.
-        valuePrefix = (valueNegative ? (sign === "(" ? sign : "-") : sign === "-" || sign === "(" ? "" : sign) + valuePrefix;
+        valuePrefix = valuePrefix + (valueNegative ? (sign === "(" ? sign : "-") : sign === "-" || sign === "(" ? "" : sign);
         valueSuffix = valueSuffix + (type === "s" ? prefixes[8 + prefixExponent / 3] : "") + (valueNegative && sign === "(" ? ")" : "");
 
         // Break the formatted value into the integer “value” part that can be
