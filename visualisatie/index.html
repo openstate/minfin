@@ -26,15 +26,20 @@ svg {
   </div>
   <div id="total">
   </div>
-  <svg class="treemap" id="treemap" width="800" height="800">
+  <svg class="treemap" id="treemap" width="1000" height="1000">
   </svg>
   <script src="d3/d3.js"></script>
   <script>
+var root,
+    node;
+
 var total = d3.select("#total");
 
 var treemap_el = d3.select("#treemap"),
     width = +treemap_el.attr("width"),
-    height = +treemap_el.attr("height");
+    height = +treemap_el.attr("height"),
+    x = d3.scaleLinear().range([0, width]),
+    y = d3.scaleLinear().range([0, height]);
 
 function convertToSlug(Text) {
   return Text.toLowerCase().replace(/[^\w ]+/g,'').replace(/ +/g,'-');
@@ -65,7 +70,8 @@ function render(year, uo) {
   d3.json("budgettaire_tabellen_json/" + year + "-" + uo + "-ontwerpbegroting.json", function(error, data) {
     if (error) throw error;
      
-    var root = d3.hierarchy(data);
+    root = d3.hierarchy(data);
+    node = root;
 
     // Total
     document.getElementById("total").innerHTML = format(d3.sum(root.leaves().map(function(e) {return e.data.value})));
@@ -82,9 +88,10 @@ function render(year, uo) {
       myNode.removeChild(myNode.firstChild);
     }
     var cell = treemap_el.selectAll("g")
-      .data(root.leaves())
+      .data(root.children)
       .enter().append("g")
-        .attr("transform", function(d) { return "translate(" + d.x0 + "," + d.y0 + ")"; });
+        .attr("transform", function(d) { return "translate(" + d.x0 + "," + d.y0 + ")"; })
+        .on("click", function(d) { return zoom(d.children ? d : root); });
 
     cell.append("rect")
       .attr("id", function(d) { return convertToSlug(d.data.id); })
@@ -127,8 +134,30 @@ function render(year, uo) {
           return d.data.id + "\n" + format(d.value);
         }
       })
+    d3.select(window).on("click", function() { zoom(root); });
   });
 };
+
+function zoom(d) {
+  var kx = width / (d.x1 - d.x0);
+  var ky = height / (d.y1 - d.y0);
+  x.domain([d.x0, d.x1]);
+  y.domain([d.y0, d.y1]);
+
+  var t = treemap_el.selectAll("g").transition()
+      .attr("transform", function(d) { return "translate(" + x(d.x0) + "," + y(d.y0) + ")"; });
+
+  t.select("rect")
+      .attr("width", function(d) { return kx * (d.x1 - d.x0) - 1; })
+      .attr("height", function(d) { return ky * (d.y1 - d.y0) - 1; });
+
+  t.select("text")
+      .attr("x", function(d) { return kx * (d.x1 - d.x0) / 2; })
+      .attr("y", function(d) { return ky * (d.y1 - d.y0) / 2; });
+
+  node = d;
+  d3.event.stopPropagation();
+}
 
 render(
   d3.select("#year").node().value,
