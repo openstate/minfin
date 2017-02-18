@@ -39,17 +39,15 @@ rect {
 var root,
     node;
 
+// Select total element
 var total = d3.select("#total");
 
+// Select treemap element
 var treemap_el = d3.select("#treemap"),
     width = +treemap_el.attr("width"),
     height = +treemap_el.attr("height"),
     x = d3.scaleLinear().range([0, width]),
     y = d3.scaleLinear().range([0, height]);
-
-function convertToSlug(Text) {
-  return Text.toLowerCase().replace(/[^\w ]+/g,'').replace(/ +/g,'-');
-}
 
 // Set locale to nl-NL
 d3.formatDefaultLocale(
@@ -61,115 +59,56 @@ d3.formatDefaultLocale(
   }
 );
 
+// Prepend values with currency symbol and use thousands separator
 var format = d3.format("$,d");
 
+// Set colors for treemap
 var color = d3.scaleOrdinal()
     .range(d3.schemeCategory10
         .map(function(c) { c = d3.rgb(c); c.opacity = 0.6; return c; }));
 
+// Initialize treemap
 var treemap = d3.treemap()
     .size([width, height])
     .round(true);
 
-function render(year, uo) {
-  d3.json("budgettaire_tabellen_json/" + year + "-" + uo + "-ontwerpbegroting.json", function(error, data) {
-    if (error) throw error;
-     
-    root = d3.hierarchy(data);
-    node = root;
+// Function to convert text to slug
+function convertToSlug(Text) {
+  return Text.toLowerCase().replace(/[^\w ]+/g,'').replace(/ +/g,'-');
+}
 
-    // Total
-    document.getElementById("total").innerHTML = format(d3.sum(root.leaves().map(function(e) {return e.data.value})));
-    
-    // Treemap
-    treemap(root
-      .eachBefore(function(d) { d.data.id = (d.parent ? d.parent.data.id + "." : "") + d.data.name; })
-      .sum(function(d) { return Math.abs(d.value); })
-      .sort(function(a, b) { return b.value - a.value; }))
-    .descendants();
-  
-    var myNode = document.getElementById("treemap");
-    while (myNode.firstChild) {
-      myNode.removeChild(myNode.firstChild);
-    }
-    var cell = treemap_el.selectAll("g")
-      .data(root.children)
-      .enter().append("g")
-        .attr("transform", function(d) { return "translate(" + d.x0 + "," + d.y0 + ")"; })
-        .on("click", function(d) { return zoom(d.children ? d : root); });
-
-    cell.append("rect")
-      .attr("id", function(d) { return convertToSlug(d.data.id); })
-      .attr("width", function(d) { return d.x1 - d.x0; })
-      .attr("height", function(d) { return d.y1 - d.y0; })
-      .attr("fill", function(d) {
-        if (d.data.value < 0) {
-          return 'red';
-        } else {
-          while (d.depth > 1) d = d.parent; return color(d.data.name);
-        }
-      });
-
-    cell.append("clipPath")
-      .attr("id", function(d, i) { return "clip-" + convertToSlug(d.data.id) + i; })
-      .append("use")
-      .attr("xlink:href", function(d, i) { return "#" + convertToSlug(d.data.id); });
-
-    cell.append("text")
-      .attr("clip-path", function(d, i) { return "url(#clip-" + convertToSlug(d.data.id) + i + ")"; })
-      .selectAll("tspan")
-        .data(function(d) {
-          var val = format(d.value);
-          if (d.data.value < 0) {
-            val = format(-d.value);
-          }
-          var txt = d.data.name + " " + val;
-          return txt.split(/ /g);
-        })
-      .enter().append("tspan")
-        .attr("x", 4)
-        .attr("y", function(d, i) { return 13 + i * 10; })
-        .text(function(d) { return d; });
-
-    cell.append("title")
-      .text(function(d) {
-        if (d.data.value < 0) {
-          return d.data.id + "\n" + format(-d.value);
-        } else {
-          return d.data.id + "\n" + format(d.value);
-        }
-      })
-    d3.select(window).on("click", function() { zoom(root); });
-  });
-};
-
-function zoom(new_root) {
+// Render/update treemap
+function render_treemap(new_root) {
+  // Calculations needed when zooming in
   var kx = width / (new_root.x1 - new_root.x0);
   var ky = height / (new_root.y1 - new_root.y0);
   x.domain([new_root.x0, new_root.x1]);
   y.domain([new_root.y0, new_root.y1]);
 
-  var myNode = document.getElementById("treemap");
-  while (myNode.firstChild) {
-    myNode.removeChild(myNode.firstChild);
+  // Remove previous treemap
+  var remove_node = document.getElementById("treemap");
+  while (remove_node.firstChild) {
+    remove_node.removeChild(remove_node.firstChild);
   }
+
+  // Add all SVG elements of the current treemap
   var cell = treemap_el.selectAll("g")
-      .data(new_root.children)
-      .enter().append("g")
-        .attr("transform", function(d) { return "translate(" + x(d.x0) + "," + y(d.y0) + ")"; })
-        .on("click", function(d) { return zoom(d.children ? d : root); });
+    .data(new_root.children)
+    .enter().append("g")
+      .attr("transform", function(d) { return "translate(" + x(d.x0) + "," + y(d.y0) + ")"; })
+      .on("click", function(d) { return render_treemap(d.children ? d : root); });
 
   cell.append("rect")
-      .attr("id", function(d) { return convertToSlug(d.data.id); })
-      .attr("width", function(d) { return kx * (d.x1 - d.x0); })
-      .attr("height", function(d) { return ky * (d.y1 - d.y0); })
-      .attr("fill", function(d) {
-        if (d.data.value < 0) {
-          return 'red';
-        } else {
-          while (d.depth > 1) d = d.parent; return color(d.data.name);
-        }
-      });
+    .attr("id", function(d) { return convertToSlug(d.data.id); })
+    .attr("width", function(d) { return kx * (d.x1 - d.x0); })
+    .attr("height", function(d) { return ky * (d.y1 - d.y0); })
+    .attr("fill", function(d) {
+      if (d.data.value < 0) {
+        return 'red';
+      } else {
+        while (d.depth > 1) d = d.parent; return color(d.data.name);
+      }
+    });
 
   cell.append("clipPath")
     .attr("id", function(d, i) { return "clip-" + convertToSlug(d.data.id) + i; })
@@ -202,9 +141,34 @@ function zoom(new_root) {
     })
 
   node = new_root;
-  d3.event.stopPropagation();
+  if (d3.event) {
+    d3.event.stopPropagation();
+  }
 }
 
+// Load selected dataset and render visualisations
+function render(year, uo) {
+  d3.json("budgettaire_tabellen_json/" + year + "-" + uo + "-ontwerpbegroting.json", function(error, data) {
+    if (error) throw error;
+
+    root = d3.hierarchy(data);
+    node = root;
+
+    // Total
+    document.getElementById("total").innerHTML = format(d3.sum(root.leaves().map(function(e) {return e.data.value})));
+
+    // Treemap
+    treemap(root
+      .eachBefore(function(d) { d.data.id = (d.parent ? d.parent.data.id + "." : "") + d.data.name; })
+      .sum(function(d) { return Math.abs(d.value); })
+      .sort(function(a, b) { return b.value - a.value; }));
+    render_treemap(root);
+  });
+    // Show root when clicking outside of the treemap
+    d3.select(window).on("click", function() { render_treemap(root); });
+};
+
+// Render visualisations based on selected year and uitgaven/ontvangsten
 render(
   d3.select("#year").node().value,
   d3.select("#uo").node().value
