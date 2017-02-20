@@ -29,6 +29,7 @@ rect {
   <div id="total"></div>
   <div id="breadcrumb"></div>
   <svg id="treemap" width="800" height="800"></svg>
+  <table id="table"></table>
   <script src="d3/d3.js"></script>
   <script>
 var root,
@@ -67,6 +68,47 @@ var treemap = d3.treemap()
 // Function to convert text to slug
 function convertToSlug(Text) {
   return Text.toLowerCase().replace(/[^\w ]+/g,'').replace(/ +/g,'-');
+}
+
+// Render/update table
+function render_table(data, columns) {
+  // Remove previous table
+  var remove_node = document.getElementById("table");
+  while (remove_node.firstChild) {
+    remove_node.removeChild(remove_node.firstChild);
+  }
+
+  var table = d3.select('table');
+  var thead = table.append('thead');
+  var tbody = table.append('tbody');
+
+  // Append the header row
+  thead.append('tr')
+    .selectAll('th')
+    .data(columns).enter()
+    .append('th')
+      .text(function (column) { return column; });
+
+  // Create a row for each object in the data
+  var rows = tbody.selectAll('tr')
+    .data(data.children)
+    .enter()
+    .append('tr');
+
+  // Create a cell in each row for each column
+  var cells = rows.selectAll('td')
+    .data(function (row) {
+      return columns.map(function (column) {
+        if (column == 'naam') {
+          return {value: row.data.name};
+        } else {
+          return {value: format(row.value)};
+        }
+      });
+    })
+    .enter()
+    .append('td')
+      .text(function (d) { return d.value; });
 }
 
 // Render/update treemap
@@ -140,6 +182,12 @@ function render_treemap(new_root) {
   if (d3.event) {
     d3.event.stopPropagation();
   }
+
+  // Table
+  var table = d3.select('#table');
+  var thead = table.append('thead');
+  var tbody = table.append('tbody');
+  render_table(new_root, ['naam', 'bedrag']);
 }
 
 // Load selected dataset and render visualisations
@@ -160,8 +208,9 @@ function render(year, uo) {
       .sort(function(a, b) { return b.value - a.value; }));
     render_treemap(root);
   });
-    // Show root when clicking outside of the treemap
-    d3.select(window).on("click", function() { render_treemap(root); });
+
+  // Show root when clicking outside of the treemap
+  d3.select(window).on("click", function() { render_treemap(root); });
 };
 
 // Render visualisations based on selected year and uitgaven/ontvangsten
