@@ -7,19 +7,17 @@ import os
 import re
 from collections import defaultdict
 
-# Script that does more clean up on begrotingsstaten_first_step.csv and
-# writes the output to another .csv called
-# 'begrotingsstaten.csv' and the directory
-# 'begrotingsstaten_json' which contains a .json file holding the values
-# in a nested way for each combination of year,
+# Script that cleans up budgettaire_tabellen_owb_201X_origineel.csv
+# files and writes the output to another .csv called
+# 'budgettaire_tabellen_owb_2015.csv' and the directory
+# 'budgettaire_tabellen_json' which contains a .json file holding the
+# values in a nested way for each combination of year,
 # uitgaven (U)/verplichtingen (V)/ontvangsten (O) and type of budget
 # (i.e., ontwerpbegroting/vastgestelde_begroting/
 # eerste_suppletoire_begroting/tweede_suppletoire_begroting/realisatie).
 # The .json files are hierarchically structured in the format used for
 # hierarchical visualisations by D3.js
 # (https://github.com/d3/d3-hierarchy/blob/master/README.md#hierarchy).
-
-# Script to convert budgettaire tabellen data to a new file containing no totals
 
 # Classes to read and write UTF-8 .csv's
 class UTF8Recoder:
@@ -82,6 +80,11 @@ class UnicodeWriter:
             self.writerow(row)
 
 
+# Create a directory to store logs of this script
+log_dir = 'logs'
+if not os.path.exists(log_dir):
+    os.mkdir(log_dir)
+
 # Mapping of hoofdstuk indicator to the name of the hoofdstuk
 mapping = {
     "A": "Infrastructuurfonds",
@@ -93,6 +96,9 @@ mapping = {
     "IIA": "De Staten Generaal",
     "IIB": "Overige Hoge Colleges van Staat",
     "III": "Algemene Zaken",
+    "IIIA": "Algemene Zaken",
+    "IIIB": "Kabinet van de Koning",
+    "IIIC": "Commissie van Toezicht betreffende de Inlichtingen- en Veiligheidsdienst",
     "IV": "Koninkrijksrelaties",
     "IXA": "Nationale Schuld",
     "IXB": u"Financiën",
@@ -107,12 +113,15 @@ mapping = {
     "XVII": "Buitenlandse Handel & Ontwikkelingssamenwerking",
     "XVIII": "Wonen en Rijksdienst",
     "XVI": "Volksgezondheid, Welzijn en Sport",
-    "XV": "Sociale Zaken en Werkgelegenheid"
+    "XV": "Sociale Zaken en Werkgelegenheid",
+    "LVIII": "Diergezondheidsfonds"
 }
 
 # Set up the datastructure for the .json output files
 tree = lambda: defaultdict(tree)
 
+# Log information on lines which would have overwritten an already
+# existing line in the json_data, because their hierarchy is the same
 def print_existing(item, uvo, hoofdstuk, artikel, artikelonderdeel, subartikelonderdeel, uitsplitsing, omschrijving, new_line):
     print 'uvo: ' + uvo
     print 'h: ' + hoofdstuk
@@ -122,13 +131,32 @@ def print_existing(item, uvo, hoofdstuk, artikel, artikelonderdeel, subartikelon
     print 'u: ' + uitsplitsing
     print 'o: ' + omschrijving
     print 'Already filled item!! %s' % (item)
-    print 'Overwriting with: %s\n' % (new_line)
+    print 'Not overwritten with: %s\n' % (new_line)
 
+# Artikel names are not consistent, so the artikel numbers/codes are
+# used in this script. For human readability we do want to output the
+# artikel names in the JSON output. A mapping is created for each each
+# artikel number/code to the artikel name when an artikel is seen for
+# the first time.
+artikel_mapping = {}
+
+# Save lines as hierarchically. It starts to try and save the line
+# at its most detailed level (omschrijving), but if this field is empty
+# then it moves up one level and tries the same. Checks are also in
+# place to see if a line will overwrite an already existing value in
+# the hierarchy, in which case the information is logged and the new
+# line is discarded in favor of the already saved line.
 def store_json_data(json_data, uvo, hoofdstuk, artikel, new_line):
-    artikelonderdeel = new_line[15].strip()
-    subartikelonderdeel = new_line[16].strip()
-    uitsplitsing = new_line[17].strip()
-    omschrijving = new_line[18].strip()
+    hoofdstuk = mapping[hoofdstuk]
+    # If the artikel number/code is not available in the mapping, then
+    # add it together with the artikel name to the mapping
+    if hoofdstuk + '_' + artikel not in artikel_mapping:
+        artikel_mapping[hoofdstuk + '_' + artikel] = new_line[8]
+    artikel = artikel_mapping[hoofdstuk + '_' + artikel]
+    artikelonderdeel = new_line[15]
+    subartikelonderdeel = new_line[16]
+    uitsplitsing = new_line[17]
+    omschrijving = new_line[18]
     if omschrijving:
         try:
             if json_data[uvo][hoofdstuk][artikel][artikelonderdeel][subartikelonderdeel][uitsplitsing][omschrijving]:
@@ -144,7 +172,7 @@ def store_json_data(json_data, uvo, hoofdstuk, artikel, new_line):
                 print_existing(json_data[uvo][hoofdstuk][artikel][artikelonderdeel][subartikelonderdeel][uitsplitsing], uvo, hoofdstuk, artikel, artikelonderdeel, subartikelonderdeel, uitsplitsing, omschrijving, new_line)
                 return
         except TypeError:
-            print_existing(json_data[uvo][hoofdstuk][artikel][artikelonderdeel], uvo, hoofdstuk, artikel, artikelonderdeel, subartikelonderdeel, uitsplitsing, omschrijving, new_line)
+            print_existing(json_data[uvo][hoofdstuk][artikel], uvo, hoofdstuk, artikel, artikelonderdeel, subartikelonderdeel, uitsplitsing, omschrijving, new_line)
             return
         json_data[uvo][hoofdstuk][artikel][artikelonderdeel][subartikelonderdeel][uitsplitsing] = new_line[21]
     elif subartikelonderdeel:
@@ -175,6 +203,7 @@ def store_json_data(json_data, uvo, hoofdstuk, artikel, new_line):
             return
         json_data[uvo][hoofdstuk][artikel] = new_line[21]
 
+# Perform all cleanup actions, see the comments for details
 def clean(year):
     # This dictionary will be used to keep track of the largest total
     # value found for a certain artikel. If this artikel doesn't have
@@ -209,6 +238,9 @@ def clean(year):
             # Store any changes to the line in new_line
             new_line = line
 
+            # Remove leading and trailing whitespace from all fields
+            new_line = [field.strip() for field in new_line]
+
             # Logic to tell if we've already seen a whole block of one
             # hoofdstuk in 2016 in order to skip the second block with
             # the same values
@@ -224,7 +256,10 @@ def clean(year):
             if line_count == 1409 and line[0] == '2017':
                 continue
 
-            artikel = new_line[6]
+            # Skip lines which don't have an artikel number/code; this
+            # happens at least in line 162-164 in 2017
+            if not new_line[6]:
+                continue
 
             # The following two lines contain
             # 'V/U/O (Verplichtingen/Uitgaven/Ontvangsten)' instead of
@@ -232,7 +267,7 @@ def clean(year):
             if (line_count == 2313 or line_count == 2332) and line[0] == '2017':
                 new_line[12] = 'V'
             # Sometimes lowercase values are used, 'u'/'v'/'o', convert them to upper case
-            uvo = new_line[12].strip().upper()
+            uvo = new_line[12].upper()
 
             # The input .csv files use just 'III' for three different
             # begrotingen, so correct these to the codes that are used
@@ -244,12 +279,11 @@ def clean(year):
                 new_line[1] = 'IIIB'
             elif new_line[3] == 'Commissie van Toezicht betreffende de Inlichtingen- en Veiligheidsdienst':
                 new_line[1] = 'IIIC'
-            hoofdstuk = new_line[1]
 
             # In 2017, the last 7/8 columns of lines 899-936 have
             # shifted one column to the right
             if line_count in range(899, 937) and line[0] == '2017':
-                if new_line[19].strip():
+                if new_line[19]:
                     new_line[18] = new_line[19]
                 new_line[19:] = new_line[20:]
 
@@ -266,13 +300,13 @@ def clean(year):
             # In 2017, the 'Deltafonds' hoofdstuk value is 'A' instead
             # of 'J' in 2017
             if new_line[3] == 'Deltafonds' and new_line[0] == '2017':
-                hoofdstuk = 'J'
+                new_line[1] = 'J'
 
             # Remove lines containing either 'pm' ('pro memorie', i.e., the value is not (yet) known) or '%' or if it doesn't contain a number
-            if not new_line[21] or 'pm' in new_line[21] or '%' in new_line[21] or not re.search(r'\d', new_line[21].strip()):
+            if not new_line[21] or 'pm' in new_line[21] or '%' in new_line[21] or not re.search(r'\d', new_line[21]):
                 continue
 
-            # Remove the comma thousand separator 
+            # Remove the comma thousands separator
             val = new_line[21].replace(',', '')
 
             # 2015 uses badly formatted floats, so round those values
@@ -281,6 +315,9 @@ def clean(year):
             val = int(val)
 
             new_line[21] = unicode(val)
+
+            artikel = new_line[6]
+            hoofdstuk = new_line[1]
 
             # Don't output lines with a 'J' in column N as these are
             # (sub)totals which we don't need as we can calculate them
@@ -320,6 +357,8 @@ def clean(year):
                         store_json_data(json_data, uvo, hoofdstuk, artikel, uvo_values['max_val_line'])
     return json_data
 
+# Recursively iterate over all nested levels from json_data and save the
+# names and values in the hierarchically structured format
 def recursively_extract(parent_item):
     if type(parent_item) == unicode:
         return u'found_leaf'
@@ -342,13 +381,12 @@ def recursively_extract(parent_item):
             )
     return item_list
 
-
+## Save hierarchical JSON data
 # Loop over all years
 years = ['2015', '2016', '2017']
 for year in years:
     json_data = clean(year)
 
-    ## Save hierarchical JSON data
     # Directory name to save the .json files in
     dirname = 'budgettaire_tabellen_json'
     # Create the directory if it does not exist
@@ -368,64 +406,6 @@ for year in years:
             }
             json.dump(out_data, OUT, indent=4)
 
-            #hoofdstuk_list = []
-            #for hoofdstuk, hoofdstuk_values in uvo_values.iteritems():
-            #    artikel_list = []
-            #    for artikel, artikel_values in hoofdstuk_values.iteritems():
-            #        artikelonderdeel_list = []
-            #        for artikelonderdeel, artikelonderdeel_values in artikel_values.iteritems():
-            #            subartikelonderdeel_list = []
-            #            for subartikelonderdeel, subartikelonderdeel_values in artikelonderdeel_values.iteritems():
-            #                uitsplitsing_list = []
-            #                for uitsplitsing, uitsplitsing_values in subartikelonderdeel_values.iteritems():
-            #                    if type(uitsplitsing_values) == str:
-            #                        uitsplitsing_list.append(
-            #                            {
-            #                                "name": uitsplitsing,
-            #                                "size": uitsplitsing_values
-            #                            }
-            #                        )
-            #                    omschrijving_list = []
-            #                    for omschrijving, value in uitsplitsing_values.iteritems():
-            #                        omschrijving_list.append(
-            #                            {
-            #                                "name": omschrijving,
-            #                                "size": value
-            #                            }
-            #                        )
-            #                    uitsplitsing_list.append(
-            #                        {
-            #                            "name": uitsplitsing,
-            #                            "children": omschrijving_list
-            #                        }
-            #                    )
-            #                subartikelonderdeel_list.append(
-            #                    {
-            #                        "name": subartikelonderdeel,
-            #                        "children": uitsplitsing_list
-            #                    }
-            #                )
-            #            artikelonderdeel_list.append(
-            #                {
-            #                    "name": artikelonderdeel,
-            #                    "children": subartikelonderdeel_list
-            #                }
-            #            )
-            #        artikel_list.append(
-            #            {
-            #                "name": artikel,
-            #                "children": artikelonderdeel_list
-            #            }
-            #        )
-            #    hoofdstuk_list.append(
-            #        {
-            #            "name": hoofdstuk,
-            #            "children": artikel_list
-            #        }
-            #    )
-            #out_data = { 
-            #    "name": filename,
-            #    "children": hoofdstuk_list
-            #}
-
-            #json.dump(out_data, OUT, indent=4)
+# Save the created artikel mapping for logging purposes
+with open(log_dir + '/artikel_mapping.json', 'w') as OUT:
+    json.dump(artikel_mapping, OUT, indent=4, sort_keys=True)
