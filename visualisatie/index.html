@@ -100,18 +100,19 @@ function render_table(data, columns) {
     .data(function (row) {
       return columns.map(function (column) {
         if (column == 'naam') {
-          return {value: row.data.name};
+          return {value: row.data.name, node: row};
         } else {
           if (row.data.value < 0) {
-            return {value: format(-row.value)};
+            return {value: format(-row.value), node: row};
           } else {
-            return {value: format(row.value)};
+            return {value: format(row.value), node: row};
           }
         }
       });
     })
     .enter()
     .append('td')
+      .on("click", function(d) { return render_treemap(d.node.children ? d.node : root); })
       .text(function (d) { return d.value; });
 }
 
