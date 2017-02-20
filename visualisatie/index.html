@@ -102,7 +102,11 @@ function render_table(data, columns) {
         if (column == 'naam') {
           return {value: row.data.name};
         } else {
-          return {value: format(row.value)};
+          if (row.data.value < 0) {
+            return {value: format(-row.value)};
+          } else {
+            return {value: format(row.value)};
+          }
         }
       });
     })
