@@ -1,0 +1,2806 @@
+{
+    "name": "2017-O-ontwerpbegroting", 
+    "children": [
+        {
+            "name": "Financi\u00ebn", 
+            "children": [
+                {
+                    "name": "Internationale financi\u00eble betrekkingen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Leningen", 
+                                    "children": [
+                                        {
+                                            "name": "Lening", 
+                                            "children": [
+                                                {
+                                                    "name": "Renteontvangsten lening Griekenland", 
+                                                    "value": "3144"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen (inter)nationale organisaties", 
+                                    "children": [
+                                        {
+                                            "name": "Deelname aan internationale instellingen", 
+                                            "children": [
+                                                {
+                                                    "name": "Ontvangsten IFI's", 
+                                                    "value": "655"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Financieringsactiviteiten publiek-private sector", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "children": [
+                                                {
+                                                    "name": "Terug te vorderen uitvoeringskosten staatsdeelnemingen", 
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Leningen", 
+                                    "children": [
+                                        {
+                                            "name": "Leningen", 
+                                            "children": [
+                                                {
+                                                    "name": "Overgenomen schuld Propertize", 
+                                                    "value": "0"
+                                                }, 
+                                                {
+                                                    "name": "Overbruggingskrediet SNS", 
+                                                    "value": "0"
+                                                }, 
+                                                {
+                                                    "name": "Renteontvangsten SNS krediet", 
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdrage aan ZBO's/RWT's", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan RWT", 
+                                            "children": [
+                                                {
+                                                    "name": "NLFI", 
+                                                    "value": "9250"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Vermogensonttrekking", 
+                                    "children": [
+                                        {
+                                            "name": "Vermogensonttrekking", 
+                                            "children": [
+                                                {
+                                                    "name": "waarvan investeringsportefeuille DNB", 
+                                                    "value": "36000"
+                                                }, 
+                                                {
+                                                    "name": "Opbrengst verkoop vermogenstitels", 
+                                                    "value": "0"
+                                                }, 
+                                                {
+                                                    "name": "waarvan SMP-Griekenland", 
+                                                    "value": "54000"
+                                                }, 
+                                                {
+                                                    "name": "Dividenden en afdrachten staatsdeelnemingen", 
+                                                    "value": "1232625"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Garanties", 
+                                    "children": [
+                                        {
+                                            "name": "Garantie", 
+                                            "children": [
+                                                {
+                                                    "name": "Premie-inkomsten garantie Propertize", 
+                                                    "value": "0"
+                                                }, 
+                                                {
+                                                    "name": "Overig", 
+                                                    "value": "915"
+                                                }, 
+                                                {
+                                                    "name": "Premie-ontvangsten garantie Tennet", 
+                                                    "value": "4800"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Financiele markten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Leningen", 
+                                    "children": [
+                                        {
+                                            "name": "Leningen", 
+                                            "children": [
+                                                {
+                                                    "name": "Ontvangsten IJsland", 
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bekostiging", 
+                                    "children": [
+                                        {
+                                            "name": "Bekostiging", 
+                                            "children": [
+                                                {
+                                                    "name": "Ontvangsten muntwezen", 
+                                                    "value": "5184"
+                                                }, 
+                                                {
+                                                    "name": "Toename munten in circulatie", 
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Belastingen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Belastingontvangsten", 
+                                                    "value": "127681119"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Rente", 
+                                    "children": [
+                                        {
+                                            "name": "Rente", 
+                                            "children": [
+                                                {
+                                                    "name": "Belasting- en invorderingsrente", 
+                                                    "value": "392600"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Boetes en schikkingen", 
+                                    "children": [
+                                        {
+                                            "name": "Boetes en schikkingen", 
+                                            "children": [
+                                                {
+                                                    "name": "Ontvangsten boetes en schikkingen", 
+                                                    "value": "248777"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bekostiging", 
+                                    "children": [
+                                        {
+                                            "name": "Bekostiging", 
+                                            "children": [
+                                                {
+                                                    "name": "Kosten vervolging", 
+                                                    "value": "217276"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Btw-Compensatiefonds", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "2922888"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Beheer materiele activa", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Programma-ontvangsten Baten-lastendiensten", 
+                                            "value": "1800"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Exportkredietverzekeringen, -garanties en investeringsverzekeringen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Verzekeringen", 
+                                    "children": [
+                                        {
+                                            "name": "Verzekeringen", 
+                                            "children": [
+                                                {
+                                                    "name": "Premies investeringsverzekeringen", 
+                                                    "value": "1250"
+                                                }, 
+                                                {
+                                                    "name": "Premies ekv", 
+                                                    "value": "88800"
+                                                }, 
+                                                {
+                                                    "name": "Schaderestituties ekv", 
+                                                    "value": "154542"
+                                                }
+                                            ]
+                                        }, 
+                                        {
+                                            "name": "Seno-Gom", 
+                                            "children": [
+                                                {
+                                                    "name": "Ontvangsten Seno-Gom", 
+                                                    "value": "0"
+                                                }, 
+                                                {
+                                                    "name": "Onttrekking begrotingsreserve Seno-Gom", 
+                                                    "value": "12500"
+                                                }, 
+                                                {
+                                                    "name": "Schaderestituties en premie Seno-Gom", 
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Centraal Apparaat", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "52552"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Defensie", 
+            "children": [
+                {
+                    "name": "Taakuitvoering Koninklijke Marechaussee", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Apparaats ontvangsten", 
+                                            "value": "4590"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Ondersteuning krijgsmacht door Defensie Materieel Organisatie", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Apparaats ontvangsten", 
+                                            "value": "43433"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Inzet", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "- Crisisbeheersingsoperaties (HGIS)", 
+                                            "value": "33783"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Taakuitvoering Luchtstrijdkrachten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Apparaats ontvangsten", 
+                                            "value": "12259"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Taakuitvoering Landstrijdkrachten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Apparaats ontvangsten", 
+                                            "value": "11523"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Taakuitvoering Zeestrijdkrachten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Apparaats ontvangsten", 
+                                            "value": "16201"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Ondersteuning krijgsmacht door Commando DienstenCentra", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Apparaats ontvangsten", 
+                                            "value": "75866"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Investeringen Krijgsmacht", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "- Overige ontvangsten materieel", 
+                                            "value": "25800"
+                                        }, 
+                                        {
+                                            "name": "- Overige ontvangsten IT, WOO en NAVO", 
+                                            "value": "1870"
+                                        }, 
+                                        {
+                                            "name": "- Verkoopopbrengsten infrastructuur (strategisch)", 
+                                            "value": "8950"
+                                        }, 
+                                        {
+                                            "name": "- Verkoopopbrengsten groot materieel (strategisch)", 
+                                            "value": "113186"
+                                        }, 
+                                        {
+                                            "name": "- Overige ontvangsten infrastructuur", 
+                                            "value": "11977"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Centraal apparaat", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Apparaats ontvangsten", 
+                                            "value": "41055"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Gemeentefonds", 
+            "children": [
+                {
+                    "name": "Gemeentefonds", 
+                    "value": "26866273"
+                }
+            ]
+        }, 
+        {
+            "name": "Veiligheid en Justitie", 
+            "children": [
+                {
+                    "name": "Rechtsbijstand en rechtspleging", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "overig", 
+                                            "value": "74438"
+                                        }, 
+                                        {
+                                            "name": "waarvan griffie", 
+                                            "value": "217283"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Vreemdelingen", 
+                    "value": "306400"
+                }, 
+                {
+                    "name": "Nationale Politie", 
+                    "value": "16500"
+                }, 
+                {
+                    "name": "Veiligheid en criminaliteitsbestrijding", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Overig", 
+                                            "value": "10000"
+                                        }, 
+                                        {
+                                            "name": "Boeten en Transacties", 
+                                            "value": "982622"
+                                        }, 
+                                        {
+                                            "name": "Afpakken", 
+                                            "value": "312560"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Geheime uitgaven", 
+                    "value": "0"
+                }, 
+                {
+                    "name": "Apparaatsuitgaven kerndepartement", 
+                    "value": "26682"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "0"
+                }, 
+                {
+                    "name": "Sanctietoepassing", 
+                    "value": "99505"
+                }, 
+                {
+                    "name": "Contraterrorisme en Nationaal Veiligheidsbeleid", 
+                    "value": "0"
+                }
+            ]
+        }, 
+        {
+            "name": "BES-fonds", 
+            "children": [
+                {
+                    "name": "BES-fonds", 
+                    "value": "32650"
+                }
+            ]
+        }, 
+        {
+            "name": "Volksgezondheid, Welzijn en Sport", 
+            "children": [
+                {
+                    "name": "Jeugd", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Effectief en effici\u00ebnt werkend jeugdstelsel", 
+                                            "children": [
+                                                {
+                                                    "name": "Effectief en effici\u00ebnt werkend jeugdstelsel", 
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }, 
+                                        {
+                                            "name": "Noodzakelijke en passende zorg", 
+                                            "children": [
+                                                {
+                                                    "name": "Noodzakelijke en passende zorg", 
+                                                    "value": "85"
+                                                }
+                                            ]
+                                        }, 
+                                        {
+                                            "name": "Laagdrempelige ondersteuning opvoeden en opgroeien", 
+                                            "children": [
+                                                {
+                                                    "name": "Laagdrempelige ondersteuning opvoeden en opgroeien", 
+                                                    "value": "4423"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Algemeen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Overig", 
+                                            "children": [
+                                                {
+                                                    "name": "Overig", 
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Sport en bewegen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Overig", 
+                                                    "value": "740"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Maatschappelijke ondersteuning en langdurige zorg", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Overig", 
+                                            "children": [
+                                                {
+                                                    "name": "Overig", 
+                                                    "value": "3441"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Tegemoetkoming specifieke kosten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Overig", 
+                                            "children": [
+                                                {
+                                                    "name": "Overig", 
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Apparaatsuitgaven", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Overig", 
+                                            "children": [
+                                                {
+                                                    "name": "Overig", 
+                                                    "value": "6731"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Zorgbreed beleid", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Overig", 
+                                            "children": [
+                                                {
+                                                    "name": "Overig", 
+                                                    "value": "4858"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Overig", 
+                                            "children": [
+                                                {
+                                                    "name": "Overig", 
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Oorlogsgetroffenen en herinnering WO II", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Overig", 
+                                            "children": [
+                                                {
+                                                    "name": "Overig", 
+                                                    "value": "901"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Volksgezondheid", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Bestuurlijke boetes", 
+                                            "children": [
+                                                {
+                                                    "name": "Bestuurlijke boetes", 
+                                                    "value": "4252"
+                                                }
+                                            ]
+                                        }, 
+                                        {
+                                            "name": "Overig", 
+                                            "children": [
+                                                {
+                                                    "name": "Overig", 
+                                                    "value": "3151"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Curatieve Zorg", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Overig", 
+                                                    "value": "1053"
+                                                }, 
+                                                {
+                                                    "name": "Wanbetalers en onverzekerden", 
+                                                    "value": "59902"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Nationale Schuld", 
+            "children": [
+                {
+                    "name": "Financiering staatsschuld", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Leningen", 
+                                    "children": [
+                                        {
+                                            "name": "Leningen", 
+                                            "children": [
+                                                {
+                                                    "name": "Uitgifte vaste schuld", 
+                                                    "value": "40714"
+                                                }, 
+                                                {
+                                                    "name": "Mutatie vlottende schuld", 
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Rente", 
+                                    "children": [
+                                        {
+                                            "name": "Rente", 
+                                            "children": [
+                                                {
+                                                    "name": "Voortijdige beeindiging derivaten", 
+                                                    "value": "0"
+                                                }, 
+                                                {
+                                                    "name": "Rentederivaten lang", 
+                                                    "value": "1483"
+                                                }, 
+                                                {
+                                                    "name": "Voortijdige beeindiging schuld", 
+                                                    "value": "0"
+                                                }, 
+                                                {
+                                                    "name": "Rentebaten vlottende schuld", 
+                                                    "value": "388"
+                                                }, 
+                                                {
+                                                    "name": "Rentebaten vaste schuld", 
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Kasbeheer", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Mutaties in rekening-courant en deposito's", 
+                                    "children": [
+                                        {
+                                            "name": "Mutaties in rekening-courant en deposito's", 
+                                            "children": [
+                                                {
+                                                    "name": "Agentschappen", 
+                                                    "value": "0"
+                                                }, 
+                                                {
+                                                    "name": "RWT\u2019s en derden", 
+                                                    "value": "0"
+                                                }, 
+                                                {
+                                                    "name": "Sociale fondsen", 
+                                                    "value": "3911"
+                                                }, 
+                                                {
+                                                    "name": "Decentrale Overheden", 
+                                                    "value": "1100"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Leningen", 
+                                    "children": [
+                                        {
+                                            "name": "Leningen", 
+                                            "children": [
+                                                {
+                                                    "name": "Ontvangen aflossingen", 
+                                                    "value": "1363"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Rente", 
+                                    "children": [
+                                        {
+                                            "name": "Rente", 
+                                            "children": [
+                                                {
+                                                    "name": "Ontvangsten bij voortijdige be\u00ebindiging", 
+                                                    "value": "0"
+                                                }, 
+                                                {
+                                                    "name": "Rentebaten", 
+                                                    "value": "168"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "De Koning", 
+            "children": [
+                {
+                    "name": "Grondwettelijke uitkering aan de leden van het Koninklijk Huis", 
+                    "value": "0"
+                }, 
+                {
+                    "name": "Functionele uitgaven van de Koning", 
+                    "value": "0"
+                }, 
+                {
+                    "name": "Doorbelaste uitgaven van andere begrotingen", 
+                    "value": "0"
+                }
+            ]
+        }, 
+        {
+            "name": "Kabinet van de Koning", 
+            "children": [
+                {
+                    "name": "Kabinet van de Koning", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Kabinet van de Koning", 
+                                            "value": "2390"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Sociale Zaken en Werkgelegenheid", 
+            "children": [
+                {
+                    "name": "Tegemoetkoming ouders", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "ONTVANGSTEN", 
+                                    "children": [
+                                        {
+                                            "name": "RESTITUTIES", 
+                                            "value": "285799"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Algemeen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "ONTVANGSTEN", 
+                                    "children": [
+                                        {
+                                            "name": "ONTVANGSTEN MINISTERIE", 
+                                            "value": "0"
+                                        }, 
+                                        {
+                                            "name": "ALGEMEEN", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Werkloosheid", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "ONTVANGSTEN", 
+                                    "children": [
+                                        {
+                                            "name": "RESTITUTIES", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Aflopende regelingen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "ONTVANGSTEN", 
+                                    "children": [
+                                        {
+                                            "name": "ALGEMEEN", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Integratie en maatschappelijke samenhang", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "ONTVANGSTEN", 
+                                    "children": [
+                                        {
+                                            "name": "LENINGEN", 
+                                            "value": "0"
+                                        }, 
+                                        {
+                                            "name": "ALGEMENE ONTVANGSTEN", 
+                                            "value": "600"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Apparaatsuitgaven kerndepartement", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "children": [
+                                        {
+                                            "name": "ONTVANGSTEN APPARAAT", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Ziekte en zwangerschap", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "ONTVANGSTEN", 
+                                    "children": [
+                                        {
+                                            "name": "RESTITUTIES", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Bijstand, Toeslagenwet en Sociale Werkvoorziening", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "ONTVANGSTEN", 
+                                    "children": [
+                                        {
+                                            "name": "RESTITUTIES", 
+                                            "value": "0"
+                                        }, 
+                                        {
+                                            "name": "ALGEMENE ONTVANGSTEN", 
+                                            "value": "2572"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Jonggehandicapten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "ONTVANGSTEN", 
+                                    "children": [
+                                        {
+                                            "name": "RESTITUTIES", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Arbeidsmarkt", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "children": [
+                                        {
+                                            "name": "BOETEN", 
+                                            "value": "24000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Arbeidsongeschiktheid", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "ONTVANGSTEN", 
+                                    "children": [
+                                        {
+                                            "name": "ALGEMENE ONTVANGSTEN", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Kinderopvang", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "ONTVANGSTEN", 
+                                    "children": [
+                                        {
+                                            "name": "WERKGEVERSBIJDRAGE KINDEROPVANG", 
+                                            "value": "1091713"
+                                        }, 
+                                        {
+                                            "name": "RESTITUTIES TERUGONTVANGSTEN", 
+                                            "value": "334820"
+                                        }, 
+                                        {
+                                            "name": "ALGEMENE ONTVANGSTEN", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Rijksbijdragen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "ONTVANGSTEN", 
+                                    "children": [
+                                        {
+                                            "name": "ALGEMENE ONTVANGSTEN", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Uitvoeringskosten ZBO's en RWT's", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "ONTVANGSTEN", 
+                                    "children": [
+                                        {
+                                            "name": "RESTITUTIES", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Nabestaanden", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "children": [
+                                        {
+                                            "name": "ONTVANGSTEN", 
+                                            "value": "0"
+                                        }, 
+                                        {
+                                            "name": "RESTITUTIES", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Oudedagsvoorziening", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "ONTVANGSTEN", 
+                                    "children": [
+                                        {
+                                            "name": "RESTITUTIES", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Wonen en Rijksdienst", 
+            "children": [
+                {
+                    "name": "Woonomgeving en bouw", 
+                    "value": "91"
+                }, 
+                {
+                    "name": "Kwaliteit Rijksdienst", 
+                    "value": "0"
+                }, 
+                {
+                    "name": "Woningmarkt", 
+                    "value": "425000"
+                }, 
+                {
+                    "name": "Uitvoering Rijksvastgoedbeleid", 
+                    "value": "138734"
+                }
+            ]
+        }, 
+        {
+            "name": "Overige Hoge Colleges van Staat", 
+            "children": [
+                {
+                    "name": "De Nationale ombudsman", 
+                    "value": "2189"
+                }, 
+                {
+                    "name": "Kanselarij Nederlandse Orden", 
+                    "value": "29"
+                }, 
+                {
+                    "name": "Raad van State", 
+                    "value": "1950"
+                }, 
+                {
+                    "name": "Kabinet Gouverneur Curacao", 
+                    "value": "200"
+                }, 
+                {
+                    "name": "Kabinet Gouverneur St. Maarten", 
+                    "value": "50"
+                }, 
+                {
+                    "name": "Algemene Rekenkamer", 
+                    "value": "1217"
+                }, 
+                {
+                    "name": "Kabinet Gouverneur Aruba", 
+                    "value": "60"
+                }
+            ]
+        }, 
+        {
+            "name": "Buitenlandse Zaken", 
+            "children": [
+                {
+                    "name": "Veiligheid en stabiliteit", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Restituties contributies", 
+                                            "value": "1000"
+                                        }, 
+                                        {
+                                            "name": "Doorberekening Defensie diversen", 
+                                            "value": "212"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Europese samenwerking", 
+                    "children": [
+                        {
+                            "name": "Restitutie Raad van Europa", 
+                            "value": "150"
+                        }, 
+                        {
+                            "name": "Perceptiekostenvergoedingen", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Invoerrechten", 
+                                            "value": "640853"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Apparaat", 
+                    "children": [
+                        {
+                            "name": "Diverse ontvangsten", 
+                            "value": "21450"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Consulaire belangenbehartiging en het internationaal uitdragen van Nederlandse waarden en belangen", 
+                    "children": [
+                        {
+                            "name": "Doorberekening Defensie diversen", 
+                            "value": "790"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Infrastructuur en Milieu", 
+            "children": [
+                {
+                    "name": "Wegen en verkeersveiligheid", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "6782"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Metereologie, seismologie en aardobservatie", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Ruimtelijke ontwikkeling", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "8989"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Klimaat", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "195485"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Bijdrage Investeringsfondsen", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Lucht en geluid", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Handhaving en toezicht", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Spoor", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Apparaatsuitgaven Kerndepartement", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "17891"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Externe veiligheid en risico's", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "2057"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Brede doeluitkering", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Luchtvaart", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "10312"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "OV-keten", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "6195"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Waterkwantiteit", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Duurzaamheid", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "2170"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Algemeen departement", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "1994"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Scheepvaart en havens", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Provinciefonds", 
+            "children": [
+                {
+                    "name": "Provinciefonds", 
+                    "value": "2166095"
+                }
+            ]
+        }, 
+        {
+            "name": "Diergezondheidsfonds", 
+            "children": [
+                {
+                    "name": "Bewaking en bestrijding van dierziekten en voorkomen en verminderen van welzijnsproblemen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Ontvangsten", 
+                                            "value": "32550"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Binnenlandse Zaken en Koninkrijksrelaties", 
+            "children": [
+                {
+                    "name": "Algemeen", 
+                    "value": "15000"
+                }, 
+                {
+                    "name": "Algemene Inlichtingen en Veiligheidsdienst", 
+                    "value": "12714"
+                }, 
+                {
+                    "name": "Dienstverlenende en innovatieve overheid", 
+                    "value": "5374"
+                }, 
+                {
+                    "name": "VUT-fonds", 
+                    "value": "0"
+                }, 
+                {
+                    "name": "Arbeidszaken overheid", 
+                    "value": "820"
+                }, 
+                {
+                    "name": "Centraal apparaat", 
+                    "value": "14056"
+                }, 
+                {
+                    "name": "Openbaar bestuur en democratie", 
+                    "value": "21965"
+                }
+            ]
+        }, 
+        {
+            "name": "Onderwijs, Cultuur en Wetenschap", 
+            "children": [
+                {
+                    "name": "Internationaal beleid", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "value": "99"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "De tegemoetkoming onderwijsbijdrage en schoolkosten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "TS 18+ (R)", 
+                                                    "value": "75"
+                                                }, 
+                                                {
+                                                    "name": "VO 18+ (R)", 
+                                                    "value": "2991"
+                                                }, 
+                                                {
+                                                    "name": "TS 17- (R)", 
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Lesgeld", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "value": "246267"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Hoger beroepsonderwijs", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "value": "1213"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Media", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "value": "199500"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "ARBEIDSMARKT- EN PERSONEELSBELEID", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "value": "6000"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Wetenschappelijk onderwijs", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "value": "16"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Voortgezet Onderwijs", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "value": "7361"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Apparaatskosten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "value": "567"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Beroepsonderwijs en volwasseneneducatie", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "value": "3000"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Cultuur", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "value": "494"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Primair Onderwijs", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "value": "8661"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "value": "0"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Studiefinanciering", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Terugontvangen hoofdsom (NR)", 
+                                                    "value": "644166"
+                                                }, 
+                                                {
+                                                    "name": "Ontvangen rente en relevant hoofdsom ( R)", 
+                                                    "value": "128068"
+                                                }, 
+                                                {
+                                                    "name": "Kortlopende vorderingen ( R)", 
+                                                    "value": "93003"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Onderzoek en Wetenschapsbeleid", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "value": "101"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Emancipatie", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "value": "0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Economische Zaken", 
+            "children": [
+                {
+                    "name": "Concurrerende, duurzame, veilige, agro-, visserij- en voedselketens", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "children": [
+                                        {
+                                            "name": "Diergezondheid en dierenwelzijn", 
+                                            "value": "500"
+                                        }, 
+                                        {
+                                            "name": "Agrarisch ondernemerschap", 
+                                            "value": "245"
+                                        }, 
+                                        {
+                                            "name": "Garanties (provisies Borgstellingsfaciliteit)", 
+                                            "value": "1800"
+                                        }, 
+                                        {
+                                            "name": "Voedselzekerheid en internationaal en Europees landbouwbeleid", 
+                                            "value": "15926"
+                                        }, 
+                                        {
+                                            "name": "Kennisontwikkeling en (agrarische) innovatie", 
+                                            "value": "12062"
+                                        }, 
+                                        {
+                                            "name": "Mestbeleid", 
+                                            "value": "7209"
+                                        }, 
+                                        {
+                                            "name": "Begrotingsreserves", 
+                                            "value": "12663"
+                                        }, 
+                                        {
+                                            "name": "Visserij", 
+                                            "value": "6993"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Bedrijvenbeleid: innovatief en duurzaam ondernemen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "children": [
+                                        {
+                                            "name": "Groeifaciliteit", 
+                                            "value": "8000"
+                                        }, 
+                                        {
+                                            "name": "Garantie Ondernemersfinanciering (GO)", 
+                                            "value": "13000"
+                                        }, 
+                                        {
+                                            "name": "Diverse ontvangsten", 
+                                            "value": "3466"
+                                        }, 
+                                        {
+                                            "name": "Joint Strike Fighter", 
+                                            "value": "2500"
+                                        }, 
+                                        {
+                                            "name": "Luchtvaartkredietregeling", 
+                                            "value": "8447"
+                                        }, 
+                                        {
+                                            "name": "Garantiefaciliteit Scheepsnieuwbouwfinanciering", 
+                                            "value": "4000"
+                                        }, 
+                                        {
+                                            "name": "BMKB", 
+                                            "value": "33000"
+                                        }, 
+                                        {
+                                            "name": "Rijksoctrooiwet", 
+                                            "value": "37681"
+                                        }, 
+                                        {
+                                            "name": "Eurostars", 
+                                            "value": "4238"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Apparaatsuitgaven kerndepartement en diensten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "ONTVANGSTEN", 
+                                            "value": "35826"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Toekomstfonds", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "children": [
+                                        {
+                                            "name": "Innovatiekredieten", 
+                                            "value": "25288"
+                                        }, 
+                                        {
+                                            "name": "Seed", 
+                                            "value": "8000"
+                                        }, 
+                                        {
+                                            "name": "Regionale Ontwikkelingsmaatschappijen", 
+                                            "value": "3000"
+                                        }, 
+                                        {
+                                            "name": "Fund of Funds (DVI I/Business Angels)", 
+                                            "value": "100"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Groen onderwijs van hoge kwaliteit", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "ONTVANGSTEN", 
+                                            "value": "75"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Natuur en biodiversiteit", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "children": [
+                                        {
+                                            "name": "Overige", 
+                                            "value": "4121"
+                                        }, 
+                                        {
+                                            "name": "Verkoop gronden", 
+                                            "value": "25000"
+                                        }, 
+                                        {
+                                            "name": "Landinrichtingsrente", 
+                                            "value": "40161"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Goed functionerende economie en markten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "children": [
+                                        {
+                                            "name": "High Trust", 
+                                            "value": "30200"
+                                        }, 
+                                        {
+                                            "name": "Diverse ontvangsten", 
+                                            "value": "700"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Een doelmatige en duurzame energievoorziening", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Ontvangsten", 
+                                    "children": [
+                                        {
+                                            "name": "COVA", 
+                                            "value": "111000"
+                                        }, 
+                                        {
+                                            "name": "Diverse ontvangsten", 
+                                            "value": "8150"
+                                        }, 
+                                        {
+                                            "name": "Ontvangsten zoutwinning", 
+                                            "value": "2511"
+                                        }, 
+                                        {
+                                            "name": "Aardgasbaten", 
+                                            "value": "2550000"
+                                        }, 
+                                        {
+                                            "name": "Onttrekking begrotingsreserve duurzame energie", 
+                                            "value": "77000"
+                                        }, 
+                                        {
+                                            "name": "Opbrengst heffing ODE (SDE+)", 
+                                            "value": "678000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "De Staten Generaal", 
+            "children": [
+                {
+                    "name": "Wetgeving/controle Eerste en Tweede Kamer", 
+                    "value": "23"
+                }, 
+                {
+                    "name": "Wetgeving en controle Eerste Kamer", 
+                    "value": "140"
+                }, 
+                {
+                    "name": "Wetgeving/controle Tweede Kamer", 
+                    "value": "3966"
+                }, 
+                {
+                    "name": "Uitgaven tbv van (oud) leden Tweede Kamer en leden Europees Parlement", 
+                    "value": "86"
+                }
+            ]
+        }, 
+        {
+            "name": "Deltafonds", 
+            "children": [
+                {
+                    "name": "Experimenteren cf. art. III Deltawet", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten Experimenteerartikel", 
+                            "value": "0"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Netwerkgebonden kosten en overige uitgaven", 
+                    "children": [
+                        {
+                            "name": "Saldo afgesloten rekeningen", 
+                            "value": "0"
+                        }, 
+                        {
+                            "name": "Netwerkgebonden kosten en overige ontvangsten", 
+                            "value": "0"
+                        }, 
+                        {
+                            "name": "Overige ontvangsten", 
+                            "value": "0"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Inv. In waterveiligheid", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten waterschappen HWBP-2", 
+                            "value": "159058"
+                        }, 
+                        {
+                            "name": "Ontvangsten investeren in waterveiligheid", 
+                            "value": "186805"
+                        }, 
+                        {
+                            "name": "Overige ontvangsten HWBP-2", 
+                            "value": "0"
+                        }, 
+                        {
+                            "name": "Ontvangsten waterschappen nHWBP", 
+                            "value": "22443"
+                        }, 
+                        {
+                            "name": "Overige ontvangsten nHWBP", 
+                            "value": "0"
+                        }, 
+                        {
+                            "name": "Overige aanleg ontvangsten", 
+                            "value": "5304"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Inv. In Zoetwatervoorziening", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten zoetwatervoorzieningen", 
+                            "value": "0"
+                        }, 
+                        {
+                            "name": "Overige aanleg ontvangsten", 
+                            "value": "0"
+                        }, 
+                        {
+                            "name": "Ontvangsten investeren in waterkwantiteit en zoetwatervoorziening", 
+                            "value": "0"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Beheer, onderhoud en vervanging", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "value": "0"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Bijdragen tlv hoofdstuk XII", 
+                    "children": [
+                        {
+                            "name": "Ten laste van begroting IenM", 
+                            "value": "717851"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Koninkrijksrelaties", 
+            "children": [
+                {
+                    "name": "Waarborgfunctie", 
+                    "value": "4857"
+                }, 
+                {
+                    "name": "Bevorderen sociaal-economische structuur", 
+                    "value": "3213"
+                }, 
+                {
+                    "name": "Schuldsanering/lopende inschrijving/leningen", 
+                    "value": "28405"
+                }, 
+                {
+                    "name": "Bevorderen autonomie Koninkrijkspartners", 
+                    "value": "0"
+                }
+            ]
+        }, 
+        {
+            "name": "Infrastructuurfonds", 
+            "children": [
+                {
+                    "name": "Overige uitgaven", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "value": "0"
+                        }, 
+                        {
+                            "name": "Tolopgave", 
+                            "value": "0"
+                        }, 
+                        {
+                            "name": "Saldo van de afgesloten rekeningen", 
+                            "value": "0"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Megaprojecten Verkeer en Vervoer", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "value": "22661"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Bijdragen andere begrotingen", 
+                    "children": [
+                        {
+                            "name": "Ten laste van begroting IenM", 
+                            "value": "5450478"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Hoofdvaarwegen", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "value": "93675"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Hoofdwegennet", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "value": "126245"
+                        }, 
+                        {
+                            "name": "Tolopgave", 
+                            "value": "0"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Regionaal, lokale infrastructuur", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "value": "0"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Spoorwegen", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten", 
+                            "value": "185262"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Buitenlandse Handel & Ontwikkelingssamenwerking", 
+            "children": [
+                {
+                    "name": "Ontvangsten", 
+                    "children": [
+                        {
+                            "name": "Versterkt internationaal handelssysteem met aandacht voor Maatschappelijk Verantwoord Ondernemen", 
+                            "value": "22626"
+                        }, 
+                        {
+                            "name": "Ontvangsten DGGF", 
+                            "value": "500"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Versterkte kaders voor ontwikkeling", 
+                    "children": [
+                        {
+                            "name": "Ontvangsten en restituties met  betrekking tot leningen", 
+                            "value": "45906"
+                        }, 
+                        {
+                            "name": "Ontvangsten OS", 
+                            "value": "31176"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Algemene Zaken", 
+            "children": [
+                {
+                    "name": "Eenheid van het algemeen regeringsbeleid", 
+                    "value": "4365"
+                }
+            ]
+        }
+    ]
+}

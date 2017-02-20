@@ -1,0 +1,2766 @@
+{
+    "name": "2015-V-ontwerpbegroting", 
+    "children": [
+        {
+            "name": "Financi\u00ebn", 
+            "children": [
+                {
+                    "name": "Internationale financi\u00eble betrekkingen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "EFSF", 
+                                            "value": "0"
+                                        }, 
+                                        {
+                                            "name": "Deelneming multilaterale ontwikkelingsbanken en -fondsen", 
+                                            "value": "169907"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Financieringsactiviteiten publiek-private sector", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Regeling BF", 
+                                            "value": "0"
+                                        }, 
+                                        {
+                                            "name": "Garantie SNS", 
+                                            "value": "0"
+                                        }, 
+                                        {
+                                            "name": "Garantie DNB", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Financiele markten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Garantieregeling bancaire leningen", 
+                                            "value": "0"
+                                        }, 
+                                        {
+                                            "name": "Garanties en vrijwaringen Staatsdeelnemingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Belastingen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Garantieprocesrisico's", 
+                                            "value": "400"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Btw-Compensatiefonds", 
+                    "value": "2901122"
+                }, 
+                {
+                    "name": "Beheer materiele activa", 
+                    "value": "306"
+                }, 
+                {
+                    "name": "Exportkredietverzekeringen, -garanties en investeringsverzekeringen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Exportkredietverzekeringen", 
+                                            "value": "10000000"
+                                        }, 
+                                        {
+                                            "name": "MIGA", 
+                                            "value": "150000"
+                                        }, 
+                                        {
+                                            "name": "Investeringsverzekeringen", 
+                                            "value": "453780"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "50043"
+                }, 
+                {
+                    "name": "Centraal Apparaat", 
+                    "value": "236162"
+                }
+            ]
+        }, 
+        {
+            "name": "Defensie", 
+            "children": [
+                {
+                    "name": "Taakuitvoering Koninklijke Marechaussee", 
+                    "value": "311472"
+                }, 
+                {
+                    "name": "Ondersteuning krijgsmacht door Defensie Materieel Organisatie", 
+                    "value": "742400"
+                }, 
+                {
+                    "name": "Taakuitvoering Landstrijdkrachten", 
+                    "value": "1121002"
+                }, 
+                {
+                    "name": "Taakuitvoering Luchtstrijdkrachten", 
+                    "value": "644308"
+                }, 
+                {
+                    "name": "Centraal apparaat", 
+                    "value": "1599771"
+                }, 
+                {
+                    "name": "Inzet", 
+                    "value": "304026"
+                }, 
+                {
+                    "name": "Taakuitvoering Zeestrijdkrachten", 
+                    "value": "696160"
+                }, 
+                {
+                    "name": "Ondersteuning krijgsmacht door Commando DienstenCentra", 
+                    "value": "1037650"
+                }, 
+                {
+                    "name": "Algemeen", 
+                    "value": "102460"
+                }, 
+                {
+                    "name": "Investeringen Krijgsmacht", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Opdracht Voorzien in nieuw materieel", 
+                                                    "value": "1197713"
+                                                }, 
+                                                {
+                                                    "name": "Bijdrage aan de NAVO", 
+                                                    "value": "29392"
+                                                }, 
+                                                {
+                                                    "name": "Bekostiging Wetenschappelijk onderzoek", 
+                                                    "value": "59445"
+                                                }, 
+                                                {
+                                                    "name": "Opdracht Voorzien in ICT", 
+                                                    "value": "75297"
+                                                }, 
+                                                {
+                                                    "name": "Opdracht Voorzien in infrastructuur", 
+                                                    "value": "194194"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Geheime uitgaven", 
+                    "value": "5339"
+                }
+            ]
+        }, 
+        {
+            "name": "Gemeentefonds", 
+            "children": [
+                {
+                    "name": "Gemeentefonds", 
+                    "value": "27272721"
+                }
+            ]
+        }, 
+        {
+            "name": "Veiligheid en Justitie", 
+            "children": [
+                {
+                    "name": "Jeugd", 
+                    "value": "372566"
+                }, 
+                {
+                    "name": "Rechtsbijstand en rechtspleging", 
+                    "value": "1439713"
+                }, 
+                {
+                    "name": "Vreemdelingen", 
+                    "value": "757030"
+                }, 
+                {
+                    "name": "Nationale Politie", 
+                    "value": "5132936"
+                }, 
+                {
+                    "name": "Veiligheid en criminaliteitsbestrijding", 
+                    "value": "662722"
+                }, 
+                {
+                    "name": "Geheime uitgaven", 
+                    "value": "3058"
+                }, 
+                {
+                    "name": "Apparaatsuitgaven kerndepartement", 
+                    "value": "387481"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "2218"
+                }, 
+                {
+                    "name": "Sanctietoepassing", 
+                    "value": "2416080"
+                }, 
+                {
+                    "name": "Contraterrorisme en Nationaal Veiligheidsbeleid", 
+                    "value": "248052"
+                }
+            ]
+        }, 
+        {
+            "name": "Volksgezondheid, Welzijn en Sport", 
+            "children": [
+                {
+                    "name": "Jeugd", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "209109"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Algemeen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "28144"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Sport en bewegen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "88753"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Maatschappelijke ondersteuning en langdurige zorg", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "3578197"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Tegemoetkoming specifieke kosten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "4068504"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Apparaatsuitgaven", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "230232"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Zorgbreed beleid", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "757515"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Oorlogsgetroffenen en herinnering WO II", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "309002"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "-46645"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Volksgezondheid", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "637324"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Curatieve Zorg", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "4601620"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Diergezondheidsfonds", 
+            "children": [
+                {
+                    "name": "Bewaking en bestrijding van dierziekten en voorkomen en verminderen van welzijnsproblemen", 
+                    "value": "21860"
+                }
+            ]
+        }, 
+        {
+            "name": "Kabinet van de Koning", 
+            "children": [
+                {
+                    "name": "Kabinet van de Koning", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Kabinet van de Koning", 
+                                            "value": "2338"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Sociale Zaken en Werkgelegenheid", 
+            "children": [
+                {
+                    "name": "Tegemoetkoming ouders", 
+                    "value": "5389722"
+                }, 
+                {
+                    "name": "Algemeen", 
+                    "value": "46404"
+                }, 
+                {
+                    "name": "Werkloosheid", 
+                    "value": "41859"
+                }, 
+                {
+                    "name": "Aflopende regelingen", 
+                    "value": "0"
+                }, 
+                {
+                    "name": "Integratie en maatschappelijke samenhang", 
+                    "value": "123166"
+                }, 
+                {
+                    "name": "Apparaatsuitgaven kerndepartement", 
+                    "value": "277741"
+                }, 
+                {
+                    "name": "Ziekte en zwangerschap", 
+                    "value": "6743"
+                }, 
+                {
+                    "name": "Bijstand, Toeslagenwet en Sociale Werkvoorziening", 
+                    "value": "6457735"
+                }, 
+                {
+                    "name": "Jonggehandicapten", 
+                    "value": "3113430"
+                }, 
+                {
+                    "name": "Arbeidsmarkt", 
+                    "value": "17447"
+                }, 
+                {
+                    "name": "Arbeidsongeschiktheid", 
+                    "value": "604"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "19383"
+                }, 
+                {
+                    "name": "Kinderopvang", 
+                    "value": "2408446"
+                }, 
+                {
+                    "name": "Rijksbijdragen", 
+                    "value": "13952163"
+                }, 
+                {
+                    "name": "Uitvoeringskosten ZBO's en RWT's", 
+                    "value": "462130"
+                }, 
+                {
+                    "name": "Nabestaanden", 
+                    "value": "829"
+                }, 
+                {
+                    "name": "Oudedagsvoorziening", 
+                    "value": "31890"
+                }
+            ]
+        }, 
+        {
+            "name": "Wonen en Rijksdienst", 
+            "children": [
+                {
+                    "name": "Woonomgeving en bouw", 
+                    "value": "249123"
+                }, 
+                {
+                    "name": "Kwaliteit Rijksdienst", 
+                    "value": "18333"
+                }, 
+                {
+                    "name": "Woningmarkt", 
+                    "value": "3377405"
+                }, 
+                {
+                    "name": "Uitvoering Rijksvastgoedbeleid", 
+                    "value": "147690"
+                }
+            ]
+        }, 
+        {
+            "name": "Overige Hoge Colleges van Staat", 
+            "children": [
+                {
+                    "name": "De Nationale ombudsman", 
+                    "value": "15461"
+                }, 
+                {
+                    "name": "Kanselarij Nederlandse Orden", 
+                    "value": "3975"
+                }, 
+                {
+                    "name": "Raad van State", 
+                    "value": "59034"
+                }, 
+                {
+                    "name": "Kabinet Gouverneur Curacao", 
+                    "value": "2735"
+                }, 
+                {
+                    "name": "Kabinet Gouverneur St. Maarten", 
+                    "value": "2058"
+                }, 
+                {
+                    "name": "Algemene Rekenkamer", 
+                    "value": "28750"
+                }, 
+                {
+                    "name": "Kabinet Gouverneur Aruba", 
+                    "value": "1795"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "0"
+                }
+            ]
+        }, 
+        {
+            "name": "Buitenlandse Zaken", 
+            "children": [
+                {
+                    "name": "Versterkte internationale rechtsorde en eerbiediging van mensenrechten", 
+                    "value": "95101"
+                }, 
+                {
+                    "name": "Geheim", 
+                    "value": "0"
+                }, 
+                {
+                    "name": "Apparaat", 
+                    "value": "675284"
+                }, 
+                {
+                    "name": "Europese samenwerking", 
+                    "value": "7962322"
+                }, 
+                {
+                    "name": "Veiligheid en stabiliteit", 
+                    "value": "232482"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "25018"
+                }, 
+                {
+                    "name": "Consulaire belangenbehartiging en het internationaal uitdragen van Nederlandse waarden en belangen", 
+                    "value": "50981"
+                }
+            ]
+        }, 
+        {
+            "name": "Infrastructuur en Milieu", 
+            "children": [
+                {
+                    "name": "Wegen en verkeersveiligheid", 
+                    "children": [
+                        {
+                            "name": "Veiligheid", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "388"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "4088"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "11288"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Netwerk", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "2560"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "11398"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "600"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Metereologie, seismologie en aardobservatie", 
+                    "children": [
+                        {
+                            "name": "Metereologie, seismologie en aardobservatie", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan (inter)nationale organisaties", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan internationale organisaties", 
+                                            "value": "1734"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "22046"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Ruimtelijke ontwikkeling", 
+                    "children": [
+                        {
+                            "name": "Gebiedsontwikkeling", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "1219"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "60"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan medeoverheden", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan medeoverheden", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Eenvoudig Beter", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "313"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "4949"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Geo-informatie", 
+                            "children": [
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "2547"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan ZBO\u2019s /RWT\u2019s", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan ZBO en RWT", 
+                                            "value": "19868"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Ruimtegebruik bodem", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "6750"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Garanties", 
+                                    "children": [
+                                        {
+                                            "name": "Garanties", 
+                                            "value": "15000"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "3505"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "12038"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan medeoverheden", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan medeoverheden", 
+                                            "value": "99854"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Ruimtelijk instrumentarium", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "1200"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "5229"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "270"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Klimaat", 
+                    "children": [
+                        {
+                            "name": "Klimaat", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "10792"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "10808"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Internationaal beleid, co\u00f6rdinatie en samenwerking", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan (inter)nationale organisaties", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan internationale organisaties", 
+                                            "value": "2674"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "23913"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "7704"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Bijdrage Investeringsfondsen", 
+                    "children": [
+                        {
+                            "name": "Bijdrage Investeringsfondsen", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan andere begrotingen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan andere begrotingshoofdstukken", 
+                                            "value": "5329360"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Lucht en geluid", 
+                    "children": [
+                        {
+                            "name": "Luchtkwaliteit en tegengaan geluidshinder", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "1057"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bekostiging", 
+                                    "children": [
+                                        {
+                                            "name": "Bekostiging", 
+                                            "value": "874"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "2843"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "-3077"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan medeoverheden", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan medeoverheden", 
+                                            "value": "23941"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Handhaving en toezicht", 
+                    "children": [
+                        {
+                            "name": "Handhaving en toezicht", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "110047"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Waterkwaliteit", 
+                    "children": [
+                        {
+                            "name": "Waterkwaliteit", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan (inter)nationale organisaties", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan internationale organisaties", 
+                                            "value": "940"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "3624"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan medeoverheden", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan medeoverheden", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Spoor", 
+                    "children": [
+                        {
+                            "name": "Spoor", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan (inter)nationale organisaties", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan internationale organisaties", 
+                                            "value": "100"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "2339"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "17270"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Apparaatsuitgaven Kerndepartement", 
+                    "children": [
+                        {
+                            "name": "Personeel", 
+                            "children": [
+                                {
+                                    "name": "Personele uitgaven", 
+                                    "children": [
+                                        {
+                                            "name": "Personeel", 
+                                            "value": "177537"
+                                        }, 
+                                        {
+                                            "name": "Waarvan externe inhuur", 
+                                            "value": "11105"
+                                        }, 
+                                        {
+                                            "name": "Postactieven", 
+                                            "value": "11239"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Materieel", 
+                            "children": [
+                                {
+                                    "name": "Materi\u00eble uitgaven", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan overige materi\u00eble uitgaven", 
+                                            "value": "30207"
+                                        }, 
+                                        {
+                                            "name": "Waarvan bijdrage aan SSO\u2019s", 
+                                            "value": "28896"
+                                        }, 
+                                        {
+                                            "name": "Waarvan ICT", 
+                                            "value": "28146"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Externe veiligheid en risico's", 
+                    "children": [
+                        {
+                            "name": "Veiligheid chemische stoffen", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan (inter)nationale organisaties", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan internationale organisaties", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "645"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "6348"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "100"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Externe veiligheid inrichten en transport", 
+                            "children": [
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "23908"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan (inter)nationale organisaties", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan internationale organisaties", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "440"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Inkomensoverdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Inkomensoverdracht", 
+                                            "value": "3000"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan medeoverheden", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan medeoverheden", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "2762"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Veiligheid GGO's", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan (inter)nationale organisaties", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan internationale organisaties", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "5000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Brede doeluitkering", 
+                    "children": [
+                        {
+                            "name": "Brede doeluitkering", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan medeoverheden", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan medeoverheden", 
+                                            "value": "1807451"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Luchtvaart", 
+                    "children": [
+                        {
+                            "name": "Luchtvaart", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan (inter)nationale organisaties", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan internationale organisaties", 
+                                            "value": "165"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "11898"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "8102"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "452"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "OV-keten", 
+                    "children": [
+                        {
+                            "name": "OV-keten", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "995"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "4268"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "758"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Waterkwantiteit", 
+                    "children": [
+                        {
+                            "name": "Waterveiligheid", 
+                            "children": [
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "2516"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Grote oppervlaktewateren", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan (inter)nationale organisaties", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan internationale organisaties", 
+                                            "value": "321"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "2107"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Algemeen waterbeleid", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "18005"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "3323"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "2851"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan medeoverheden", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan medeoverheden", 
+                                            "value": "1511"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Duurzaamheid", 
+                    "children": [
+                        {
+                            "name": "Ecosystemen en landbouw", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Duurzaamheidsinstrumentarium", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "194"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "1593"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Natuurlijk kapitaal", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "869"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "2079"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "359"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Afval en duurzaamheidsagenda", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Duurzame productketens", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "2600"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "11061"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "507"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "PM", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "children": [
+                        {
+                            "name": "Onvoorzien", 
+                            "value": "8013"
+                        }, 
+                        {
+                            "name": "Prijsbijstelling", 
+                            "value": "580"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Algemeen departement", 
+                    "children": [
+                        {
+                            "name": "Algemeen departement", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "16605"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "23186"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan ZBO\u2019s /RWT\u2019s", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan ZBO en RWT", 
+                                            "value": "5377"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Scheepvaart en havens", 
+                    "children": [
+                        {
+                            "name": "Scheepvaart en havens", 
+                            "children": [
+                                {
+                                    "name": "Bijdragen aan (inter)nationale organisaties", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan internationale organisaties", 
+                                            "value": "1004"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Bijdragen aan agentschappen", 
+                                    "children": [
+                                        {
+                                            "name": "Bijdrage aan agentschappen", 
+                                            "value": "1404"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdrachten", 
+                                            "value": "2299"
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "name": "Subsidies", 
+                                    "children": [
+                                        {
+                                            "name": "Subsidies", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Provinciefonds", 
+            "children": [
+                {
+                    "name": "Provinciefonds", 
+                    "value": "952181"
+                }
+            ]
+        }, 
+        {
+            "name": "De Koning", 
+            "children": [
+                {
+                    "name": "Grondwettelijke uitkering aan de leden van het Koninklijk Huis", 
+                    "value": "7659"
+                }, 
+                {
+                    "name": "Functionele uitgaven van de Koning", 
+                    "value": "26826"
+                }, 
+                {
+                    "name": "Doorbelaste uitgaven van andere begrotingen", 
+                    "value": "5600"
+                }
+            ]
+        }, 
+        {
+            "name": "Binnenlandse Zaken en Koninkrijksrelaties", 
+            "children": [
+                {
+                    "name": "Algemeen", 
+                    "value": "1304"
+                }, 
+                {
+                    "name": "Algemene Inlichtingen en Veiligheidsdienst", 
+                    "value": "212743"
+                }, 
+                {
+                    "name": "Dienstverlenende en innovatieve overheid", 
+                    "value": "88885"
+                }, 
+                {
+                    "name": "VUT-fonds", 
+                    "value": "0"
+                }, 
+                {
+                    "name": "Arbeidszaken overheid", 
+                    "value": "35546"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "10554"
+                }, 
+                {
+                    "name": "Centraal apparaat", 
+                    "value": "253792"
+                }, 
+                {
+                    "name": "Openbaar bestuur en democratie", 
+                    "value": "30383"
+                }
+            ]
+        }, 
+        {
+            "name": "Onderwijs, Cultuur en Wetenschap", 
+            "children": [
+                {
+                    "name": "Media", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "De tegemoetkoming onderwijsbijdrage en schoolkosten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Lesgeld", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Internationaal beleid", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "ARBEIDSMARKT- EN PERSONEELSBELEID", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Wetenschappelijk onderwijs", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Hoger beroepsonderwijs", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Voortgezet Onderwijs", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Apparaatskosten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Beroepsonderwijs en volwasseneneducatie", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Cultuur", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "629000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Primair Onderwijs", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Studiefinanciering", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Onderzoek en Wetenschapsbeleid", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "28992"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Emancipatie", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "15172"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Economische Zaken", 
+            "children": [
+                {
+                    "name": "Een sterk innovatievermogen", 
+                    "value": "618986"
+                }, 
+                {
+                    "name": "Concurrerende, duurzame, veilige agro-, visserij- en voedselketens", 
+                    "value": "658062"
+                }, 
+                {
+                    "name": "Apparaatsuitgaven kerndepartement en diensten", 
+                    "value": "348836"
+                }, 
+                {
+                    "name": "Groen onderwijs van hoge kwaliteit", 
+                    "value": "881348"
+                }, 
+                {
+                    "name": "Een doelmatige en duurzame energievoorziening", 
+                    "value": "3960853"
+                }, 
+                {
+                    "name": "Goed functionerende economie en markten", 
+                    "value": "192396"
+                }, 
+                {
+                    "name": "Een excellent ondernemingsklimaat", 
+                    "value": "1798832"
+                }, 
+                {
+                    "name": "Natuur en Regio", 
+                    "value": "200392"
+                }
+            ]
+        }, 
+        {
+            "name": "De Staten Generaal", 
+            "children": [
+                {
+                    "name": "Wetgeving/controle Eerste en Tweede Kamer", 
+                    "value": "1493"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "-1573"
+                }, 
+                {
+                    "name": "Wetgeving en controle Eerste Kamer", 
+                    "value": "11670"
+                }, 
+                {
+                    "name": "Wetgeving/controle Tweede Kamer", 
+                    "value": "96115"
+                }, 
+                {
+                    "name": "Uitgaven tbv van (oud) leden Tweede Kamer en leden Europees Parlement", 
+                    "value": "29232"
+                }
+            ]
+        }, 
+        {
+            "name": "Deltafonds", 
+            "children": [
+                {
+                    "name": "Experimenteren cf. art. III Deltawet", 
+                    "children": [
+                        {
+                            "name": "Experimenteerprojecten", 
+                            "value": "0"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Netwerkgebonden kosten en overige uitgaven", 
+                    "children": [
+                        {
+                            "name": "Apparaatskosten RWS", 
+                            "value": "174560"
+                        }, 
+                        {
+                            "name": "Staf Deltacommissaris", 
+                            "value": "1852"
+                        }, 
+                        {
+                            "name": "Overige netwerkgebonden uitgaven", 
+                            "value": "63012"
+                        }, 
+                        {
+                            "name": "Programma uitgaven DC", 
+                            "value": "1961"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Inv. In waterveiligheid", 
+                    "children": [
+                        {
+                            "name": "Programma HWBP rijksprojecten", 
+                            "value": "157843"
+                        }, 
+                        {
+                            "name": "Overige studiekosten", 
+                            "value": "0"
+                        }, 
+                        {
+                            "name": "Studie en onderzoekskosten DP (MIRT-onderz.)", 
+                            "value": "5156"
+                        }, 
+                        {
+                            "name": "Ruimte voor de Rivier", 
+                            "value": "172656"
+                        }, 
+                        {
+                            "name": "Maaswerken", 
+                            "value": "28552"
+                        }, 
+                        {
+                            "name": "Realisatieprogramma waterveiligheid", 
+                            "value": "125374"
+                        }, 
+                        {
+                            "name": "Verk. en planstudieprogr. waterveiligheid", 
+                            "value": "4550"
+                        }, 
+                        {
+                            "name": "Programma HWBP waterschapsprojecten", 
+                            "value": "517022"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Inv. In Zoetwatervoorziening", 
+                    "children": [
+                        {
+                            "name": "Studie en onderzoekskosten DP (MIRT-onderz.)", 
+                            "value": "1950"
+                        }, 
+                        {
+                            "name": "Verkenningen en planuitwerking zoetwatervoorziening", 
+                            "value": "1223"
+                        }, 
+                        {
+                            "name": "Realisatieprogramma zoetwatervoorziening", 
+                            "value": "10212"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Investeren in waterkwaliteit", 
+                    "children": [
+                        {
+                            "name": "Overige waterkwaliteitsprojecten", 
+                            "value": "7943"
+                        }, 
+                        {
+                            "name": "Real.progr.Kaderrichtlijn water", 
+                            "value": "33687"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Beheer, onderhoud en vervanging", 
+                    "children": [
+                        {
+                            "name": "Waterveiligheid", 
+                            "value": "124794"
+                        }, 
+                        {
+                            "name": "Vervanging", 
+                            "value": "33274"
+                        }, 
+                        {
+                            "name": "Watermanagement", 
+                            "value": "7734"
+                        }, 
+                        {
+                            "name": "Zoetwatervoorziening", 
+                            "value": "17380"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Koninkrijksrelaties", 
+            "children": [
+                {
+                    "name": "Waarborgfunctie", 
+                    "value": "61553"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "803"
+                }, 
+                {
+                    "name": "Bevorderen autonomie Koninkrijkspartners", 
+                    "value": "27435"
+                }
+            ]
+        }, 
+        {
+            "name": "Infrastructuurfonds", 
+            "children": [
+                {
+                    "name": "Overige uitgaven", 
+                    "children": [
+                        {
+                            "name": "Beter Benutten", 
+                            "value": "50000"
+                        }, 
+                        {
+                            "name": "Apparaat RWS overige", 
+                            "value": "200208"
+                        }, 
+                        {
+                            "name": "Nat. Basisinformatie voorzi.", 
+                            "value": "42"
+                        }, 
+                        {
+                            "name": "Externe veiligheid", 
+                            "value": "2000"
+                        }, 
+                        {
+                            "name": "Gebiedsgerichte aanpak (UPR)", 
+                            "value": "0"
+                        }, 
+                        {
+                            "name": "Netwerkoverstijgende kosten Overige", 
+                            "value": "12425"
+                        }, 
+                        {
+                            "name": "Tol gefinancierde uitgaven", 
+                            "value": "0"
+                        }, 
+                        {
+                            "name": "Intermodaal vervoer", 
+                            "value": "-2140"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Megaprojecten Verkeer en Vervoer", 
+                    "children": [
+                        {
+                            "name": "Verkenning en planuitwerkingprogramma ZuidasDok", 
+                            "value": "52716"
+                        }, 
+                        {
+                            "name": "Westerscheldetunnel", 
+                            "value": "0"
+                        }, 
+                        {
+                            "name": "Zuiderzeelijn", 
+                            "value": "0"
+                        }, 
+                        {
+                            "name": "Project Mainportontwikkeling R'dam", 
+                            "value": "3560"
+                        }, 
+                        {
+                            "name": "Verkenning en planuitwerkingprogramma ERTMS Landelijke invoer", 
+                            "value": "40000"
+                        }, 
+                        {
+                            "name": "Realisatie HSL", 
+                            "value": "614"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Hoofdvaarwegen", 
+                    "children": [
+                        {
+                            "name": "Basispakket verkeersmanagement HVWN", 
+                            "value": "7494"
+                        }, 
+                        {
+                            "name": "Apparaatskosten RWS", 
+                            "value": "213769"
+                        }, 
+                        {
+                            "name": "Investeringsruimte Hoofdvaarwegen", 
+                            "value": "-7428"
+                        }, 
+                        {
+                            "name": "Realisatie HVWN", 
+                            "value": "150127"
+                        }, 
+                        {
+                            "name": "Beheer en onderhoud HVWN", 
+                            "value": "176607"
+                        }, 
+                        {
+                            "name": "Overige netwerkgekosten kosten HVWN", 
+                            "value": "23820"
+                        }, 
+                        {
+                            "name": "Verkenningen en planuitwerkingen HVWN", 
+                            "value": "5364"
+                        }, 
+                        {
+                            "name": "Vervanging HVWN", 
+                            "value": "79829"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Hoofdwegennet", 
+                    "children": [
+                        {
+                            "name": "Verkeersmanagement HWN", 
+                            "value": "4038"
+                        }, 
+                        {
+                            "name": "Beheer en onderhoud HWN", 
+                            "value": "402579"
+                        }, 
+                        {
+                            "name": "Ge\u00efntegreerde contractvormen/PPS", 
+                            "value": "81535"
+                        }, 
+                        {
+                            "name": "Verkenning en planuitwerking HWN", 
+                            "value": "19931"
+                        }, 
+                        {
+                            "name": "Realisatie HWN", 
+                            "value": "35356"
+                        }, 
+                        {
+                            "name": "Investeringsruimte wegen", 
+                            "value": "-25176"
+                        }, 
+                        {
+                            "name": "Overige netwerkgebonden kosten HWN", 
+                            "value": "86742"
+                        }, 
+                        {
+                            "name": "Vervanging", 
+                            "value": "28542"
+                        }, 
+                        {
+                            "name": "Apparaatskosten RWS", 
+                            "value": "338633"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Regionaal, lokale infrastructuur", 
+                    "children": [
+                        {
+                            "name": "Planuitwerking Regionale Infra", 
+                            "value": "3620"
+                        }, 
+                        {
+                            "name": "Realisatie Regionale Infra", 
+                            "value": "4038"
+                        }, 
+                        {
+                            "name": "Regionale Mobiliteitsfondsen", 
+                            "value": "0"
+                        }, 
+                        {
+                            "name": "RSP-ZZL: RB projecten", 
+                            "value": "37259"
+                        }, 
+                        {
+                            "name": "Investeringsruimte spoorwegen", 
+                            "value": "5900"
+                        }, 
+                        {
+                            "name": "RSP-ZZL: REP", 
+                            "value": "16207"
+                        }, 
+                        {
+                            "name": "RSP-ZZL: RB mob.fondsen", 
+                            "value": "0"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Spoorwegen", 
+                    "children": [
+                        {
+                            "name": "Verkenningen en planuitwerking Personenverv.", 
+                            "value": "46226"
+                        }, 
+                        {
+                            "name": "Beheer, onderhoud en vervanging Spoor", 
+                            "value": "1241404"
+                        }, 
+                        {
+                            "name": "Ge\u00efntegreerde contractvormen/PPS Spoor", 
+                            "value": "31"
+                        }, 
+                        {
+                            "name": "Realisatie goederenvervoer", 
+                            "value": "171301"
+                        }, 
+                        {
+                            "name": "Planuitwerkingen Personenvervoer", 
+                            "value": "0"
+                        }, 
+                        {
+                            "name": "Realisatie personenvervoer", 
+                            "value": "237694"
+                        }, 
+                        {
+                            "name": "Verkenningen en planuitwerking Goederenverv.", 
+                            "value": "2018"
+                        }, 
+                        {
+                            "name": "Rente en aflossing Spoor", 
+                            "value": "16597"
+                        }, 
+                        {
+                            "name": "Investeringsruimte spoorwegen", 
+                            "value": "18650"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Buitenlandse Handel & Ontwikkelingssamenwerking", 
+            "children": [
+                {
+                    "name": "Ontvangsten", 
+                    "value": "320663"
+                }, 
+                {
+                    "name": "Duurzame ontwikkeling, voedselzekerheid en water", 
+                    "value": "445237"
+                }, 
+                {
+                    "name": "Versterkte kaders voor ontwikkeling", 
+                    "value": "21217"
+                }, 
+                {
+                    "name": "Sociale vooruitgang", 
+                    "value": "1589610"
+                }, 
+                {
+                    "name": "Vrede en veiligheid voor ontwikkeling", 
+                    "value": "366379"
+                }
+            ]
+        }, 
+        {
+            "name": "Algemene Zaken", 
+            "children": [
+                {
+                    "name": "Eenheid van het algemeen regeringsbeleid", 
+                    "value": "59429"
+                }
+            ]
+        }
+    ]
+}

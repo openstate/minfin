@@ -1,0 +1,1672 @@
+{
+    "name": "2016-V-ontwerpbegroting", 
+    "children": [
+        {
+            "name": "Financi\u00ebn", 
+            "children": [
+                {
+                    "name": "Internationale financi\u00eble betrekkingen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Deelneming multilaterale ontwikkelingsbanken en -fondsen", 
+                                            "value": "181841"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Financieringsactiviteiten publiek-private sector", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Verplichtingen", 
+                                            "value": "19401"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Financiele markten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Verplichtingen", 
+                                            "value": "22379"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Belastingen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Garantieprocesrisico's", 
+                                            "value": "245"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Btw-Compensatiefonds", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Verplichtingen", 
+                                            "value": "2903048"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Beheer materiele activa", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Verplichtingen", 
+                                            "value": "306"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Exportkredietverzekeringen, -garanties en investeringsverzekeringen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Exportkredietverzekeringen", 
+                                            "value": "10000000"
+                                        }, 
+                                        {
+                                            "name": "MIGA", 
+                                            "value": "150000"
+                                        }, 
+                                        {
+                                            "name": "Investeringsverzekeringen", 
+                                            "value": "453780"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Verplichtingen", 
+                                            "value": "63539"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Centraal Apparaat", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Verplichtingen", 
+                                            "value": "242985"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Defensie", 
+            "children": [
+                {
+                    "name": "Taakuitvoering Koninklijke Marechaussee", 
+                    "value": "319517"
+                }, 
+                {
+                    "name": "Taakuitvoering Luchtstrijdkrachten", 
+                    "value": "633799"
+                }, 
+                {
+                    "name": "Inzet", 
+                    "value": "367889"
+                }, 
+                {
+                    "name": "Taakuitvoering Zeestrijdkrachten", 
+                    "value": "689550"
+                }, 
+                {
+                    "name": "Investeringen Krijgsmacht", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "Opdrachten", 
+                                    "children": [
+                                        {
+                                            "name": "Opdracht Voorzien in nieuw materieel", 
+                                            "value": "1092306"
+                                        }, 
+                                        {
+                                            "name": "Bijdrage aan de NAVO", 
+                                            "value": "28293"
+                                        }, 
+                                        {
+                                            "name": "Bekostiging Wetenschappelijk onderzoek", 
+                                            "value": "57175"
+                                        }, 
+                                        {
+                                            "name": "Opdracht Voorzien in ICT", 
+                                            "value": "157105"
+                                        }, 
+                                        {
+                                            "name": "Opdracht Voorzien in infrastructuur", 
+                                            "value": "145000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Taakuitvoering Landstrijdkrachten", 
+                    "value": "1137980"
+                }
+            ]
+        }, 
+        {
+            "name": "De Staten Generaal", 
+            "children": [
+                {
+                    "name": "Wetgeving/controle Eerste en Tweede Kamer", 
+                    "value": "1482"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "-1781"
+                }, 
+                {
+                    "name": "Wetgeving en controle Eerste Kamer", 
+                    "value": "13061"
+                }, 
+                {
+                    "name": "Wetgeving/controle Tweede Kamer", 
+                    "value": "97421"
+                }, 
+                {
+                    "name": "Uitgaven tbv van (oud) leden Tweede Kamer en leden Europees Parlement", 
+                    "value": "29396"
+                }
+            ]
+        }, 
+        {
+            "name": "Veiligheid en Justitie", 
+            "children": [
+                {
+                    "name": "Jeugd", 
+                    "value": "0"
+                }, 
+                {
+                    "name": "Rechtsbijstand en rechtspleging", 
+                    "value": "1443296"
+                }, 
+                {
+                    "name": "Vreemdelingen", 
+                    "value": "824898"
+                }, 
+                {
+                    "name": "Nationale Politie", 
+                    "value": "5189705"
+                }, 
+                {
+                    "name": "Veiligheid en criminaliteitsbestrijding", 
+                    "value": "645578"
+                }, 
+                {
+                    "name": "Geheime uitgaven", 
+                    "value": "3067"
+                }, 
+                {
+                    "name": "Apparaatsuitgaven kerndepartement", 
+                    "value": "400647"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "30958"
+                }, 
+                {
+                    "name": "Sanctietoepassing", 
+                    "value": "2644228"
+                }, 
+                {
+                    "name": "Contraterrorisme en Nationaal Veiligheidsbeleid", 
+                    "value": "257151"
+                }
+            ]
+        }, 
+        {
+            "name": "BES-fonds", 
+            "children": [
+                {
+                    "name": "BES-fonds", 
+                    "value": "33409"
+                }
+            ]
+        }, 
+        {
+            "name": "Volksgezondheid, Welzijn en Sport", 
+            "children": [
+                {
+                    "name": "Jeugd", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "126154"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Algemeen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "27336"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Sport en bewegen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "106757"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Maatschappelijke ondersteuning en langdurige zorg", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "3643306"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Tegemoetkoming specifieke kosten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "4432332"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Apparaatsuitgaven", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "249153"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Zorgbreed beleid", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "829432"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Oorlogsgetroffenen en herinnering WO II", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "290109"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "-14967"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Volksgezondheid", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "608239"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Curatieve Zorg", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "", 
+                                            "children": [
+                                                {
+                                                    "name": "Verplichtingen", 
+                                                    "value": "4097613"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Diergezondheidsfonds", 
+            "children": [
+                {
+                    "name": "Bewaking en bestrijding van dierziekten en voorkomen en verminderen van welzijnsproblemen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Verplichtingen", 
+                                            "value": "30620"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Kabinet van de Koning", 
+            "children": [
+                {
+                    "name": "Kabinet van de Koning", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Kabinet van de Koning", 
+                                            "value": "2343"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Sociale Zaken en Werkgelegenheid", 
+            "children": [
+                {
+                    "name": "Tegemoetkoming ouders", 
+                    "value": "5329468"
+                }, 
+                {
+                    "name": "Algemeen", 
+                    "value": "47231"
+                }, 
+                {
+                    "name": "Werkloosheid", 
+                    "value": "66620"
+                }, 
+                {
+                    "name": "Aflopende regelingen", 
+                    "value": "0"
+                }, 
+                {
+                    "name": "Integratie en maatschappelijke samenhang", 
+                    "value": "144278"
+                }, 
+                {
+                    "name": "Apparaatsuitgaven kerndepartement", 
+                    "value": "261914"
+                }, 
+                {
+                    "name": "Ziekte en zwangerschap", 
+                    "value": "7416"
+                }, 
+                {
+                    "name": "Bijstand, Toeslagenwet en Sociale Werkvoorziening", 
+                    "value": "6435802"
+                }, 
+                {
+                    "name": "Jonggehandicapten", 
+                    "value": "3174376"
+                }, 
+                {
+                    "name": "Arbeidsmarkt", 
+                    "value": "21333"
+                }, 
+                {
+                    "name": "Arbeidsongeschiktheid", 
+                    "value": "765"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "90282"
+                }, 
+                {
+                    "name": "Kinderopvang", 
+                    "value": "2365471"
+                }, 
+                {
+                    "name": "Rijksbijdragen", 
+                    "value": "13147314"
+                }, 
+                {
+                    "name": "Uitvoeringskosten ZBO's en RWT's", 
+                    "value": "458267"
+                }, 
+                {
+                    "name": "Nabestaanden", 
+                    "value": "1083"
+                }, 
+                {
+                    "name": "Oudedagsvoorziening", 
+                    "value": "40014"
+                }
+            ]
+        }, 
+        {
+            "name": "Wonen en Rijksdienst", 
+            "children": [
+                {
+                    "name": "Woonomgeving en bouw", 
+                    "value": "105530"
+                }, 
+                {
+                    "name": "Kwaliteit Rijksdienst", 
+                    "value": "19187"
+                }, 
+                {
+                    "name": "Woningmarkt", 
+                    "value": "3569919"
+                }, 
+                {
+                    "name": "Uitvoering Rijksvastgoedbeleid", 
+                    "value": "144746"
+                }
+            ]
+        }, 
+        {
+            "name": "Overige Hoge Colleges van Staat", 
+            "children": [
+                {
+                    "name": "De Nationale ombudsman", 
+                    "value": "15204"
+                }, 
+                {
+                    "name": "Kanselarij Nederlandse Orden", 
+                    "value": "5421"
+                }, 
+                {
+                    "name": "Raad van State", 
+                    "value": "54031"
+                }, 
+                {
+                    "name": "Kabinet Gouverneur Curacao", 
+                    "value": "2708"
+                }, 
+                {
+                    "name": "Kabinet Gouverneur St. Maarten", 
+                    "value": "1958"
+                }, 
+                {
+                    "name": "Algemene Rekenkamer", 
+                    "value": "28204"
+                }, 
+                {
+                    "name": "Kabinet Gouverneur Aruba", 
+                    "value": "1776"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "0"
+                }
+            ]
+        }, 
+        {
+            "name": "Buitenlandse Zaken", 
+            "children": [
+                {
+                    "name": "Versterkte internationale rechtsorde en eerbiediging van mensenrechten", 
+                    "value": "94041"
+                }, 
+                {
+                    "name": "Apparaat", 
+                    "value": "714489"
+                }, 
+                {
+                    "name": "Europese samenwerking", 
+                    "value": "7698273"
+                }, 
+                {
+                    "name": "Veiligheid en stabiliteit", 
+                    "value": "233499"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "33970"
+                }, 
+                {
+                    "name": "Consulaire belangenbehartiging en het internationaal uitdragen van Nederlandse waarden en belangen", 
+                    "value": "53120"
+                }
+            ]
+        }, 
+        {
+            "name": "Infrastructuur en Milieu", 
+            "children": [
+                {
+                    "name": "Wegen en verkeersveiligheid", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "28702"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Metereologie, seismologie en aardobservatie", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "32566"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Ruimtelijke ontwikkeling", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "111358"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Klimaat", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "54747"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Bijdrage Investeringsfondsen", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "6375221"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Lucht en geluid", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "25758"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Handhaving en toezicht", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "110655"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Waterkwaliteit", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "0"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Spoor", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "4573"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Apparaatsuitgaven Kerndepartement", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "332770"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Externe veiligheid en risico's", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "33309"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Brede doeluitkering", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "854242"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Luchtvaart", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "25355"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "OV-keten", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "5171"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Waterkwantiteit", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "41900"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Duurzaamheid", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "21842"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "25"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Algemeen departement", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "44730"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Scheepvaart en havens", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "33737"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Provinciefonds", 
+            "children": [
+                {
+                    "name": "Provinciefonds", 
+                    "value": "2160334"
+                }
+            ]
+        }, 
+        {
+            "name": "De Koning", 
+            "children": [
+                {
+                    "name": "Grondwettelijke uitkering aan de leden van het Koninklijk Huis", 
+                    "value": "7804"
+                }, 
+                {
+                    "name": "Functionele uitgaven van de Koning", 
+                    "value": "27076"
+                }, 
+                {
+                    "name": "Doorbelaste uitgaven van andere begrotingen", 
+                    "value": "5704"
+                }
+            ]
+        }, 
+        {
+            "name": "Binnenlandse Zaken en Koninkrijksrelaties", 
+            "children": [
+                {
+                    "name": "Algemeen", 
+                    "value": "1206"
+                }, 
+                {
+                    "name": "Algemene Inlichtingen en Veiligheidsdienst", 
+                    "value": "213713"
+                }, 
+                {
+                    "name": "Dienstverlenende en innovatieve overheid", 
+                    "value": "151477"
+                }, 
+                {
+                    "name": "VUT-fonds", 
+                    "value": "0"
+                }, 
+                {
+                    "name": "Arbeidszaken overheid", 
+                    "value": "32911"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "0"
+                }, 
+                {
+                    "name": "Centraal apparaat", 
+                    "value": "254767"
+                }, 
+                {
+                    "name": "Openbaar bestuur en democratie", 
+                    "value": "29154"
+                }
+            ]
+        }, 
+        {
+            "name": "Nationale Schuld", 
+            "children": [
+                {
+                    "name": "Financiering staatsschuld", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Verplichtingen", 
+                                            "value": "36179"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Kasbeheer", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Verplichtingen", 
+                                            "value": "1201"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Economische Zaken", 
+            "children": [
+                {
+                    "name": "Een sterk innovatievermogen", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "VERPLICHTINGEN", 
+                                            "value": "488218"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Concurrerende, duurzame, veilige agro-, visserij- en voedselketens", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "131610"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Apparaatsuitgaven kerndepartement en diensten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "VERPLICHTINGEN", 
+                                            "value": "380243"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Toekomstfonds", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "VERPLICHTINGEN", 
+                                            "value": "158184"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Groen onderwijs van hoge kwaliteit", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "VERPLICHTINGEN", 
+                                            "value": "842665"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Een doelmatige en duurzame energievoorziening", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "93050"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Goed functionerende economie en markten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "VERPLICHTINGEN", 
+                                            "value": "182901"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Een excellent ondernemingsklimaat", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "1650000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Natuur en Regio", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "VERPLICHTINGEN", 
+                                            "value": "151579"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Gemeentefonds", 
+            "children": [
+                {
+                    "name": "Gemeentefonds", 
+                    "value": "26631140"
+                }
+            ]
+        }, 
+        {
+            "name": "Deltafonds", 
+            "children": [
+                {
+                    "name": "Experimenteren cf. art. III Deltawet", 
+                    "children": [
+                        {
+                            "name": "Experimenteerprojecten", 
+                            "value": "0"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Netwerkgebonden kosten en overige uitgaven", 
+                    "children": [
+                        {
+                            "name": "Netwerkgebonden kosten en overige uitgaven", 
+                            "value": "282366"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Inv. In waterveiligheid", 
+                    "children": [
+                        {
+                            "name": "Investeren in waterveiligheid", 
+                            "value": "1014493"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Inv. In Zoetwatervoorziening", 
+                    "children": [
+                        {
+                            "name": "Investeren in zoetwatervoorziening", 
+                            "value": "41620"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Investeren in waterkwaliteit", 
+                    "children": [
+                        {
+                            "name": "Investeren in waterkwaliteit", 
+                            "value": "17907"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Beheer, onderhoud en vervanging", 
+                    "children": [
+                        {
+                            "name": "Beheer, onderhoud en vervanging", 
+                            "value": "268257"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Onderwijs, Cultuur en Wetenschap", 
+            "children": [
+                {
+                    "name": "Internationaal beleid", 
+                    "value": "13662"
+                }, 
+                {
+                    "name": "De tegemoetkoming onderwijsbijdrage en schoolkosten", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Lesgeld", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Media", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "ARBEIDSMARKT- EN PERSONEELSBELEID", 
+                    "value": "250915"
+                }, 
+                {
+                    "name": "Wetenschappelijk onderwijs", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Hoger beroepsonderwijs", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Voortgezet Onderwijs", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Apparaatskosten", 
+                    "value": "239161"
+                }, 
+                {
+                    "name": "Beroepsonderwijs en volwasseneneducatie", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Cultuur", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "653100"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Primair Onderwijs", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "0"
+                }, 
+                {
+                    "name": "Studiefinanciering", 
+                    "children": [
+                        {
+                            "name": "", 
+                            "children": [
+                                {
+                                    "name": "", 
+                                    "children": [
+                                        {
+                                            "name": "Waarvan garantieverplichtingen", 
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Onderzoek en Wetenschapsbeleid", 
+                    "value": "934735"
+                }, 
+                {
+                    "name": "Emancipatie", 
+                    "value": "10609"
+                }
+            ]
+        }, 
+        {
+            "name": "Koninkrijksrelaties", 
+            "children": [
+                {
+                    "name": "Apparaat", 
+                    "value": "21466"
+                }, 
+                {
+                    "name": "Schuldsanering/lopende inschrijving/leningen", 
+                    "value": "0"
+                }, 
+                {
+                    "name": "Bevorderen sociaal-economische structuur", 
+                    "value": "14559"
+                }, 
+                {
+                    "name": "Waarborgfunctie", 
+                    "value": "70252"
+                }, 
+                {
+                    "name": "Nominaal en onvoorzien", 
+                    "value": "0"
+                }, 
+                {
+                    "name": "Bevorderen autonomie Koninkrijkspartners", 
+                    "value": "0"
+                }
+            ]
+        }, 
+        {
+            "name": "Infrastructuurfonds", 
+            "children": [
+                {
+                    "name": "Overige uitgaven", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "132798"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Megaprojecten Verkeer en Vervoer", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "185987"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Hoofdvaarwegen", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "1131208"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Hoofdwegennet", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "2917637"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Regionaal, lokale infrastructuur", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "182873"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Spoorwegen", 
+                    "children": [
+                        {
+                            "name": "Verplichtingen", 
+                            "value": "2244286"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "Buitenlandse Handel & Ontwikkelingssamenwerking", 
+            "children": [
+                {
+                    "name": "Ontvangsten", 
+                    "value": "325230"
+                }, 
+                {
+                    "name": "Duurzame ontwikkeling, voedselzekerheid en water", 
+                    "value": "439033"
+                }, 
+                {
+                    "name": "Versterkte kaders voor ontwikkeling", 
+                    "value": "188571"
+                }, 
+                {
+                    "name": "Sociale vooruitgang", 
+                    "value": "572209"
+                }, 
+                {
+                    "name": "Vrede en veiligheid voor ontwikkeling", 
+                    "value": "543709"
+                }
+            ]
+        }, 
+        {
+            "name": "Algemene Zaken", 
+            "children": [
+                {
+                    "name": "Eenheid van het algemeen regeringsbeleid", 
+                    "value": "59240"
+                }
+            ]
+        }
+    ]
+}
