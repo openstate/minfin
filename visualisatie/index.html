@@ -30,17 +30,13 @@ rect {
       <option value="O">Ontvangsten</option>
     </select>
   </div>
-  <div id="total">
-  </div>
-  <svg id="treemap" width="800" height="800">
-  </svg>
+  <div id="total"></div>
+  <div id="breadcrumb"></div>
+  <svg id="treemap" width="800" height="800"></svg>
   <script src="d3/d3.js"></script>
   <script>
 var root,
     node;
-
-// Select total element
-var total = d3.select("#total");
 
 // Select treemap element
 var treemap_el = d3.select("#treemap"),
@@ -84,6 +80,10 @@ function render_treemap(new_root) {
   var ky = height / (new_root.y1 - new_root.y0);
   x.domain([new_root.x0, new_root.x1]);
   y.domain([new_root.y0, new_root.y1]);
+
+  // Breadcrumb
+  var breadcrumb = new_root.ancestors().map( function(d) {return d.data.name ? d.data.name : "' '"} ).slice(0, -1).reverse().join(' > ');
+  document.getElementById("breadcrumb").innerHTML = breadcrumb
 
   // Remove previous treemap
   var remove_node = document.getElementById("treemap");
