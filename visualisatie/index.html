@@ -32,7 +32,7 @@ rect {
   </div>
   <div id="total">
   </div>
-  <svg class="treemap" id="treemap" width="800" height="800">
+  <svg id="treemap" width="800" height="800">
   </svg>
   <script src="d3/d3.js"></script>
   <script>
@@ -134,9 +134,9 @@ function render_treemap(new_root) {
   cell.append("title")
     .text(function(d) {
       if (d.data.value < 0) {
-        return d.data.id + "\n" + format(-d.value);
+        return d.data.name + "\n" + format(-d.value);
       } else {
-        return d.data.id + "\n" + format(d.value);
+        return d.data.name + "\n" + format(d.value);
       }
     })
 
