@@ -14,3 +14,7 @@ Alle bovenstaande bestanden hebben '_origineel' toegevoegd gekregen aan de naam 
 Mocht je zelf de  en conversie scripts uit willen voeren dan hoef je enkel `convert_budgettaire_tabellen.py` uit te voeren: `./convert_budgettaire_tabellen.py`
 
 Alle opschoningstaken zijn gedocumenteerd in de code van de scripts (samen met de rijnummers in de .csv als de opschoning op specifieke regels van toepassing is).
+
+De folder `logs` bevat logbestanden van het opschoningsproces:
+- `artikel_mapping.json`: bevat de mapping van artikelnummers/codes naar artikelnamen die automatisch gegenereerd wordt door het script en die gebruikt wordt voor de naamgeving van de artikellen in de .json bestanden in de `budgettaire_tabellen_json` folder (de artikelnamen zijn namelijk niet consistent).
+- `duplicate_hierarchies.log`: bevat informatie over rijen die niet in de .json bestanden in de `budgettaire_tabellen_json` folder opgeslagen konden worden omdat het hiërarchische pad van deze rijen niet uniek was. Dit betekent dat een andere rij wel in de .json bestanden is opgeslagen en in dit logbestand zie je welke rijen er daardoor niet konden worden opgeslagen.
