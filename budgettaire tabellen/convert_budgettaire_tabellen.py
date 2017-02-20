@@ -3,6 +3,7 @@
 
 import csv, codecs, cStringIO
 import json
+import logging
 import os
 import re
 from collections import defaultdict
@@ -85,6 +86,10 @@ log_dir = 'logs'
 if not os.path.exists(log_dir):
     os.mkdir(log_dir)
 
+# Initialize logger where we write the duplicate entries to
+log_dup = logging.getLogger('overwrite_logger')
+log_dup.addHandler(logging.FileHandler(log_dir + '/duplicate_hierarchies.log'))
+
 # Mapping of hoofdstuk indicator to the name of the hoofdstuk
 mapping = {
     "A": "Infrastructuurfonds",
@@ -122,16 +127,61 @@ tree = lambda: defaultdict(tree)
 
 # Log information on lines which would have overwritten an already
 # existing line in the json_data, because their hierarchy is the same
-def print_existing(item, uvo, hoofdstuk, artikel, artikelonderdeel, subartikelonderdeel, uitsplitsing, omschrijving, new_line):
-    print 'uvo: ' + uvo
-    print 'h: ' + hoofdstuk
-    print 'a: ' + artikel
-    print 'ad: ' + artikelonderdeel
-    print 'sad: ' + subartikelonderdeel
-    print 'u: ' + uitsplitsing
-    print 'o: ' + omschrijving
-    print 'Already filled item!! %s' % (item)
-    print 'Not overwritten with: %s\n' % (new_line)
+def print_existing(value, hierarchy_list, new_line):
+    log_dup.warning("Found value %s at: '%s'" % (value, "' > '".join(hierarchy_list)))
+    log_dup.warning('Thus could not save: %s\n' % (', '.join(new_line)))
+
+# Use the values in hierarchy_list to retrieve its value stored in
+# json_data. E.g., when hierarchy_list contains
+# [u'U', 'Koninkrijksrelaties', u'Nominaal en onvoorzien'] this function
+# will the value stored in
+# json_data[u'U']['Koninkrijksrelaties'][u'Nominaal en onvoorzien']
+def get_dict_with_list(json_data, hierarchy_list):
+    for k in hierarchy_list: json_data = json_data[k]
+    return json_data
+
+# The same logic of get_dict_with_list to use hierarchy_list to traverse
+# json_data is used here to store a value instead of retrieving a value
+def set_dict_with_list(json_data, hierarchy_list, value):
+    for key in hierarchy_list[:-1]:
+        json_data = json_data.setdefault(key, {})
+    json_data[hierarchy_list[-1]] = value
+
+# Check if a value is already stored using this hierarchy_list of the
+# current line. get_dict_with_list can return three states. 1) it
+# returns empty, which means nothing is stored yet at this place in the
+# hierarchy, so the current line can be stored here. 2) it is not empty,
+# the current line and already stored information are printed for later
+# analysis as to why there is a collision. 3) a TypeError is returned,
+# which means that something is already stored in this hierarchy but at
+# a higher level. We still want to know what is stored there for
+# analysis, so we recursively call this function again using the
+# hierarchy_list one level up.
+def already_exists(json_data, hierarchy_list, new_line, exists=False):
+    try:
+        if get_dict_with_list(json_data, hierarchy_list):
+            print_existing(get_dict_with_list(json_data, hierarchy_list), hierarchy_list, new_line)
+            return True
+        elif exists:
+            return True
+        else:
+            return False
+    except TypeError:
+        return already_exists(json_data, hierarchy_list[:-1], new_line, True)
+
+# This function starts by trying to save the line at its most detailed
+# level (omschrijving), but if this field is empty then it moves up one
+# level and tries the same. Checks are also in place to see if a line
+# will overwrite an already existing value in the hierarchy, in which
+# case the information is logged and the new line is discarded in favor
+# of the already saved line.
+def store_json_data_recursively(json_data, hierarchy_list, new_line):
+    if hierarchy_list[-1] or len(hierarchy_list) == 3:
+        if already_exists(json_data, hierarchy_list, new_line):
+            return
+        set_dict_with_list(json_data, hierarchy_list, new_line[21])
+    else:
+        store_json_data_recursively(json_data, hierarchy_list[:-1], new_line)
 
 # Artikel names are not consistent, so the artikel numbers/codes are
 # used in this script. For human readability we do want to output the
@@ -140,12 +190,10 @@ def print_existing(item, uvo, hoofdstuk, artikel, artikelonderdeel, subartikelon
 # the first time.
 artikel_mapping = {}
 
-# Save lines as hierarchically. It starts to try and save the line
-# at its most detailed level (omschrijving), but if this field is empty
-# then it moves up one level and tries the same. Checks are also in
-# place to see if a line will overwrite an already existing value in
-# the hierarchy, in which case the information is logged and the new
-# line is discarded in favor of the already saved line.
+# Save lines in a hierarchically structured way. This requires recursion
+# as we need to find the most detailed level for which we can store a
+# value (e.g., some value are stored at the 'artikelonderdeel' level,
+# while others are stored at the 'omschrijving' level).
 def store_json_data(json_data, uvo, hoofdstuk, artikel, new_line):
     hoofdstuk = mapping[hoofdstuk]
     # If the artikel number/code is not available in the mapping, then
@@ -157,51 +205,7 @@ def store_json_data(json_data, uvo, hoofdstuk, artikel, new_line):
     subartikelonderdeel = new_line[16]
     uitsplitsing = new_line[17]
     omschrijving = new_line[18]
-    if omschrijving:
-        try:
-            if json_data[uvo][hoofdstuk][artikel][artikelonderdeel][subartikelonderdeel][uitsplitsing][omschrijving]:
-                print_existing(json_data[uvo][hoofdstuk][artikel][artikelonderdeel][subartikelonderdeel][uitsplitsing][omschrijving], uvo, hoofdstuk, artikel, artikelonderdeel, subartikelonderdeel, uitsplitsing, omschrijving, new_line)
-                return
-        except TypeError:
-            print_existing(json_data[uvo][hoofdstuk][artikel][artikelonderdeel][subartikelonderdeel], uvo, hoofdstuk, artikel, artikelonderdeel, subartikelonderdeel, uitsplitsing, omschrijving, new_line)
-            return
-        json_data[uvo][hoofdstuk][artikel][artikelonderdeel][subartikelonderdeel][uitsplitsing][omschrijving] = new_line[21]
-    elif uitsplitsing:
-        try:
-            if json_data[uvo][hoofdstuk][artikel][artikelonderdeel][subartikelonderdeel][uitsplitsing]:
-                print_existing(json_data[uvo][hoofdstuk][artikel][artikelonderdeel][subartikelonderdeel][uitsplitsing], uvo, hoofdstuk, artikel, artikelonderdeel, subartikelonderdeel, uitsplitsing, omschrijving, new_line)
-                return
-        except TypeError:
-            print_existing(json_data[uvo][hoofdstuk][artikel], uvo, hoofdstuk, artikel, artikelonderdeel, subartikelonderdeel, uitsplitsing, omschrijving, new_line)
-            return
-        json_data[uvo][hoofdstuk][artikel][artikelonderdeel][subartikelonderdeel][uitsplitsing] = new_line[21]
-    elif subartikelonderdeel:
-        try:
-            if json_data[uvo][hoofdstuk][artikel][artikelonderdeel][subartikelonderdeel]:
-                print_existing(json_data[uvo][hoofdstuk][artikel][artikelonderdeel][subartikelonderdeel], uvo, hoofdstuk, artikel, artikelonderdeel, subartikelonderdeel, uitsplitsing, omschrijving, new_line)
-                return
-        except TypeError:
-            print_existing(json_data[uvo][hoofdstuk][artikel][artikelonderdeel][subartikelonderdeel], uvo, hoofdstuk, artikel, artikelonderdeel, subartikelonderdeel, uitsplitsing, omschrijving, new_line)
-            return
-        json_data[uvo][hoofdstuk][artikel][artikelonderdeel][subartikelonderdeel] = new_line[21]
-    elif artikelonderdeel:
-        try:
-            if json_data[uvo][hoofdstuk][artikel][artikelonderdeel]:
-                print_existing(json_data[uvo][hoofdstuk][artikel][artikelonderdeel], uvo, hoofdstuk, artikel, artikelonderdeel, subartikelonderdeel, uitsplitsing, omschrijving, new_line)
-                return
-        except TypeError:
-            print_existing(json_data[uvo][hoofdstuk][artikel][artikelonderdeel], uvo, hoofdstuk, artikel, artikelonderdeel, subartikelonderdeel, uitsplitsing, omschrijving, new_line)
-            return
-        json_data[uvo][hoofdstuk][artikel][artikelonderdeel] = new_line[21]
-    else:
-        try:
-            if json_data[uvo][hoofdstuk][artikel]:
-                print_existing(json_data[uvo][hoofdstuk][artikel], uvo, hoofdstuk, artikel, artikelonderdeel, subartikelonderdeel, uitsplitsing, omschrijving, new_line)
-                return
-        except TypeError:
-            print_existing(json_data[uvo][hoofdstuk][artikel], uvo, hoofdstuk, artikel, artikelonderdeel, subartikelonderdeel, uitsplitsing, omschrijving, new_line)
-            return
-        json_data[uvo][hoofdstuk][artikel] = new_line[21]
+    store_json_data_recursively(json_data, [uvo, hoofdstuk, artikel, artikelonderdeel, subartikelonderdeel, uitsplitsing, omschrijving], new_line)
 
 # Perform all cleanup actions, see the comments for details
 def clean(year):
