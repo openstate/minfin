@@ -259,7 +259,6 @@ function render_stacked_bar(new_root, uo, years, stbar_data = []) {
           return !isNaN(i[0]) && !isNaN(i[1])
         });
         cleand.map(function(i) {i.push(d.key)});
-        console.log(cleand);
         return cleand;
       })
       .enter().append("rect")
