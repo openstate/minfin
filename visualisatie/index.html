@@ -134,11 +134,8 @@ function render_table(data, columns) {
         if (column == 'naam') {
           return {value: row.data.name, node: row};
         } else {
-          if (row.data.value < 0) {
-            return {value: format(-row.value), node: row};
-          } else {
-            return {value: format(row.value), node: row};
-          }
+          var val = d3.sum(row.leaves().map(function(e) {return e.data.value}))
+          return {value: format(val), node: row};
         }
       });
     })
@@ -173,14 +170,21 @@ function render_stacked_bar(new_root, uo, years, stbar_data = []) {
   // create the stacked bar chart
   if (years.length > 0) {
     var current_year = years.shift();
-    var year_data = {year: current_year};
+    // abs_total stores the absolute totals which d3.stack() needs to
+    // allocate space for the rect's; sum_total store the actual sum of
+    // of all the values (including negative values which is what we
+    // display in the tooltip and use to color negative rect's red
+    var year_data = {
+      'abs_total': {year: current_year},
+      'sum_total': {}
+    };
     var filename = data_dir + current_year + "-" + uo + "-ontwerpbegroting.json";
     d3.json(filename, function(error, data) {
       // Add an id and total value for each budget in the hierarchy and sort it
       y_data = d3.hierarchy(data);
       y_data.eachBefore(function(d) {
         d.data.id = (d.parent ? d.parent.data.id + "." : "") + d.data.name;
-      }).sum(function(d) { return d.value; })
+      }).sum(function(d) { return Math.abs(d.value); })
         .sort(function(a, b) { return b.value - a.value; });
 
       // Match the root of the currently selected year with the root of
@@ -194,7 +198,10 @@ function render_stacked_bar(new_root, uo, years, stbar_data = []) {
       // to stbar_data
       if (y_root) {
         y_root.children.map(function(d) {
-          year_data[d.data.name] = d.value;
+          year_data['abs_total'][d.data.name] = d.value;
+          year_data['sum_total'][d.data.name] = d3.sum(
+            d.leaves().map(function(e) {return e.data.value})
+          );
           stbar_keys[d.data.name] = 1;
         });
         stbar_data.push(year_data);
@@ -228,18 +235,25 @@ function render_stacked_bar(new_root, uo, years, stbar_data = []) {
     // Find the maximum value; needed to set the y-axis (so skip year
     // values)
     var max_val = d3.max(stbar_data.map(function(d) {
-      return d3.sum(Object.keys(d).map(function(k) {
-        if (k == 'year') {return 0} else {return d[k]}
+      return d3.sum(Object.keys(d['abs_total']).map(function(k) {
+        if (k == 'year') {return 0} else {return d['abs_total'][k]}
       }));
     }));
 
-    x.domain(stbar_data.map(function(d) {return d['year']}));
+    x.domain(stbar_data.map(function(d) {return d['abs_total']['year']}));
     y.domain([0, max_val]).nice();
+
+    var sum_totals = {};
+    stbar_data.map(function(d) {
+      sum_totals[d['abs_total']['year']] = d['sum_total']
+    });
 
     // The actual stacked bar chart elements
     g.append("g")
       .selectAll("g")
-      .data(d3.stack().keys(Object.keys(stbar_keys))(stbar_data))
+      .data(d3.stack().keys(Object.keys(stbar_keys))(stbar_data.map(
+        function(d) {return d['abs_total']}
+      )))
       .enter().append("g")
         .attr("fill", function(d, i) {
           if (color_shades) {
@@ -265,9 +279,14 @@ function render_stacked_bar(new_root, uo, years, stbar_data = []) {
         .attr("y", function(d) { return y(d[1]); })
         .attr("height", function(d) { return y(d[0]) - y(d[1]); })
         .attr("width", x.bandwidth())
+        .attr("fill", function(d) {
+          if (sum_totals[d.data.year][d[2]] < 0) {
+            return 'red';
+          }
+        })
         .append("title")
           .text(function(d) {
-            return d[2] + "\n" + format(d.data[d[2]]);
+            return d[2] + "\n" + format(sum_totals[d.data.year][d[2]]);
           });
 
     // X-axis
@@ -389,11 +408,8 @@ function render_treemap(new_root) {
     })
     .selectAll("tspan")
       .data(function(d) {
-        var val = format(d.value);
-        if (d.data.value < 0) {
-          val = format(-d.value);
-        }
-        var txt = d.data.name + " " + val;
+        var val = d3.sum(d.leaves().map(function(e) {return e.data.value}))
+        var txt = d.data.name + " " + format(val);
         return txt.split(/ /g);
       })
     .enter().append("tspan")
@@ -403,11 +419,8 @@ function render_treemap(new_root) {
 
   cell.append("title")
     .text(function(d) {
-      if (d.data.value < 0) {
-        return d.data.name + "\n" + format(-d.value);
-      } else {
-        return d.data.name + "\n" + format(d.value);
-      }
+      var val = d3.sum(d.leaves().map(function(e) {return e.data.value}))
+      return d.data.name + "\n" + format(val);
     })
 
   node = new_root;
@@ -443,7 +456,10 @@ function render(year, uo) {
     );
 
     // Treemap; add an id and total value for each budget in the
-    // hierarchy and sort it
+    // hierarchy and sort it; note that d.value contains the absolute
+    // total of a node which is what we need to let the treemap also
+    // visualize negative values; the actual displayed total values are
+    // calculated normally (i.e., not absolute)
     treemap(root
       .eachBefore(function(d) {
         d.data.id = (d.parent ? d.parent.data.id + "." : "") + d.data.name;
@@ -452,6 +468,7 @@ function render(year, uo) {
       .sort(function(a, b) { return b.value - a.value; }));
     render_treemap(root);
   });
+
 
   // Show root when clicking outside of the treemap
   d3.select(window).on("click", function() { render_treemap(root); });
