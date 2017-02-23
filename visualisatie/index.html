@@ -16,24 +16,31 @@ rect {
 </head>
 <body>
   <div>
-    <select id="year">
-      <option value="2017">2017</option>
+    <select size="1" id="year">
+      <option selected value="2017">2017</option>
       <option value="2016">2016</option>
       <option value="2015">2015</option>
     </select>
     <select id="uo">
-      <option value="U">Uitgaven</option>
+      <option selected value="U">Uitgaven</option>
       <option value="O">Ontvangsten</option>
     </select>
   </div>
   <div id="total"></div>
   <div id="breadcrumb"></div>
+  <svg id="stacked-bar" width="400" height="800"></svg>
   <svg id="treemap" width="800" height="800"></svg>
   <table id="table"></table>
   <script src="d3/d3.js"></script>
   <script>
 var root,
-    node;
+    node,
+    year,
+    uo;
+
+var data_dir = "budgettaire_tabellen_json/";
+
+var all_years = [];
 
 // Select treemap element
 var treemap_el = d3.select("#treemap"),
@@ -55,10 +62,36 @@ d3.formatDefaultLocale(
 // Prepend values with currency symbol and use thousands separator
 var format = d3.format("$,d");
 
-// Set colors for treemap
-var color = d3.scaleOrdinal()
-    .range(d3.schemeCategory10
-        .map(function(c) { c = d3.rgb(c); c.opacity = 0.6; return c; }));
+// Colors for each hoofdstuk
+var color_map = {
+  "Infrastructuurfonds": {"background": "#ffb612", "dark": "#523900", "bright":"#FFEDC2", "text": "black"},
+  "Gemeentefonds": {"background": "#01689b", "dark": "#003651", "bright":"C2EAFF", "text": "white"},
+  "Provinciefonds": {"background": "#01689b", "dark": "#003651", "bright":"C2EAFF", "text": "white"},
+  "Diergezondheidsfonds": {"background": "#535353", "dark": "#292929", "bright":"#E0E0E0", "text": "white"},
+  "BES-fonds": {"background": "#696969", "dark": "#292929", "bright":"#E0E0E0", "text": "white"},
+  "De Koning": {"background": "#999999", "dark": "#292929", "bright":"#E0E0E0", "text": "black"},
+  "De Staten Generaal": {"background": "#f092cd", "dark": "#480A31", "bright":"#F8C9E7", "text": "black"},
+  "Overige Hoge Colleges van Staat": {"background": "#b4b4b4", "dark": "#292929", "bright":"#E0E0E0", "text": "black"},
+  "Algemene Zaken": {"background": "#a90061", "dark": "#52002E", "bright":"#FFC2E4", "text": "white"},
+  "Algemene Zaken": {"background": "#a90061", "dark": "#52002E", "bright":"#FFC2E4", "text": "white"},
+  "Kabinet van de Koning": {"background": "#cccccc", "dark": "#292929", "bright":"#E0E0E0", "text": "black"},
+  "Commissie van Toezicht betreffende de Inlichtingen- en Veiligheidsdienst": {"background": "#e6e6e6", "dark": "#292929", "bright":"#E0E0E0", "text": "black"},
+  "Koninkrijksrelaties": {"background": "#d52b1e", "dark": "#470E0A", "bright":"#F7CDC9", "text": "white"},
+  "Nationale Schuld": {"background": "#f3f3f3", "dark": "#292929", "bright":"#E0E0E0", "text": "black"},
+  "Financiën": {"background": "#007bc7", "dark": "#003252", "bright":"#C2E8FF", "text": "white"},
+  "Deltafonds": {"background": "#94710a", "dark": "#4C3B05", "bright":"#FBEEC6", "text": "white"},
+  "Buitenlandse Zaken": {"background": "#39870c", "dark": "#204B07", "bright":"#DAFAC7", "text": "white"},
+  "Binnenlandse Zaken en Koninkrijksrelaties": {"background": "#d52b1e", "dark": "#470E0A", "bright":"#F7CDC9", "text": "white"},
+  "Onderwijs, Cultuur en Wetenschap": {"background": "#777c00", "dark": "#4F5200", "bright":"#FDFFC2", "text": "white"},
+  "Veiligheid en Justitie": {"background": "#8fcae7", "dark": "#0E3243", "bright":"#CDE7F4", "text": "black"},
+  "Defensie": {"background": "#42145f", "dark": "#2F0E43", "bright":"#E5CDF4", "text": "white"},
+  "Economische Zaken": {"background": "#275937", "dark": "#193923", "bright":"#D4ECDC", "text": "white"},
+  "Infrastructuur en Milieu": {"background": "#f9e11e", "dark": "#504702", "bright":"#FDF7C3", "text": "black"},
+  "Buitenlandse Handel & Ontwikkelingssamenwerking": {"background": "#76d2b6", "dark": "#143E31", "bright":"#D1F0E7", "text": "black"},
+  "Wonen en Rijksdienst": {"background": "#673327", "dark": "#3B1D16", "bright":"#EED8D3", "text": "white"},
+  "Volksgezondheid, Welzijn en Sport": {"background": "#e17000", "dark": "#522900", "bright":"#FFE0C2", "text": "black"},
+  "Sociale Zaken en Werkgelegenheid": {"background": "#ca005d", "dark": "#520026", "bright":"#FFC2DE", "text": "white"}
+}
 
 // Initialize treemap
 var treemap = d3.treemap()
@@ -112,9 +145,153 @@ function render_table(data, columns) {
     })
     .enter()
     .append('td')
-      .on("click", function(d) { return render_treemap(d.node.children ? d.node : root); })
+      .on("click", function(d) {
+        return render_treemap(d.node.children ? d.node : root);
+      })
       .text(function (d) { return d.value; });
 }
+
+// Stores all names of all children across all years visualized in the
+// current stacked bar chart
+var stbar_keys;
+
+// Render the stacked bar chart of the currently selected budget for all
+// years
+function render_stacked_bar(new_root, uo, years, stbar_data = []) {
+  // Reset stbar_keys if this is the first invocation of a new render,
+  // i.e., when stbar_data is still empty
+  if (stbar_data.length == 0) {
+    stbar_keys = {};
+  }
+
+  // Retrieve the identifier of the current root of the current year,
+  // needed to retrieve the matchin root of other years; remove the top
+  // level of the id, e.g. 2017-U-ontwerpbegroting, to allow for the
+  // matching
+  var current_id = new_root.data.id.replace(/[^\.]*\.?/, '');
+
+  // Recursively load all data for all years; once no years are left
+  // create the stacked bar chart
+  if (years.length > 0) {
+    var current_year = years.shift();
+    var year_data = {year: current_year};
+    var filename = data_dir + current_year + "-" + uo + "-ontwerpbegroting.json";
+    d3.json(filename, function(error, data) {
+      // Add an id and total value for each budget in the hierarchy and sort it
+      y_data = d3.hierarchy(data);
+      y_data.eachBefore(function(d) {
+        d.data.id = (d.parent ? d.parent.data.id + "." : "") + d.data.name;
+      }).sum(function(d) { return d.value; })
+        .sort(function(a, b) { return b.value - a.value; });
+
+      // Match the root of the currently selected year with the root of
+      // the newly loaded data
+      var y_root;
+      y_data.each(function(d) {
+        if (d.data.id.replace(/[^\.]*\.?/, '') == current_id) { y_root = d; }
+      });
+
+      // If a match is found, then add the data of the root's children
+      // to stbar_data
+      if (y_root) {
+        y_root.children.map(function(d) {
+          year_data[d.data.name] = d.value;
+          stbar_keys[d.data.name] = 1;
+        });
+        stbar_data.push(year_data);
+      }
+      render_stacked_bar(new_root, uo, years, stbar_data);
+    });
+  } else {
+    // Remove previous stacked bar chart
+    var remove_node = document.getElementById("stacked-bar");
+    while (remove_node.firstChild) {
+      remove_node.removeChild(remove_node.firstChild);
+    }
+
+    // Create stacked bar chart
+    var stbar_svg = d3.select("#stacked-bar"),
+      margin = {top: 20, right: 20, bottom: 30, left: 40},
+      width = +stbar_svg.attr("width") - margin.left - margin.right,
+      height = +stbar_svg.attr("height") - margin.top - margin.bottom,
+      g = stbar_svg.append("g").attr(
+        "transform", "translate(" + margin.left + "," + margin.top + ")"
+      );
+
+    var x = d3.scaleBand()
+      .rangeRound([0, width])
+      .paddingInner(0.05)
+      .align(0.1);
+
+    var y = d3.scaleLinear()
+      .rangeRound([height, 0]);
+
+    // Find the maximum value; needed to set the y-axis (so skip year
+    // values)
+    var max_val = d3.max(stbar_data.map(function(d) {
+      return d3.sum(Object.keys(d).map(function(k) {
+        if (k == 'year') {return 0} else {return d[k]}
+      }));
+    }));
+
+    x.domain(stbar_data.map(function(d) {return d['year']}));
+    y.domain([0, max_val]).nice();
+
+    // The actual stacked bar chart elements
+    g.append("g")
+      .selectAll("g")
+      .data(d3.stack().keys(Object.keys(stbar_keys))(stbar_data))
+      .enter().append("g")
+        .attr("fill", function(d, i) {
+          if (color_shades) {
+            return color_shades(i);
+          } else {
+            return color_map[d.key].background;
+          }
+        })
+        .attr("id", function(d) { return d.key; })
+      .selectAll("rect")
+      // Add the name/key to each stacked bar chart element in order to
+      // add a title with the name and value
+      .data(function(d) {
+        // Remove element from array if it contains NaN
+        var cleand = d.filter(function(i) {
+          return !isNaN(i[0]) && !isNaN(i[1])
+        });
+        cleand.map(function(i) {i.push(cleand.key)}); return cleand;
+      })
+      .enter().append("rect")
+        .attr("x", function(d) { return x(d.data.year); })
+        .attr("y", function(d) { return y(d[1]); })
+        .attr("height", function(d) { return y(d[0]) - y(d[1]); })
+        .attr("width", x.bandwidth())
+        .append("title")
+          .text(function(d) {
+            return d[2] + "\n" + format(d.data[d[2]]);
+          });
+
+    // X-axis
+    g.append("g")
+      .attr("class", "axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+
+    // Y-axis
+    g.append("g")
+      .attr("class", "axis")
+      .call(d3.axisLeft(y).ticks(null, "s"))
+      .append("text")
+        .attr("x", 2)
+        .attr("y", y(y.ticks().pop()) + 0.5)
+        .attr("dy", "0.32em")
+        .attr("fill", "#000")
+        .attr("font-weight", "bold")
+        .attr("text-anchor", "start")
+        .text("bedrag");
+  }
+}
+
+var color_shades;
 
 // Render/update treemap
 function render_treemap(new_root) {
@@ -125,7 +302,9 @@ function render_treemap(new_root) {
   y.domain([new_root.y0, new_root.y1]);
 
   // Breadcrumb
-  var breadcrumb = new_root.ancestors().map( function(d) {return d.data.name ? d.data.name : "' '"} ).slice(0, -1).reverse().join(' > ');
+  var breadcrumb = new_root.ancestors().map( function(d) {
+    return d.data.name ? d.data.name : "' '"
+  } ).slice(0, -1).reverse().join(' > ');
   document.getElementById("breadcrumb").innerHTML = breadcrumb
 
   // Remove previous treemap
@@ -134,32 +313,80 @@ function render_treemap(new_root) {
     remove_node.removeChild(remove_node.firstChild);
   }
 
+  // Create color shades to color elements if the current root is any
+  // level below hoofdstuk; otherwise use color_map for hoofdstuk colors
+  color_shades = '';
+  var color_dark = '';
+  var color_bright = '';
+  var temp_root = new_root;
+  if (temp_root.depth > 0) {
+    var color_range;
+    var number_of_children = new_root.children.length;
+
+    // Move up the hierarchy to retrieve the name of the parent
+    // hoofdstuk
+    while (temp_root.depth > 1) temp_root = temp_root.parent;
+    hoofdstuk_name = temp_root.data.name;
+
+    // Use darker shades when the hoofdstuk text color is white and vice
+    // versa
+    if (color_map[hoofdstuk_name].text == 'white') {
+      color_dark = color_map[hoofdstuk_name].dark;
+      color_bright = color_map[hoofdstuk_name].background;
+      color_range = [color_bright, color_dark];
+    } else {
+      color_dark = color_map[hoofdstuk_name].background;
+      color_bright = color_map[hoofdstuk_name].bright;
+      color_range = [color_dark, color_bright];
+    }
+    color_shades = d3.scaleLinear()
+      .domain([0, number_of_children])
+      .range(color_range);
+  }
+
   // Add all SVG elements of the current treemap
   var cell = treemap_el.selectAll("g")
     .data(new_root.children)
     .enter().append("g")
-      .attr("transform", function(d) { return "translate(" + x(d.x0) + "," + y(d.y0) + ")"; })
-      .on("click", function(d) { return render_treemap(d.children ? d : root); });
+      .attr("transform", function(d) {
+        return "translate(" + x(d.x0) + "," + y(d.y0) + ")";
+      })
+      .on("click", function(d) {
+        return render_treemap(d.children ? d : root);
+      });
 
   cell.append("rect")
     .attr("id", function(d) { return convertToSlug(d.data.id); })
     .attr("width", function(d) { return kx * (d.x1 - d.x0); })
     .attr("height", function(d) { return ky * (d.y1 - d.y0); })
-    .attr("fill", function(d) {
+    .attr("fill", function(d, i) {
       if (d.data.value < 0) {
         return 'red';
       } else {
-        while (d.depth > 1) d = d.parent; return color(d.data.name);
+        if (color_shades) {
+          return color_shades(i);
+        } else {
+          return color_map[d.data.name].background;
+        }
       }
     });
 
   cell.append("clipPath")
-    .attr("id", function(d, i) { return "clip-" + convertToSlug(d.data.id) + i; })
+    .attr("id", function(d, i) {
+      return "clip-" + convertToSlug(d.data.id) + i;
+    })
     .append("use")
-    .attr("xlink:href", function(d, i) { return "#" + convertToSlug(d.data.id); });
+    .attr("xlink:href", function(d, i) {
+      return "#" + convertToSlug(d.data.id);
+    });
 
   cell.append("text")
-    .attr("clip-path", function(d, i) { return "url(#clip-" + convertToSlug(d.data.id) + i + ")"; })
+    .attr("clip-path", function(d, i) {
+      return "url(#clip-" + convertToSlug(d.data.id) + i + ")";
+    })
+    .attr("fill", function(d) {
+        while (d.depth > 1) d = d.parent; return color_map[d.data.name].text;
+    })
     .selectAll("tspan")
       .data(function(d) {
         var val = format(d.value);
@@ -193,22 +420,34 @@ function render_treemap(new_root) {
   var thead = table.append('thead');
   var tbody = table.append('tbody');
   render_table(new_root, ['naam', 'bedrag']);
+
+  // Load all years
+  d3.selectAll("#year option").each(function() {all_years.push(this.value)});
+
+  // Stacked bar chart
+  render_stacked_bar(new_root, uo, all_years.sort());
 }
 
 // Load selected dataset and render visualisations
 function render(year, uo) {
-  d3.json("budgettaire_tabellen_json/" + year + "-" + uo + "-ontwerpbegroting.json", function(error, data) {
+  var filename = data_dir + year + "-" + uo + "-ontwerpbegroting.json";
+  d3.json(filename, function(error, data) {
     if (error) throw error;
 
     root = d3.hierarchy(data);
     node = root;
 
     // Total
-    document.getElementById("total").innerHTML = format(d3.sum(root.leaves().map(function(e) {return e.data.value})));
+    document.getElementById("total").innerHTML = format(
+      d3.sum(root.leaves().map(function(e) {return e.data.value}))
+    );
 
-    // Treemap
+    // Treemap; add an id and total value for each budget in the
+    // hierarchy and sort it
     treemap(root
-      .eachBefore(function(d) { d.data.id = (d.parent ? d.parent.data.id + "." : "") + d.data.name; })
+      .eachBefore(function(d) {
+        d.data.id = (d.parent ? d.parent.data.id + "." : "") + d.data.name;
+      })
       .sum(function(d) { return Math.abs(d.value); })
       .sort(function(a, b) { return b.value - a.value; }));
     render_treemap(root);
@@ -219,15 +458,18 @@ function render(year, uo) {
 };
 
 // Render visualisations based on selected year and uitgaven/ontvangsten
-render(
-  d3.select("#year").node().value,
-  d3.select("#uo").node().value
-);
+year = d3.select("#year").node().value;
+uo = d3.select("#uo").node().value;
+render(year, uo);
+
 d3.select("#year").on("change", function() {
-  render(this.value, d3.select("#uo").node().value)
+  year = this.value;
+  render(year, uo);
 });
+
 d3.select("#uo").on("change", function() {
-  render(d3.select("#year").node().value, this.value)
+  uo = this.value;
+  render(year, uo);
 });
   </script>
 </body>
