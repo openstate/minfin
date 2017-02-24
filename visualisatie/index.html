@@ -12,6 +12,10 @@ rect {
   stroke-width: 2;
   stroke-opacity: 0.3;
 }
+
+path {
+  stroke: white;
+}
   </style>
 </head>
 <body>
@@ -28,26 +32,60 @@ rect {
   </div>
   <div id="total"></div>
   <div id="breadcrumb"></div>
+  <div style="display:block;">
+    <button id="btn-treemap">treemap</button>
+    <button id="btn-donut">donut</button>
+  </div>
   <svg id="stacked-bar" width="400" height="800"></svg>
-  <svg id="treemap" width="800" height="800"></svg>
+  <svg id="treemap" width="0" height="0"></svg>
+  <svg id="donut" width="0" height="0"></svg>
   <table id="table"></table>
   <script src="d3/d3.js"></script>
   <script>
-var root,
-    node,
-    year,
-    uo;
+var root;
+var current_id;
+
+var width = "800";
+var height = "800";
 
 var data_dir = "budgettaire_tabellen_json/";
 
 var all_years = [];
 
-// Select treemap element
-var treemap_el = d3.select("#treemap"),
-    width = +treemap_el.attr("width"),
-    height = +treemap_el.attr("height"),
-    x = d3.scaleLinear().range([0, width]),
-    y = d3.scaleLinear().range([0, height]);
+// Select treemap SVG and initialize
+var treemap_svg = d3.select("#treemap"),
+  tree_x = d3.scaleLinear().range([0, width]),
+  tree_y = d3.scaleLinear().range([0, height]);
+var treemap = d3.treemap()
+    .size([width, height])
+    .round(true);
+
+// Select Donut SVG and initialize
+var donut_svg = d3.select("#donut");
+var donut_radius = (Math.min(width, height) / 2) - 10;
+var donut_x = d3.scaleLinear()
+  .range([0, 2 * Math.PI]);
+var donut_y = d3.scaleSqrt()
+  .range([0, donut_radius]);
+var partition = d3.partition();
+var arc = d3.arc()
+  .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, donut_x(d.x0))); })
+  .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, donut_x(d.x1))); })
+  .innerRadius(function(d) { return Math.max(0, donut_y(d.y0)); })
+  .outerRadius(function(d) { return Math.max(0, donut_y(d.y1)); });
+
+// Select stacked bar chart SVG and initialize
+var stbar_svg = d3.select("#stacked-bar"),
+  stbar_margin = {top: 20, right: 20, bottom: 30, left: 40},
+  stbar_width = +stbar_svg.attr("width") - stbar_margin.left - stbar_margin.right,
+  stbar_height = +stbar_svg.attr("height") - stbar_margin.top - stbar_margin.bottom;
+var stbar_x = d3.scaleBand()
+  .rangeRound([0, stbar_width])
+  .paddingInner(0.05)
+  .align(0.1);
+
+var stbar_y = d3.scaleLinear()
+  .rangeRound([stbar_height, 0]);
 
 // Set locale to nl-NL
 d3.formatDefaultLocale(
@@ -92,23 +130,23 @@ var color_map = {
   "Sociale Zaken en Werkgelegenheid": {"background": "#ca005d", "dark": "#520026", "bright":"#FFC2DE", "text": "white"}
 }
 
-// Initialize treemap
-var treemap = d3.treemap()
-    .size([width, height])
-    .round(true);
+// Remove all children of an element
+function remove_element(id) {
+  var remove_node = document.getElementById(id);
+  while (remove_node.firstChild) {
+    remove_node.removeChild(remove_node.firstChild);
+  }
+}
 
-// Function to convert text to slug
-function convertToSlug(Text) {
+// Convert text to slug
+function convert_to_slug(Text) {
   return Text.toLowerCase().replace(/[^\w ]+/g,'').replace(/ +/g,'-');
 }
 
 // Render/update table
 function render_table(data, columns) {
   // Remove previous table
-  var remove_node = document.getElementById("table");
-  while (remove_node.firstChild) {
-    remove_node.removeChild(remove_node.firstChild);
-  }
+  remove_element("table");
 
   var table = d3.select('table');
   var thead = table.append('thead');
@@ -142,7 +180,7 @@ function render_table(data, columns) {
     .enter()
     .append('td')
       .on("click", function(d) {
-        return render_treemap(d.node.children ? d.node : root);
+        return render(d.node.children ? d.node : root);
       })
       .text(function (d) { return d.value; });
 }
@@ -159,12 +197,6 @@ function render_stacked_bar(new_root, uo, years, stbar_data = []) {
   if (stbar_data.length == 0) {
     stbar_keys = {};
   }
-
-  // Retrieve the identifier of the current root of the current year,
-  // needed to retrieve the matchin root of other years; remove the top
-  // level of the id, e.g. 2017-U-ontwerpbegroting, to allow for the
-  // matching
-  var current_id = new_root.data.id.replace(/[^\.]*\.?/, '');
 
   // Recursively load all data for all years; once no years are left
   // create the stacked bar chart
@@ -210,27 +242,12 @@ function render_stacked_bar(new_root, uo, years, stbar_data = []) {
     });
   } else {
     // Remove previous stacked bar chart
-    var remove_node = document.getElementById("stacked-bar");
-    while (remove_node.firstChild) {
-      remove_node.removeChild(remove_node.firstChild);
-    }
+    remove_element("stacked-bar");
 
     // Create stacked bar chart
-    var stbar_svg = d3.select("#stacked-bar"),
-      margin = {top: 20, right: 20, bottom: 30, left: 40},
-      width = +stbar_svg.attr("width") - margin.left - margin.right,
-      height = +stbar_svg.attr("height") - margin.top - margin.bottom,
-      g = stbar_svg.append("g").attr(
-        "transform", "translate(" + margin.left + "," + margin.top + ")"
+    var g = stbar_svg.append("g").attr(
+        "transform", "translate(" + stbar_margin.left + "," + stbar_margin.top + ")"
       );
-
-    var x = d3.scaleBand()
-      .rangeRound([0, width])
-      .paddingInner(0.05)
-      .align(0.1);
-
-    var y = d3.scaleLinear()
-      .rangeRound([height, 0]);
 
     // Find the maximum value; needed to set the y-axis (so skip year
     // values)
@@ -240,8 +257,8 @@ function render_stacked_bar(new_root, uo, years, stbar_data = []) {
       }));
     }));
 
-    x.domain(stbar_data.map(function(d) {return d['abs_total']['year']}));
-    y.domain([0, max_val]).nice();
+    stbar_x.domain(stbar_data.map(function(d) {return d['abs_total']['year']}));
+    stbar_y.domain([0, max_val]).nice();
 
     var sum_totals = {};
     stbar_data.map(function(d) {
@@ -275,10 +292,10 @@ function render_stacked_bar(new_root, uo, years, stbar_data = []) {
         return cleand;
       })
       .enter().append("rect")
-        .attr("x", function(d) { return x(d.data.year); })
-        .attr("y", function(d) { return y(d[1]); })
-        .attr("height", function(d) { return y(d[0]) - y(d[1]); })
-        .attr("width", x.bandwidth())
+        .attr("x", function(d) { return stbar_x(d.data.year); })
+        .attr("y", function(d) { return stbar_y(d[1]); })
+        .attr("height", function(d) { return stbar_y(d[0]) - stbar_y(d[1]); })
+        .attr("width", stbar_x.bandwidth())
         .attr("fill", function(d) {
           if (sum_totals[d.data.year][d[2]] < 0) {
             return 'red';
@@ -292,16 +309,16 @@ function render_stacked_bar(new_root, uo, years, stbar_data = []) {
     // X-axis
     g.append("g")
       .attr("class", "axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
+      .attr("transform", "translate(0," + stbar_height + ")")
+      .call(d3.axisBottom(stbar_x));
 
     // Y-axis
     g.append("g")
       .attr("class", "axis")
-      .call(d3.axisLeft(y).ticks(null, "s"))
+      .call(d3.axisLeft(stbar_y).ticks(null, "s"))
       .append("text")
         .attr("x", 2)
-        .attr("y", y(y.ticks().pop()) + 0.5)
+        .attr("y", stbar_y(stbar_y.ticks().pop()) + 0.5)
         .attr("dy", "0.32em")
         .attr("fill", "#000")
         .attr("font-weight", "bold")
@@ -311,29 +328,9 @@ function render_stacked_bar(new_root, uo, years, stbar_data = []) {
 }
 
 var color_shades;
-
-// Render/update treemap
-function render_treemap(new_root) {
-  // Calculations needed when zooming in
-  var kx = width / (new_root.x1 - new_root.x0);
-  var ky = height / (new_root.y1 - new_root.y0);
-  x.domain([new_root.x0, new_root.x1]);
-  y.domain([new_root.y0, new_root.y1]);
-
-  // Breadcrumb
-  var breadcrumb = new_root.ancestors().map( function(d) {
-    return d.data.name ? d.data.name : "' '"
-  } ).slice(0, -1).reverse().join(' > ');
-  document.getElementById("breadcrumb").innerHTML = breadcrumb
-
-  // Remove previous treemap
-  var remove_node = document.getElementById("treemap");
-  while (remove_node.firstChild) {
-    remove_node.removeChild(remove_node.firstChild);
-  }
-
-  // Create color shades to color elements if the current root is any
-  // level below hoofdstuk; otherwise use color_map for hoofdstuk colors
+// Create color shades to color elements if the current root is any
+// level below hoofdstuk; otherwise use color_map for hoofdstuk colors
+function make_color_shades(new_root) {
   color_shades = '';
   var color_dark = '';
   var color_bright = '';
@@ -362,70 +359,146 @@ function render_treemap(new_root) {
       .domain([0, number_of_children])
       .range(color_range);
   }
+}
 
-  // Add all SVG elements of the current treemap
-  var cell = treemap_el.selectAll("g")
-    .data(new_root.children)
-    .enter().append("g")
-      .attr("transform", function(d) {
-        return "translate(" + x(d.x0) + "," + y(d.y0) + ")";
-      })
-      .on("click", function(d) {
-        return render_treemap(d.children ? d : root);
+// Donut zoom function
+function donut_zoom(d) {
+  donut_svg.transition()
+    .duration(750)
+    .tween("scale", function() {
+      var xd = d3.interpolate(donut_x.domain(), [d.x0, d.x1]),
+        yd = d3.interpolate(donut_y.domain(), [d.y0, 1]),
+        yr = d3.interpolate(donut_y.range(), [d.y0 ? 20 : 0, donut_radius]);
+      return function(t) { donut_x.domain(xd(t)); donut_y.domain(yd(t)).range(yr(t)); };
+    })
+    .selectAll("path")
+      .attrTween("d", function(d) { return function() { return arc(d); }; });
+}
+
+// Render/update visualizations
+function render(new_root) {
+  // Retrieve the identifier of the current root of the current year,
+  // needed to retrieve the matching root of other years; remove the top
+  // level of the id, e.g. 2017-U-ontwerpbegroting, to allow for the
+  // matching
+  current_id = new_root.data.id.replace(/[^\.]*\.?/, '');
+
+  // Breadcrumb
+  var breadcrumb = new_root.ancestors().map( function(d) {
+    return d.data.name ? d.data.name : "' '"
+  } ).slice(0, -1).reverse().join(' > ');
+  document.getElementById("breadcrumb").innerHTML = breadcrumb
+
+  // Get color shades
+  make_color_shades(new_root);
+
+  // Treemap
+  if (current_visual == "treemap") {
+    // Remove previous treemap
+    remove_element("treemap");
+
+    // Initialize treemap SVG
+    treemap_svg.attr("width", width);
+    treemap_svg.attr("height", height);
+
+    // Calculations needed when zooming in
+    var kx = width / (new_root.x1 - new_root.x0);
+    var ky = height / (new_root.y1 - new_root.y0);
+    tree_x.domain([new_root.x0, new_root.x1]);
+    tree_y.domain([new_root.y0, new_root.y1]);
+
+    // Add all SVG elements of the current treemap
+    var cell = treemap_svg.selectAll("g")
+      .data(new_root.children)
+      .enter().append("g")
+        .attr("transform", function(d) {
+          return "translate(" + tree_x(d.x0) + "," + tree_y(d.y0) + ")";
+        })
+        .on("click", function(d) {
+          return render(d.children ? d : root);
+        });
+
+    cell.append("rect")
+      .attr("id", function(d) { return convert_to_slug(d.data.id); })
+      .attr("width", function(d) { return kx * (d.x1 - d.x0); })
+      .attr("height", function(d) { return ky * (d.y1 - d.y0); })
+      .attr("fill", function(d, i) {
+        if (d.data.value < 0) {
+          return 'red';
+        } else {
+          if (color_shades) {
+            return color_shades(i);
+          } else {
+            return color_map[d.data.name].background;
+          }
+        }
       });
 
-  cell.append("rect")
-    .attr("id", function(d) { return convertToSlug(d.data.id); })
-    .attr("width", function(d) { return kx * (d.x1 - d.x0); })
-    .attr("height", function(d) { return ky * (d.y1 - d.y0); })
-    .attr("fill", function(d, i) {
-      if (d.data.value < 0) {
-        return 'red';
-      } else {
-        if (color_shades) {
-          return color_shades(i);
-        } else {
-          return color_map[d.data.name].background;
-        }
-      }
-    });
-
-  cell.append("clipPath")
-    .attr("id", function(d, i) {
-      return "clip-" + convertToSlug(d.data.id) + i;
-    })
-    .append("use")
-    .attr("xlink:href", function(d, i) {
-      return "#" + convertToSlug(d.data.id);
-    });
-
-  cell.append("text")
-    .attr("clip-path", function(d, i) {
-      return "url(#clip-" + convertToSlug(d.data.id) + i + ")";
-    })
-    .attr("fill", function(d) {
-        while (d.depth > 1) d = d.parent; return color_map[d.data.name].text;
-    })
-    .selectAll("tspan")
-      .data(function(d) {
-        var val = d3.sum(d.leaves().map(function(e) {return e.data.value}))
-        var txt = d.data.name + " " + format(val);
-        return txt.split(/ /g);
+    cell.append("clipPath")
+      .attr("id", function(d, i) {
+        return "clip-" + convert_to_slug(d.data.id) + i;
       })
-    .enter().append("tspan")
-      .attr("x", 4)
-      .attr("y", function(d, i) { return 13 + i * 10; })
-      .text(function(d) { return d; });
+      .append("use")
+      .attr("xlink:href", function(d, i) {
+        return "#" + convert_to_slug(d.data.id);
+      });
 
-  cell.append("title")
-    .text(function(d) {
-      var val = d3.sum(d.leaves().map(function(e) {return e.data.value}))
-      return d.data.name + "\n" + format(val);
-    })
+    cell.append("text")
+      .attr("clip-path", function(d, i) {
+        return "url(#clip-" + convert_to_slug(d.data.id) + i + ")";
+      })
+      .attr("fill", function(d) {
+          while (d.depth > 1) d = d.parent; return color_map[d.data.name].text;
+      })
+      .selectAll("tspan")
+        .data(function(d) {
+          var val = d3.sum(d.leaves().map(function(e) {return e.data.value}))
+          var txt = d.data.name + " " + format(val);
+          return txt.split(/ /g);
+        })
+      .enter().append("tspan")
+        .attr("x", 4)
+        .attr("y", function(d, i) { return 13 + i * 10; })
+        .text(function(d) { return d; });
 
-  node = new_root;
-  if (d3.event) {
-    d3.event.stopPropagation();
+    cell.append("title")
+      .text(function(d) {
+        var val = d3.sum(d.leaves().map(function(e) {return e.data.value}))
+        return d.data.name + "\n" + format(val);
+      })
+
+    if (d3.event) {
+      d3.event.stopPropagation();
+    }
+  // Donut
+  } else if (current_visual == "donut") {
+    // Remove previous donut
+    remove_element("donut");
+
+    // Initialize donut SVG
+    donut_svg.attr("width", width);
+    donut_svg.attr("height", height);
+    donut_svg_g = donut_svg.append("g")
+      .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
+
+    // Add all SVG elements of the current donut
+    var dat = [new_root].concat(new_root.children);
+    donut_svg_g.selectAll("path")
+      .data(new_root.children)
+      .enter().append("path")
+        .attr("d", arc)
+        .style("fill", function(d, i) {
+          if (color_shades) {
+            return color_shades(i);
+          } else {
+            return color_map[d.data.name].background;
+          }
+        })
+        .on("click", function(d) {d.children ? render(d) : render(root)})
+      .append("title")
+        .text(function(d) { return d.data.name + "\n" + format(d.value); });
+
+    donut_zoom(new_root);
   }
 
   // Table
@@ -436,57 +509,82 @@ function render_treemap(new_root) {
 
   // Load all years
   d3.selectAll("#year option").each(function() {all_years.push(this.value)});
-
   // Stacked bar chart
   render_stacked_bar(new_root, uo, all_years.sort());
 }
 
-// Load selected dataset and render visualisations
-function render(year, uo) {
+// Load selected dataset and render visualizations
+function load(year, uo) {
   var filename = data_dir + year + "-" + uo + "-ontwerpbegroting.json";
   d3.json(filename, function(error, data) {
     if (error) throw error;
 
-    root = d3.hierarchy(data);
-    node = root;
-
-    // Total
-    document.getElementById("total").innerHTML = format(
-      d3.sum(root.leaves().map(function(e) {return e.data.value}))
-    );
-
-    // Treemap; add an id and total value for each budget in the
-    // hierarchy and sort it; note that d.value contains the absolute
-    // total of a node which is what we need to let the treemap also
-    // visualize negative values; the actual displayed total values are
-    // calculated normally (i.e., not absolute)
-    treemap(root
+    // Add an id and total value for each budget in the hierarchy and
+    // sort it; note that d.value contains the absolute total of a node
+    // which is what we need to let the treemap/donut also visualize
+    // negative values; the actual displayed total values are calculated
+    // normally (i.e., not absolute)
+    root = d3.hierarchy(data)
       .eachBefore(function(d) {
         d.data.id = (d.parent ? d.parent.data.id + "." : "") + d.data.name;
       })
       .sum(function(d) { return Math.abs(d.value); })
-      .sort(function(a, b) { return b.value - a.value; }));
-    render_treemap(root);
+      .sort(function(a, b) { return b.value - a.value; });
+
+    // Total; the total value of the current year/uo selection is always
+    // displayed at the top regardless of the current zoomlevel
+    document.getElementById("total").innerHTML = format(
+      d3.sum(root.leaves().map(function(e) {return e.data.value}))
+    );
+
+    if (current_visual == "treemap") {
+      // Treemap
+      render(treemap(root));
+    } else if (current_visual == "donut") {
+      // Donut
+      render(partition(root));
+    }
   });
 
-
   // Show root when clicking outside of the treemap
-  d3.select(window).on("click", function() { render_treemap(root); });
+  //d3.select(window).on("click", function() { render(root); });
 };
 
-// Render visualisations based on selected year and uitgaven/ontvangsten
-year = d3.select("#year").node().value;
-uo = d3.select("#uo").node().value;
-render(year, uo);
+// Render visualizations based on selected year and uitgaven/ontvangsten
+// Initial visualization
+var current_visual = "treemap";
+var year = d3.select("#year").node().value;
+var uo = d3.select("#uo").node().value;
+load(year, uo);
 
+// User changed year selection
 d3.select("#year").on("change", function() {
   year = this.value;
-  render(year, uo);
+  load(year, uo);
 });
 
+// User changed uitgaven/ontvangsten selection
 d3.select("#uo").on("change", function() {
   uo = this.value;
-  render(year, uo);
+  load(year, uo);
+});
+
+// User clicked on treemap button
+d3.select("#btn-treemap").on("click", function() {
+  current_visual = "treemap";
+  remove_element("donut");
+  donut_svg.attr("width", 0);
+  donut_svg.attr("height", 0);
+  load(year, uo);
+});
+
+// User clicked on donut button
+d3.select("#btn-donut").on("click", function() {
+  current_visual = "donut";
+  remove_element("treemap");
+  treemap_svg.attr("width", 0);
+  treemap_svg.attr("height", 0);
+  load(year, uo);
 });
   </script>
 </body>
