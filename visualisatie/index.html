@@ -48,6 +48,8 @@ var current_id;
 var width = "800";
 var height = "800";
 
+var line_height = 12;
+
 var data_dir = "budgettaire_tabellen_json/";
 
 var all_years = [];
@@ -458,7 +460,7 @@ function render(new_root) {
         })
       .enter().append("tspan")
         .attr("x", 4)
-        .attr("y", function(d, i) { return 13 + i * 10; })
+        .attr("y", function(d, i) { return 13 + i * line_height; })
         .text(function(d) { return d; });
 
     cell.append("title")
@@ -497,6 +499,30 @@ function render(new_root) {
         .on("click", function(d) {d.children ? render(d) : render(root)})
       .append("title")
         .text(function(d) { return d.data.name + "\n" + format(d.value); });
+
+    // Add name and value of selected node in center
+    var total_lines = 1;
+    donut_svg_g.append("text")
+      .attr("text-anchor", "middle")
+      .selectAll("tspan")
+        .data(function() {
+          var val = d3.sum(new_root.leaves().map(function(e) {return e.data.value}))
+          var txt = new_root.data.name;
+          var txt_array = txt.split(/ /g);
+          if (txt_array.length > 12) {
+            txt_array = txt_array.slice(0,12);
+            txt_array[txt_array.length - 1] += ('...');
+          }
+          txt_array.push(format(val));
+          return txt_array;
+        })
+      .enter().append("tspan")
+        .attr("x", 4)
+        .attr("y", function(d, i) { total_lines += 1; return 13 + i * line_height; })
+        .text(function(d) { return d; });
+
+    donut_svg_g.select("text")
+      .attr("transform", "translate(0, " + -(total_lines - 4) * line_height + ")");
 
     donut_zoom(new_root);
   }
