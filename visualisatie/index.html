@@ -490,15 +490,19 @@ function render(new_root) {
       .enter().append("path")
         .attr("d", arc)
         .style("fill", function(d, i) {
-          if (color_shades) {
-            return color_shades(i);
+          if (d.data.value < 0) {
+            return 'red';
           } else {
-            return color_map[d.data.name].background;
+            if (color_shades) {
+              return color_shades(i);
+            } else {
+              return color_map[d.data.name].background;
+            }
           }
         })
         .on("click", function(d) {d.children ? render(d) : render(root)})
       .append("title")
-        .text(function(d) { return d.data.name + "\n" + format(d.value); });
+        .text(function(d) { return d.data.name + "\n" + format(d3.sum(d.leaves().map(function(e) {return e.data.value}))); });
 
     // Add name and value of selected node in center
     var total_lines = 1;
@@ -506,13 +510,21 @@ function render(new_root) {
       .attr("text-anchor", "middle")
       .selectAll("tspan")
         .data(function() {
-          var val = d3.sum(new_root.leaves().map(function(e) {return e.data.value}))
-          var txt = new_root.data.name;
-          var txt_array = txt.split(/ /g);
-          if (txt_array.length > 12) {
-            txt_array = txt_array.slice(0,12);
-            txt_array[txt_array.length - 1] += ('...');
+          var txt_array = [];
+          if (new_root.depth == 0) {
+            var budget_uo = "uitgaven";
+            if (uo == "O") {
+              budget_uo = "ontvangsten";
+            }
+            txt_array.push(["Totaal ontwerpbegroting " + year + " " + budget_uo]);
+          } else {
+            txt_array = new_root.data.name.split(/ /g);
+            if (txt_array.length > 12) {
+              txt_array = txt_array.slice(0, 12);
+              txt_array[txt_array.length - 1] += ('...');
+            }
           }
+          var val = d3.sum(new_root.leaves().map(function(e) {return e.data.value}))
           txt_array.push(format(val));
           return txt_array;
         })
