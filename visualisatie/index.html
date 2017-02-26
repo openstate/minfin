@@ -3,6 +3,10 @@
 <head>
   <meta charset="utf-8">
   <style>
+#breadcrumb {
+  color: lightgrey;
+}
+
 svg {
   font: 10px sans-serif;
 }
@@ -31,7 +35,14 @@ path {
     </select>
   </div>
   <div id="total"></div>
-  <div id="breadcrumb"></div>
+  <div id="breadcrumb">
+    <span id="start"></span> > 
+    <span id="hoofdstuk"></span> > 
+    <span id="artikel"></span> > 
+    <span id="artikelonderdeel"></span> > 
+    <span id="subartikelonderdeel"></span> > 
+    <span id="uitsplitsing"></span>
+  </div>
   <div style="display:block;">
     <button id="btn-treemap">treemap</button>
     <button id="btn-donut">donut</button>
@@ -165,12 +176,17 @@ function render_table(data, columns) {
   var rows = tbody.selectAll('tr')
     .data(data.children)
     .enter()
-    .append('tr');
+    .append('tr')
+      .on("click", function(d) {
+        return render(d.children ? d : root);
+      });
 
   // Create a cell in each row for each column
   var cells = rows.selectAll('td')
     .data(function (row) {
       return columns.map(function (column) {
+        // Return data.name for the 'naam' column' else return the value
+        // for the 'bedrag' column
         if (column == 'naam') {
           return {value: row.data.name, node: row};
         } else {
@@ -181,10 +197,26 @@ function render_table(data, columns) {
     })
     .enter()
     .append('td')
-      .on("click", function(d) {
-        return render(d.node.children ? d.node : root);
-      })
+      // Add text inside a span in order to prepend the SVG rect later
+      // on
+      .append("span")
       .text(function (d) { return d.value; });
+
+  // Add a colored rect in front of the first td of each tr
+  rows.select('tr td')
+    .insert("svg", ":first-child")
+      .attr("width", 20)
+      .attr("height", 15)
+    .append("rect")
+      .attr("width", 15)
+      .attr("height", 15)
+      .attr("fill", function(d, i) {
+        if (color_shades) {
+          return color_shades(i);
+        } else {
+          return color_map[d.data.name].background;
+        }
+      });
 }
 
 // Stores all names of all children across all years visualized in the
@@ -386,10 +418,24 @@ function render(new_root) {
   current_id = new_root.data.id.replace(/[^\.]*\.?/, '');
 
   // Breadcrumb
-  var breadcrumb = new_root.ancestors().map( function(d) {
-    return d.data.name ? d.data.name : "' '"
-  } ).slice(0, -1).reverse().join(' > ');
-  document.getElementById("breadcrumb").innerHTML = breadcrumb
+  var breadcrumb = ['start', 'hoofdstuk', 'artikel', 'artikelonderdeel', 'subartikelonderdeel', 'uitsplitsing']
+  var breadcrumb_el = d3.selectAll("#breadcrumb span");
+  breadcrumb_el.each(function (d) { d3.select(this).attr("style", "color:lightgrey"); });
+  new_root.ancestors().reverse().map(function(d, i) {
+    if (d.depth == 0) {
+      breadcrumb[i] = 'start';
+    } else {
+      breadcrumb[i] = d.data.name ? d.data.name : "' '";
+    }
+    breadcrumb_el.filter(function (el, idx) { return idx === i;})
+      .attr("style", "color:black")
+      .on("click", function(el) {
+        return render(d);
+      });
+  });
+  breadcrumb.map(function(d, i) {
+    breadcrumb_el.filter(function (db, idx) { return idx === i;}).text(d);
+  })
 
   // Get color shades
   make_color_shades(new_root);
@@ -583,9 +629,6 @@ function load(year, uo) {
       render(partition(root));
     }
   });
-
-  // Show root when clicking outside of the treemap
-  //d3.select(window).on("click", function() { render(root); });
 };
 
 // Render visualizations based on selected year and uitgaven/ontvangsten
