@@ -25,3 +25,6 @@ Bron: http://opendata.rijksbegroting.nl/#dataset_2
 |                                                         | begrotingsjaar          |
 |                                                         | begrotings_hoofdstuk    |
 |                                                         | begrotings_staat        |
+
+
+The script `subsidieoverzichten2json.py` is used to convert the `subsidieoverzichten.csv` to `subsidieoverzichten.json`.
