@@ -49,7 +49,7 @@ with open('subsidieoverzichten.csv') as IN, \
         line_data['Regeling'] = line[1]
         line_data['Beleid'] = line[2]
         line_data['Ontvanger'] = line[4]
-        line_data['Realisatie'] = re.sub(',', '', line[5])
+        line_data['Realisatie'] = int(float(re.sub(',', '.', line[5])) * 1000)
         line_data['Jaar'] = line[6]
         line_data['Overheid'] = line[8]
         out_data.append(line_data)

@@ -27,4 +27,4 @@ Bron: http://opendata.rijksbegroting.nl/#dataset_2
 |                                                         | begrotings_staat        |
 
 
-The script `subsidieoverzichten2json.py` is used to convert the `subsidieoverzichten.csv` to `subsidieoverzichten.json`.
+Het script `subsidieoverzichten2json.py` wordt gebruikt om `subsidieoverzichten.csv` om te zetten naar `subsidieoverzichten.json`. In `subsidieoverzichten.csv` zijn de bedragen gedeeld door 1000 maar wel met 3 cijfers achter de komma. Dus 40,000 is €40000, en 0,456 is €456. In `subsidieoverzichten.json` zijn de bedragen niet gedeeld door 1000 en dus gewoon als het volle bedrag weergegeven.
