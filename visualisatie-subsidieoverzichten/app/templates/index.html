@@ -74,15 +74,12 @@
     <script src="http://cdn.datatables.net/plug-ins/be7019ee387/integration/bootstrap/3/dataTables.bootstrap.js"></script>
     <!-- Datatables: buttons js: -->
     <script src="https://cdn.datatables.net/buttons/1.2.0/js/dataTables.buttons.min.js"></script>
-    <script type="https://cdn.datatables.net/buttons/1.2.0/js/buttons.bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.0/js/buttons.bootstrap.min.js"></script>
+
     <!-- accounting.js -->
     <script src="/static/scripts/accounting.min.js"></script>
 
-
-    <script type="text/javascript">
-    var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
-    </script>
     <!-- Custom Scripts -->
-    <script src="../static/scripts/datatables_script.js"></script>
+    <script src="/static/scripts/datatables_script.js"></script>
   </body>
 </html>
