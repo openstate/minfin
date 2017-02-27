@@ -1,0 +1,29 @@
+version: '2'
+services:
+  subsidies-nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile-nginx
+    volumes:
+        - ../app/static/:/usr/share/nginx/html/static
+    networks:
+      - subsidies
+    restart: always
+  subsidies-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+        - ../app/:/opt/subsidies
+    networks:
+      - subsidies
+    restart: always
+  subsidies-elasticsearch:
+    build:
+      context: .
+      dockerfile: Dockerfile-elasticsearch
+    networks:
+      - subsidies
+    restart: always
+networks:
+    subsidies:

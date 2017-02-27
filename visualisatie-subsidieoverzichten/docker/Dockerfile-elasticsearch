@@ -1,0 +1,6 @@
+FROM elasticsearch:2.3.5
+
+COPY es_mapping .
+RUN service elasticsearch start \
+  && sleep 10 \
+  && curl -XPUT 'http://127.0.0.1:9200/sub/' -d '@es_mapping'

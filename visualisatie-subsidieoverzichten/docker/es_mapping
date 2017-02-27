@@ -1,0 +1,55 @@
+{
+    "mappings": {
+        "subsidie": {
+            "properties": {
+
+                "overheid": {
+                    "type": "string",
+                    "fields": {
+                        "raw": {
+                            "type": "string",
+                            "index": "not_analyzed"
+                        }
+                    }
+                },
+
+                "regeling": {
+                    "type": "string",
+                    "fields": {
+                        "raw": {
+                            "type": "string",
+                            "index": "not_analyzed"
+                        }
+                    }
+                },
+
+                "ontvanger": {
+                    "type": "string",
+                    "fields": {
+                        "raw": {
+                            "type": "string",
+                            "index": "not_analyzed"
+                        }
+                    }
+                },
+
+                "beleid": {
+                    "type": "string",
+                    "fields": {
+                        "raw": {
+                            "type": "string",
+                            "index": "not_analyzed"
+                        }
+                    }
+                },
+
+                "realisatie": {
+                    "type": "long"
+                },
+                "jaar": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

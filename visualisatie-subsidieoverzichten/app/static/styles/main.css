@@ -1,0 +1,26 @@
+article {
+  padding: 20px;
+}
+
+.dt-button {
+  background-color: #f2f2f2;
+  color: #3d4a4c;
+  margin: 20px 5px;
+  padding: 10px;
+}
+
+.dt-button a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+.dt-button.button-unclicked {
+  background-color: #f08382;
+}
+
+.dt-button:hover {
+  background-color: #f08382;
+}
+
+.dataTables_filter {
+  margin: 15px 0px 0px 0px;
+}
