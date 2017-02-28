@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile-nginx
     volumes:
-        - ../app/static/:/usr/share/nginx/html/static
+      - ../app/static/:/usr/share/nginx/html/static
     networks:
       - subsidies
     restart: always
@@ -14,7 +14,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-        - ../app/:/opt/subsidies
+      - ../app/:/opt/subsidies
     networks:
       - subsidies
     restart: always
@@ -26,4 +26,4 @@ services:
       - subsidies
     restart: always
 networks:
-    subsidies:
+  subsidies:
