@@ -17,6 +17,14 @@ article {
   background-color: #f08382;
 }
 
+.dt-button.button-unclicked:before {
+  content: "✗";
+}
+
+.dt-button:before {
+  content: "✔";
+}
+
 .dt-button:hover {
   background-color: #f08382;
 }
