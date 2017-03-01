@@ -104,7 +104,6 @@ function readData(callbackFunction) {
       nodes = $.grep(nodes, function(o) {
         return o.begrotingCurrentYear != "-" && o.realisatieCurrentYear != "-"
       });
-      console.log(nodes);
       callbackFunction();
     })
 }

@@ -92,7 +92,8 @@
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
         .call(zoomBeh);
 
-    svg.append("rect")
+    function start() {
+      svg.append("rect")
           .attr("width", width)
           .attr("height", height)
           .on("click", function() {
@@ -100,8 +101,8 @@
             updatePlot();
           })
 
-    // Read data and put it in the variables nodes (declared in data.js)
-    function start() {
+      // Read data and put it in the variables nodes (declared in
+      // data.js)
       readData(function() {
         readDepartments(function() {
           initLegend();

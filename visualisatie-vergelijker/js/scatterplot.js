@@ -103,7 +103,6 @@ function addAndRemoveNodes() {
     .exit()
     .remove();
 
-
   // Add and remove history nodes
   svg.selectAll(".historyLine")
     .data(historyConnections)
@@ -149,7 +148,6 @@ function addAndRemoveNodes() {
       return d.departement + "_" + d.omschrijving + "_" + d.jaar
     })
     .exit().remove();
-
 }
 
 // Called when user clicks on a node, or switches views
