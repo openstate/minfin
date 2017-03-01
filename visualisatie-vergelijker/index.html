@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>DDB</title>
+  <title>Onder- en overbesteding</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -137,7 +137,7 @@
     d3.select("#year").on("change", function() {
       currentYear = this.value;
       // Remove previous visualisation
-      var remove_node = $('#graph svg g').empty()
+      remove_node = $('#graph svg g').empty()
       // Draw visualisation for selected year
       start();
     });
@@ -146,7 +146,7 @@
     d3.select("#uo").on("change", function() {
       currentUo = this.value;
       // Remove previous visualisation
-      var remove_node = $('#graph svg g').empty()
+      remove_node = $('#graph svg g').empty()
       // Draw visualisation for selected year
       start();
     });
