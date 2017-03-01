@@ -1,0 +1,170 @@
+[
+  {
+    "label": "Algemene Zaken",
+    "color": "#a90061",
+    "chapters": [
+      "III, Algemene Zaken"
+    ]
+  },
+  {
+    "label": "De Koning",
+    "color": "#999999",
+    "chapters": [
+      "I, De Koning"
+    ]
+  },
+  {
+    "label": "Binnenlandse Zaken en Koninkrijksrelaties",
+    "color": "#d52b1e",
+    "chapters": [
+      "VII, Binnenlandse Zaken en Koninkrijksrelaties"
+    ]
+  },
+  {
+    "label": "De Staten Generaal",
+    "color": "#f092cd",
+    "chapters": [
+      "IIA, De Staten Generaal"
+    ]
+  },
+  {
+    "label": "Overige Hoge Colleges van Staat",
+    "color": "#b4b4b4",
+    "chapters": [
+      "IIB, Overige Hoge Colleges van Staat"
+    ]
+  },
+  {
+    "label": "Koninkrijksrelaties",
+    "color": "#d52b1e",
+    "chapters": [
+      "IV, Koninkrijksrelaties"
+    ]
+  },
+  {
+    "label": "Gemeentefonds",
+    "color": "#01689b",
+    "chapters": [
+      "B, Gemeentefonds"
+    ]
+  },
+  {
+    "label": "Provinciefonds",
+    "color": "#01689b",
+    "chapters": [
+      "C, Provinciefonds"
+    ]
+  },
+  {
+    "label": "BES-fonds",
+    "color": "#696969",
+    "chapters": [
+      "H, BES-fonds"
+    ]
+  },
+  {
+    "label":"Buitenlandse Zaken",
+    "color":"#39870c",
+    "chapters":[
+      "V, Buitenlandse Zaken"
+    ]
+  },
+  {
+    "label":"Veiligheid en Justitie",
+    "color":"#8fcae7",
+    "chapters":[
+      "VI, Veiligheid en Justitie"
+    ]
+  },
+  {
+    "label":"Onderwijs, Cultuur en Wetenschap",
+    "color":"#777c00",
+    "chapters":[
+      "VIII, Onderwijs, Cultuur en Wetenschap"
+    ]
+  },
+  {
+    "label":"Nationale Schuld",
+    "color":"#cccccc",
+    "chapters":[
+      "IXA, Nationale Schuld"
+    ]
+  },
+  {
+    "label":"Financiën",
+    "color":"#007bc7",
+    "chapters":[
+      "IXB, Financiën"
+    ]
+  },
+  {
+    "label":"Defensie",
+    "color":"#42145f",
+    "chapters":[
+      "X, Defensie"
+    ]
+  },
+  {
+    "label":"Infrastructuur en Milieu",
+    "color":"#f9e11e",
+    "chapters":[
+      "XII, Infrastructuur en Milieu"
+    ]
+  },
+  {
+    "label":"Infrastructuurfonds",
+    "color":"#ffb612",
+    "chapters":[
+      "A, Infrastructuurfonds"
+    ]
+  },
+  {
+    "label":"Deltafonds",
+    "color":"#94710a",
+    "chapters":[
+      "J, Deltafonds"
+    ]
+  },
+  {
+    "label":"Economische Zaken",
+    "color":"#275937",
+    "chapters":[
+      "XIII, Economische Zaken"
+    ]
+  },
+  {
+    "label":"Diergezondheidsfonds",
+    "color":"#535353",
+    "chapters":[
+      "F, Diergezondheidsfonds"
+    ]
+  },
+  {
+    "label":"Sociale Zaken en Werkgelegenheid",
+    "color":"#ca005d",
+    "chapters":[
+      "XV, Sociale Zaken en Werkgelegenheid"
+    ]
+  },
+  {
+    "label":"Volksgezondheid, Welzijn en Sport",
+    "color":"#e17000",
+    "chapters":[
+      "XVI, Volksgezondheid, Welzijn en Sport"
+    ]
+  },
+  {
+    "label":"Buitenlandse Handel & Ontwikkelingssamenwerking",
+    "color":"#76d2b6",
+    "chapters":[
+      "XVII, Buitenlandse Handel & Ontwikkelingssamenwerking"
+    ]
+  },
+  {
+    "label":"Wonen en Rijksdienst",
+    "color":"#673327",
+    "chapters":[
+      "XVIII, Wonen en Rijksdienst"
+    ]
+  }
+]

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DDB</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <div id="legend"></div>
+  <div id="title">Onder- en overbesteding</div>
+  <div id="yearControls">
+    <select id="year" class="form-control">
+      <option value="2015" selected>2015</option>
+      <option value="2014">2014</option>
+      <option value="2013">2013</option>
+    </select>
+  </div>
+  <div id="uoControls">
+    <select id="uo" class="form-control">
+      <option value="U" selected>Uitgaven</option>
+      <option value="O">Ontvangsten</option>
+    </select>
+  </div>
+  <div id="viewControls">
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-default" onclick='setView("verschilArtikel")'>Verschil absoluut</button>
+      <button type="button" class="btn btn-default" onclick='setView("verschilArtikelPerc")'>Verschil relatief</button>
+    </div>
+  </div>
+  <button id="resetZoomButton" onclick="resetZoom()">Reset zoom</button>
+  <div id="showLabels">
+    <label for="showLabelsButton">Toon labels</label>
+    <input id="showLabelsButton" type="checkbox" onclick="showLabelsClicked()">
+  </div>
+  <div id="graph">
+    <div id="tooltip">
+      <div id="tooltip-department"></div>
+      <div id="tooltip-omschrijving"></div>
+      <table id="tooltip-budget" class="table"></table>
+    </div>
+  </div>
+
+  <script src="lib/d3.v3.min.js"></script>
+  <script src="lib/jquery-3.1.1.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/tooltip.js"></script>
+  <script src="js/scatterplot.js"></script>
+  <script src="js/legend.js"></script>
+  <script src="js/locale.js"></script>
+
+  <script>
+    var selectedNode = null;
+    var currentView = "verschilArtikel"; // Or "verschilArtikelPerc"
+    var currentYear = $("#year option:selected").val();
+    // Whether (U)itgaven or (O)ntvangsten is selected
+    var currentUo = $("#uo option:selected").val();
+    var radiusIsBegroting = false;
+    var showingLabels = false;
+    // Set the first and last year which both have a begroting and
+    // realisatie
+    var firstYear = 2013;
+    var lastYear = 2015;
+
+    // Margin within graph area
+    var margin = {top: 10, right: 30, bottom: 20, left: 80};
+    var innerWidth = $("#graph").innerWidth(),
+        innerHeight = $("#graph").innerHeight();
+    var width = innerWidth - margin.left - margin.right,
+        height = innerHeight - margin.top - margin.bottom;
+
+    var xScale, yScale;
+    // Used to limit zooming to one direction
+    var dummyScale = d3.scale.linear();
+    var xAxis, yAxis;
+
+    d3.select("#resetZoomButton").attr("disabled","true");
+
+    var zoomBeh = d3.behavior.zoom()
+     //.x(xScale) // Not here, because xScale.domain is not set.
+     //.y(yScale) // Call zoomBeh.x(xScale) every time xScale.domain is changed (which does not happen in our case)
+     .on("zoom", function() {
+       d3.event.sourceEvent.stopPropagation();
+       zoom()
+     });
+
+    var svg = d3.select("#graph").append("svg")
+        .attr("width", width + margin.left + margin.right - 7)
+        .attr("height", height + margin.top + margin.bottom - 7)
+      .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+        .call(zoomBeh);
+
+    svg.append("rect")
+          .attr("width", width)
+          .attr("height", height)
+          .on("click", function() {
+            selectedNode = null;
+            updatePlot();
+          })
+
+    // Read data and put it in the variables nodes (declared in data.js)
+    function start() {
+      readData(function() {
+        readDepartments(function() {
+          initLegend();
+          assignDepartmentsToNodes();
+          sortNodes();
+          initPlot();
+          switchView();
+          updatePlot();
+        });
+      });
+    }
+    start();
+
+    var tooltip = d3.select("#tooltip");
+
+    function zoom() {
+      // Limit zooming to y direction
+      svg.select(".y.axis").call(yAxis);
+      updatePositions();
+
+      d3.select("#resetZoomButton").attr("disabled",null);
+    }
+
+    function resetZoom() {
+      zoomBeh.scale(1);
+      zoomBeh.translate([0,0]);
+      zoom();
+      d3.select("#resetZoomButton").attr("disabled","true");
+    }
+
+    // User changed year selection
+    d3.select("#year").on("change", function() {
+      currentYear = this.value;
+      // Remove previous visualisation
+      var remove_node = $('#graph svg g').empty()
+      // Draw visualisation for selected year
+      start();
+    });
+
+    // User changed uitgaven/ontvangsten selection
+    d3.select("#uo").on("change", function() {
+      currentUo = this.value;
+      // Remove previous visualisation
+      var remove_node = $('#graph svg g').empty()
+      // Draw visualisation for selected year
+      start();
+    });
+
+    function showLabelsClicked() {
+      showingLabels = !showingLabels;
+      updatePlot();
+    }
+
+    function setView(view) {
+      currentView = view;
+      switchView();
+    }
+
+    function switchView() {
+      switch(currentView) {
+        case "verschilArtikel":
+          var largest = Math.max(Math.abs(minVerschil),maxVerschil);
+          yScale.domain([-largest,largest]).nice().clamp(true);
+          zoomBeh.x(dummyScale).y(yScale)
+           .center([width/2,height/2])
+           .scaleExtent([0, 5000]);
+          break;
+        case "verschilArtikelPerc":
+          var largest = Math.max(Math.abs(minVerschilPerc),maxVerschilPerc);
+          yScale.domain([-100,100]).nice().clamp(true);
+          zoomBeh.x(dummyScale).y(yScale)
+           .center([width/2,height/2])
+           .scaleExtent([0, 60]);
+          break;
+      }
+      rScale.domain([0,maxBegroting]);
+      drawAxes();
+      updatePlot();
+      updatePositions(true);
+    }
+  </script>
+</body>
+</html>

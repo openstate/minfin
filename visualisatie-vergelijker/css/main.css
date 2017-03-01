@@ -1,0 +1,171 @@
+body {
+  overflow: hidden;
+}
+
+td, th {
+  text-align: right;
+}
+
+#title {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  font-size: 21pt;
+  font-weight: bold;
+}
+
+#yearControls {
+  position: absolute;
+  left: 250px;
+  bottom: 10px;
+}
+
+#uoControls {
+  position: absolute;
+  left: 350px;
+  bottom: 10px;
+}
+
+#viewControls {
+  position: absolute;
+  left: 500px;
+  bottom: 10px;
+}
+
+#resetZoomButton {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+#showLabels {
+  position: absolute;
+  left: 110px;
+  bottom: 8px;
+}
+
+#graph {
+  position: absolute;
+  top: 60px;
+  bottom: 50px;
+  left: 10px;
+  right: 220px;
+  overflow: auto;
+}
+
+#legend {
+  position: absolute;
+  top: 60px;
+  bottom: 50px;
+  right: 10px;
+  width: 200px;
+}
+
+.legendEntry {
+  font-size: 10pt;
+  line-height: 110%;
+
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+
+  cursor: default;
+  padding: 5px;
+  margin-bottom: 2px;
+}
+
+.legendEntry .legendLabel {
+  margin-left: 22px;
+}
+
+.legendEntry .legendColor {
+  width: 10px;
+  height: 10px;
+  margin-top: 2px;
+  margin-left: 2px;
+  border-radius: 5px;
+  float: left;
+}
+
+text {
+  pointer-events: none;
+}
+
+#tooltip {
+  font-size: 8pt;
+  position: absolute;
+  text-align: center;
+  width: 350px;
+  padding: 5px;
+  background: #fff;
+  color: #333;
+  pointer-events: none;
+  display: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#tooltip-department {
+  font-size: 9pt;
+  margin-top: 5px;
+}
+
+#tooltip-omschrijving {
+  font-size: 11pt;
+  font-weight: bold;
+  margin-top: -2px;
+}
+
+#tooltip-budget {
+  font-size: 9pt;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.axis .tick line {
+  opacity: 0.1;
+}
+
+.axis .tick text {
+  font-size: 7pt;
+}
+
+.axis .domain {
+  display: none;
+}
+
+.zeroLine {
+  fill: none;
+  stroke: #000;
+}
+
+.historyNode circle {
+  stroke: #333;
+  stroke-width: 2pt;
+}
+
+.historyLine {
+  fill: none;
+  stroke: #333;
+  stroke-width: 2pt;
+}
+
+.historyNodeLabel {
+  fill: #333;
+  font-size: 10pt;
+}
+
+rect {
+  fill: transparent;
+  shape-rendering: crispEdges;
+}
+
+.nodeLabel {
+  font-size: 7;
+  fill: #333;
+}
