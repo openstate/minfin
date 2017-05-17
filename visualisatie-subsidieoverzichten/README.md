@@ -1,5 +1,5 @@
 # Subsidie visualisatie
-Bekijk en doorzoek alle subsidies van de rijksoverheid.
+Bekijk en doorzoek alle subsidies van de rijksoverheid: https://rijkssubsidies.openstate.eu/
 
 # Benodigde software
 * [docker-compose](https://docs.docker.com/compose/install/)
